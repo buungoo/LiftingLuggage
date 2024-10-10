@@ -90,6 +90,9 @@
       <DependentUpon>CylinderVSensValve.fbt</DependentUpon>
       <IEC61499Type>CAT</IEC61499Type>
     </None>
+    <None Include="CylinderVSensValve\CylinderVSensValve_HMI.meta.xml">
+      <DependentUpon>CylinderVSensValve_HMI.fbt</DependentUpon>
+    </None>
     <None Include="CylinderVSens\CylinderVSens.cfg">
       <DependentUpon>CylinderVSens.fbt</DependentUpon>
       <IEC61499Type>CAT</IEC61499Type>
@@ -283,6 +286,16 @@
     </Content>
     <Content Include="CylinderHSensValve\CylinderHSensValve_HMI.opcua.xml">
       <DependentUpon>CylinderHSensValve.fbt</DependentUpon>
+      <Plugin>OPCUAConfigurator</Plugin>
+      <IEC61499Type>CAT_OPCUA</IEC61499Type>
+    </Content>
+    <Content Include="CylinderVSensValve\CylinderVSensValve_HMI.offline.xml">
+      <DependentUpon>CylinderVSensValve.fbt</DependentUpon>
+      <Plugin>OfflineParametrizationEditor</Plugin>
+      <IEC61499Type>CAT_OFFLINE</IEC61499Type>
+    </Content>
+    <Content Include="CylinderVSensValve\CylinderVSensValve_HMI.opcua.xml">
+      <DependentUpon>CylinderVSensValve.fbt</DependentUpon>
       <Plugin>OPCUAConfigurator</Plugin>
       <IEC61499Type>CAT_OPCUA</IEC61499Type>
     </Content>

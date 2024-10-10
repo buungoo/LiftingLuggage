@@ -217,6 +217,7 @@
         </FileItem>
         <FileItem Name="Composites/Main#CylinderVSensValve.bin">
           <Hash>FC3CFAE943AD2EB50D435D5A8626C2CD7CFADDF1043E624AFBE366EA853CD4E3</Hash>
+          <Changed>true</Changed>
         </FileItem>
         <FileItem Name="Basics/Main#ValveControlSR.bin">
           <Hash>6D31F3B5605F6B030F49682B11AF233416E1F360362EF3D4A26F1E5156C97547</Hash>
@@ -306,7 +307,7 @@
   <deployment>
     <network_profile name="(Local Test)">
       <device id="8e25662b-7163-43d9-a62e-5110e1ee3534">
-        <sref snapshot="{97B1A9C7-4457-453E-8D38-A8A42B90E046}" state="ACTIVE" />
+        <sref snapshot="{97B1A9C7-4457-453E-8D38-A8A42B90E046}" state="ACTIVE_MODIFIED" />
       </device>
       <device id="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e" />
       <device id="f52da1eb-1c96-483e-9b03-6c71f593bf08" />

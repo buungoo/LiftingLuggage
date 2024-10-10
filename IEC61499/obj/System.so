@@ -151,20 +151,20 @@
           <Parameter Name="PEERNAME" Value="'DEV.RES0'" />
         </FB>
         <EventConnections>
-          <Connection Source="START.COLD" Destination="PusherControl.INIT" dx1="48.60425" />
+          <Connection Source="START.COLD" Destination="PusherControl.INIT" dx1="48.60419" />
           <Connection Source="FB1.INITO" Destination="FB2.INIT" dx1="42.60425" dx2="50" dy="530" />
-          <Connection Source="FB2.INITO" Destination="FB2.REQ" dx1="65.896" dx2="70" dy="-110" />
-          <Connection Source="FB2.CNF" Destination="FB2.START" dx1="45.896" dx2="90" dy="-170" />
+          <Connection Source="FB2.INITO" Destination="FB2.REQ" dx1="165.896" dx2="70" dy="-110" />
+          <Connection Source="FB2.CNF" Destination="FB2.START" dx1="145.896" dx2="90" dy="-170" />
           <Connection Source="START.COLD" Destination="FB1.INIT" dx1="48.60419" />
           <Connection Source="PusherControl.INITO" Destination="FB3.INIT" dx1="161.8125" />
           <Connection Source="PusherControl.CNF" Destination="FB3.REQ" dx1="61.8125" />
           <Connection Source="FB2.IND" Destination="PusherControl.REQ" dx1="90" />
         </EventConnections>
         <DataConnections>
-          <Connection Source="FB2.VALUE1" Destination="PusherControl.PusherRetracted" dx1="90" />
-          <Connection Source="FB2.VALUE2" Destination="PusherControl.PusherExtended" dx1="110" />
-          <Connection Source="FB2.VALUE3" Destination="PusherControl.LuggageArrived" dx1="130" />
-          <Connection Source="FB2.VALUE4" Destination="PusherControl.LuggageLifted" dx1="150" />
+          <Connection Source="FB2.VALUE1" Destination="PusherControl.PusherRetracted" dx1="110" />
+          <Connection Source="FB2.VALUE2" Destination="PusherControl.PusherExtended" dx1="130" />
+          <Connection Source="FB2.VALUE3" Destination="PusherControl.LuggageArrived" dx1="150" />
+          <Connection Source="FB2.VALUE4" Destination="PusherControl.LuggageLifted" dx1="170" />
           <Connection Source="PusherControl.ExtendPusher" Destination="FB3.VALUE1" dx1="41.8125" />
         </DataConnections>
       </FBNetwork>
