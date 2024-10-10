@@ -50,8 +50,8 @@
     <Input Name="PushPosX" x="1080" y="1332" Type="Data" />
     <Output Name="INITO" x="3260" y="312" Type="Event" />
     <Output Name="CNF" x="3300" y="1072" Type="Event" />
-    <Output Name="LuggLifted" x="2880" y="1632" Type="Data" />
-    <Output Name="LuggLoaded" x="2880" y="1552" Type="Data" />
+    <Output Name="LuggLifted" x="2920" y="1732" Type="Data" />
+    <Output Name="LuggLoaded" x="2920" y="1572" Type="Data" />
     <EventConnections>
       <Connection Source="INIT" Destination="FB3.INIT" />
       <Connection Source="REQ" Destination="FB3.REQ" />
@@ -71,8 +71,8 @@
     <DataConnections>
       <Connection Source="LiftPosY" Destination="FB3.LiftPos" />
       <Connection Source="PushPosX" Destination="FB3.PushPos" />
-      <Connection Source="FB3.HSens" Destination="LuggLifted" />
-      <Connection Source="FB3.LSens" Destination="LuggLoaded" dx1="130" />
+      <Connection Source="FB3.HSens" Destination="LuggLifted" dx1="42.3335" />
+      <Connection Source="FB3.LSens" Destination="LuggLoaded" />
       <Connection Source="FB3.LuggPosX" Destination="IThis.PositionX" dx1="235.145">
         <AvoidsNodes>false</AvoidsNodes>
       </Connection>

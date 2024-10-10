@@ -30,6 +30,16 @@
       </ComplexOPCUAObject>
     </ComplexOPCUAObject>
     <ComplexOPCUAObject DisplayName="PushCylinder" NodeId="9a0b3be3-c86b-c286-4232-68715b995435" BrowseName="PushCylinder" IsDummyNode="false" Type="BaseObjectType">
+      <OPCUAObject>
+        <NxtOpcUaObject DisplayName="IThis" BrowseName="IThis" id="ff3cd35a-a4dd-c5ef-849f-4931967d644b" FbType="Cat" Type="BaseObjectType">
+          <OPCUAVariable UID="ff496905-d2c6-ac14-e807-0b38f178ba64" DataType="BOOL" Extension="V1;Path=DEV.RES0.Model.PushCylinder.IThis.FWD_OUT;Trigger=CNF" IsInput="false" Type="BaseDataVariableType" HasCondition="false">
+            <OPCUAAttribute Name="AccessLevel" Value="3" />
+            <OPCUAAttribute Name="BrowseName" Value="FWD_OUT" />
+            <OPCUAAttribute Name="DisplayName" Value="FWD_OUT" />
+            <OPCUAAttribute Name="Description" />
+          </OPCUAVariable>
+        </NxtOpcUaObject>
+      </OPCUAObject>
       <ComplexOPCUAObject DisplayName="FB1" NodeId="435c52fd-3248-860d-9946-e580606d8aa8" BrowseName="FB1" IsDummyNode="false" Type="BaseObjectType">
         <ComplexOPCUAObject DisplayName="LeftSensor" NodeId="c07ebfe9-001a-6cd8-dec8-67d229262001" BrowseName="LeftSensor" IsDummyNode="false" Type="BaseObjectType">
           <OPCUAObject>

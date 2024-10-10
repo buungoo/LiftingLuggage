@@ -1,41 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<System Name="System" ProjectName="LiftingLuggage" ProjectGuid="{A5C5F206-235D-47D9-8A3B-71E672475EE7}" BuildTime="2024-10-10 11:13:06Z" DeployTime="" StudioVersion="IEC 61499 IDE, Panther UAOv23.0 g5173 4181ef5 Thu Oct 12 16:53:40 2023" SnapshotGuid="{820E0B97-528B-494C-ACB7-B8253DF44620}">
+<System Name="System" ProjectName="LiftingLuggage" ProjectGuid="{A5C5F206-235D-47D9-8A3B-71E672475EE7}" BuildTime="2024-10-10 14:51:02Z" DeployTime="" StudioVersion="IEC 61499 IDE, Panther UAOv23.0 g5173 4181ef5 Thu Oct 12 16:53:40 2023" SnapshotGuid="{CC812B7E-9258-4F4E-AB67-A63E063276B0}">
   <Device ID="f52da1eb-1c96-483e-9b03-6c71f593bf08" Name="PusherControlDEV" Type="Soft_dPAC" Namespace="SE.DPAC">
     <Resource ID="F4D5DF7CD07DEA" Name="RES0" Type="EMB_RES_ECO" Namespace="Runtime.Management">
       <FBNetwork>
         <FB ID="3F546C369396E15D" Name="PusherControl" Type="PusherControl" Namespace="Main" />
-        <FB ID="6B01B5A1FEFBE3C" Name="CHAN_DEV_RES0" Type="COMM_CHANN_DESC" Namespace="Runtime.System">
-          <Attribute Name="Endpoint.Port" Value="51304" />
-          <Parameter Name="PEERNAME" Value="'DEV.RES0'" />
+        <FB ID="F421EBF448AFBE70" Name="FB1" Type="OPCUA_CONNECT_13434D741E95123C0" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=1" />
+          <Parameter Name="QI" Value="TRUE" />
+          <Parameter Name="ID" Value="'Luggage_OPCUA'" />
+          <Parameter Name="URI" Value="'opc.tcp://127.0.0.1:4841'" />
+        </FB>
+        <FB ID="936034DEE7AD4E19" Name="FB2" Type="OPCUA_READ_17210D0FAA2FB8D01" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=4;VALUE${CNTX}:BOOL,BOOL,BOOL,BOOL" />
+          <Parameter Name="ATTRIB_ID" Value="13" />
+          <Parameter Name="QI" Value="TRUE" />
+          <Parameter Name="CONNECTION_ID" Value="'Luggage_OPCUA'" />
+          <Parameter Name="SCAN_RATE" Value="50" />
+          <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.PushCylinder.FB1.RightSensor.Interface1.sensRead'" />
+          <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.PushCylinder.FB1.LeftSensor.Interface1.sensRead'" />
+          <Parameter Name="NODE_ID3" Value="'ns=2;s=DEV.RES0.Model.Luggage.IThis.LuggageLoaded'" />
+          <Parameter Name="NODE_ID4" Value="'ns=2;s=DEV.RES0.Model.Luggage.IThis.LuggageLifted'" />
+        </FB>
+        <FB ID="C84743275EEC5B0B" Name="FB3" Type="OPCUA_WRITE_247815A92EEC3FB0E" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=1;VALUE${CNTX}:BOOL" />
+          <Parameter Name="ATTRIB_ID" Value="13" />
+          <Parameter Name="QI" Value="TRUE" />
+          <Parameter Name="CONNECTION_ID" Value="'Luggage_OPCUA'" />
+          <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.PushCylinder.IThis.FWD_OUT'" />
         </FB>
         <FB ID="28D6BD2C325A3758" Name="CHAN_LiftControlDEV_RES0" Type="COMM_CHANN_DESC" Namespace="Runtime.System">
           <Attribute Name="Endpoint.Port" Value="51305" />
           <Parameter Name="PEERNAME" Value="'LiftControlDEV.RES0'" />
         </FB>
-        <FB Name="PROXY_115F7C1914C9D6D55" Type="CROSSCOMM_PEER_66DEE93E7DD8F4C0" Comment="PusherControlDEV_RES0_LiftingLuggage_Model" Namespace="Main">
-          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventOutputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;INITO&quot;&gt;&#xD;&#xA;      &lt;With Var=&quot;PushRetracted&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;PushExtended&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LuggageArrived&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LuggageLifted&quot; /&gt;&#xD;&#xA;    &lt;/Event&gt;&#xD;&#xA;    &lt;Event Name=&quot;CNF&quot;&gt;&#xD;&#xA;      &lt;With Var=&quot;PushRetracted&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;PushExtended&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LuggageArrived&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LuggageLifted&quot; /&gt;&#xD;&#xA;    &lt;/Event&gt;&#xD;&#xA;  &lt;/EventOutputs&gt;&#xD;&#xA;  &lt;OutputVars&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;PushRetracted&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;PushExtended&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LuggageArrived&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LuggageLifted&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;  &lt;/OutputVars&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        <FB ID="6B01B5A1FEFBE3C" Name="CHAN_DEV_RES0" Type="COMM_CHANN_DESC" Namespace="Runtime.System">
+          <Attribute Name="Endpoint.Port" Value="51304" />
+          <Parameter Name="PEERNAME" Value="'DEV.RES0'" />
         </FB>
         <FB Name="SND_PROXY_215481CFAF6AAF7F1" Type="CROSSCOMM_SENDER_124AAD7831CB0FFC2" Comment="LiftControlDEV_RES0_LiftingLuggage_PusherControl" Namespace="Main">
           <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventInputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;PUSHED&quot; /&gt;&#xD;&#xA;  &lt;/EventInputs&gt;&#xD;&#xA;  &lt;InputVars /&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
         </FB>
-        <FB Name="SND_PROXY_1480A46B16BD48652" Type="CROSSCOMM_SENDER_393C57E253140061" Comment="DEV_RES0_LiftingLuggage_PusherControl" Namespace="Main">
-          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventInputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;INITO&quot;&gt;&#xD;&#xA;      &lt;With Var=&quot;ExtendPusher&quot; /&gt;&#xD;&#xA;    &lt;/Event&gt;&#xD;&#xA;    &lt;Event Name=&quot;CNF&quot;&gt;&#xD;&#xA;      &lt;With Var=&quot;ExtendPusher&quot; /&gt;&#xD;&#xA;    &lt;/Event&gt;&#xD;&#xA;  &lt;/EventInputs&gt;&#xD;&#xA;  &lt;InputVars&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;ExtendPusher&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;  &lt;/InputVars&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        <FB Name="SND_PROXY_1480A46B16BD48652" Type="CROSSCOMM_SENDER_45FE03D7848F2EB2" Comment="DEV_RES0_LiftingLuggage_PusherControl" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventInputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;INITO&quot; /&gt;&#xD;&#xA;  &lt;/EventInputs&gt;&#xD;&#xA;  &lt;InputVars /&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        </FB>
+        <FB Name="PROXY_115F7C1914C9D6D55" Type="CROSSCOMM_PEER_195C19FF067434822" Comment="PusherControlDEV_RES0_LiftingLuggage_Model" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventOutputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;INITO&quot; /&gt;&#xD;&#xA;  &lt;/EventOutputs&gt;&#xD;&#xA;  &lt;OutputVars /&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
         </FB>
         <FB Name="START" Type="E_RESTART" Namespace="IEC61499.Standard" />
         <EventConnections>
           <Connection Source="START.COLD" Destination="PusherControl.INIT" />
-          <Connection Source="PROXY_115F7C1914C9D6D55.INITO" Destination="PusherControl.INIT" />
-          <Connection Source="PROXY_115F7C1914C9D6D55.CNF" Destination="PusherControl.REQ" />
+          <Connection Source="FB1.INITO" Destination="FB2.INIT" />
+          <Connection Source="FB2.INITO" Destination="FB2.REQ" />
+          <Connection Source="FB2.CNF" Destination="FB2.START" />
+          <Connection Source="START.COLD" Destination="FB1.INIT" />
+          <Connection Source="PusherControl.INITO" Destination="FB3.INIT" />
+          <Connection Source="PusherControl.CNF" Destination="FB3.REQ" />
+          <Connection Source="FB2.IND" Destination="PusherControl.REQ" />
           <Connection Source="PusherControl.PUSHED" Destination="SND_PROXY_215481CFAF6AAF7F1.PUSHED" />
           <Connection Source="PusherControl.INITO" Destination="SND_PROXY_1480A46B16BD48652.INITO" />
-          <Connection Source="PusherControl.CNF" Destination="SND_PROXY_1480A46B16BD48652.CNF" />
+          <Connection Source="PROXY_115F7C1914C9D6D55.INITO" Destination="PusherControl.INIT" />
         </EventConnections>
         <DataConnections>
-          <Connection Source="PROXY_115F7C1914C9D6D55.PushRetracted" Destination="PusherControl.PusherRetracted" />
-          <Connection Source="PROXY_115F7C1914C9D6D55.PushExtended" Destination="PusherControl.PusherExtended" />
-          <Connection Source="PROXY_115F7C1914C9D6D55.LuggageArrived" Destination="PusherControl.LuggageArrived" />
-          <Connection Source="PROXY_115F7C1914C9D6D55.LuggageLifted" Destination="PusherControl.LuggageLifted" />
-          <Connection Source="PusherControl.ExtendPusher" Destination="SND_PROXY_1480A46B16BD48652.ExtendPusher" />
+          <Connection Source="FB2.VALUE1" Destination="PusherControl.PusherRetracted" />
+          <Connection Source="FB2.VALUE2" Destination="PusherControl.PusherExtended" />
+          <Connection Source="FB2.VALUE3" Destination="PusherControl.LuggageArrived" />
+          <Connection Source="FB2.VALUE4" Destination="PusherControl.LuggageLifted" />
+          <Connection Source="PusherControl.ExtendPusher" Destination="FB3.VALUE1" />
         </DataConnections>
         <AdapterConnections />
       </FBNetwork>

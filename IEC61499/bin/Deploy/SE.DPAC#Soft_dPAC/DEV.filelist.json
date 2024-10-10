@@ -1,9 +1,9 @@
 {
   "snapshot": {
-    "guid": "820e0b97-528b-494c-acb7-b8253df44620",
-    "hash": "D52E5516277F93CA6E59E789820BD05CA5B0C47454BF10E88BA5C836D3E8A26A",
+    "guid": "97b1a9c7-4457-453e-8d38-a8a42b90e046",
+    "hash": "3E929710AB70C10ADE40A8AB621614A5D5297CF562E654BD4A85C119AB9BDF14",
     "app": {
-      "hash": "D52E5516277F93CA6E59E789820BD05CA5B0C47454BF10E88BA5C836D3E8A26A",
+      "hash": "3E929710AB70C10ADE40A8AB621614A5D5297CF562E654BD4A85C119AB9BDF14",
       "items": [
         "Main#ValveControlDA.bin",
         "Main#Sensor_HMI.bin",
@@ -19,6 +19,7 @@
         "Main#CylinderH_HMI.bin",
         "Main#CylinderH.bin",
         "Main#CylinderHSens.bin",
+        "Main#CylinderHSensValve_HMI.bin",
         "Main#CylinderHSensValve.bin",
         "Main#Model_HMI.bin",
         "Main#Luggage_HMI.bin",
@@ -26,8 +27,8 @@
         "Main#Luggage.bin",
         "Main#Model.bin",
         "Main#CROSSCOMM_SENDER_95FAF9232B073808.bin",
-        "Main#CROSSCOMM_SENDER_160EC6DC30B01CA3B.bin",
-        "Main#CROSSCOMM_PEER_870DEA938BB7E735.bin",
+        "Main#CROSSCOMM_PEER_195C19FF067434822.bin",
+        "Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin",
         "Main#CROSSCOMM_PEER_21793A890546FF994.bin",
         "Device.bin",
         "CommDesc.xml",

@@ -1,6 +1,7 @@
 C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\LiftingLuggage\HwConfiguration\bin\Windows\Debug\HwConfiguration.dll
 C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\LiftingLuggage\HwConfiguration\bin\Windows\Debug\HwConfiguration.pdb
 C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\LiftingLuggage\HwConfiguration\bin\Windows\Debug\SE.DPAC.HwConfiguration.dll
+C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\LiftingLuggage\HwConfiguration\bin\Windows\Debug\Standard.OPCUAClient.HwConfiguration.dll
 C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\LiftingLuggage\HwConfiguration\obj\Windows\Debug\HwConfiguration.hwconfigproj.AssemblyReference.cache
 C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\LiftingLuggage\HwConfiguration\obj\Windows\Debug\HwConfiguration.hwconfigproj.CoreCompileInputs.cache
 C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\LiftingLuggage\HwConfiguration\obj\Windows\Debug\HwConfiguration.hwconfigproj.CopyComplete

@@ -23,6 +23,14 @@ namespace HMI.Main.Symbols.CylinderHSensValve
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
+			this.REQ_Fired += REQ_Fired_EventHandler;
+		}
+
+		void REQ_Fired_EventHandler(object sender, REQEventArgs e)
+		{
+			// TODO: Implement REQ_Fired_EventHandler
+			bool output = e.FWD_IN.Value;
+			this.FireEvent_CNF(output);
 		}
 	}
 }

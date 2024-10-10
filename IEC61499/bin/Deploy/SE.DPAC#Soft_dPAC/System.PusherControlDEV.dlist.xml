@@ -3,28 +3,43 @@
   <Deployable>
     <DeployInformation Type="Working">
       <FileGroup Name="FileList">
-        <FileItem Name="Basics/Main#PusherControl.bin" Library="IEC61499.dll" BuildSnapshot="{820E0B97-528B-494C-ACB7-B8253DF44620}">
-          <Modified>2024-01-14T09:18:04</Modified>
-          <Hash>5E5C8A4BA316520EFA484FE1DE04D0E5664C367F21F2F1E0E3AECD98EED09C13</Hash>
+        <FileItem Name="Basics/Main#PusherControl.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
+          <Modified>2024-10-10T13:47:24</Modified>
+          <Hash>97EA06E30F825C4A90077475471DF469D28F56E0D7BE59A0E27FDD8DCF73892B</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_PEER_66DEE93E7DD8F4C0.bin" Library="IEC61499.dll" BuildSnapshot="{820E0B97-528B-494C-ACB7-B8253DF44620}">
-          <Modified>2024-10-10T13:11:56</Modified>
-          <Hash>C6B04ABC3E9BEE164D0C1564C06BBEE2C1B0E22F77D3AD2230289CEC72C20958</Hash>
+        <FileItem Name="Basics/Main#OPCUA_CONNECT_13434D741E95123C0.bin" Library="IEC61499.dll" BuildSnapshot="{936C75D5-4F48-4446-81BD-3457F9CD9286}">
+          <Modified>2024-10-10T14:49:50</Modified>
+          <Hash>8BE023713261E815C5FE82E1C27C9C3BA242FCADDED0B6AC31D3DEB55A35BED9</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_124AAD7831CB0FFC2.bin" Library="IEC61499.dll" BuildSnapshot="{820E0B97-528B-494C-ACB7-B8253DF44620}">
-          <Modified>2024-10-10T13:11:56</Modified>
-          <Hash>B1F2EDACA892FC2CE349235EB2EC551661B80A5ED6AAD2578E0A1347161C66A5</Hash>
+        <FileItem Name="Basics/Main#OPCUA_READ_17210D0FAA2FB8D01.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
+          <Modified>2024-10-10T14:23:34</Modified>
+          <Hash>419F950B131E3A6859EEF412E8CF4708BCD4C360976BCA73BA9F9BA8E107CB5A</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_393C57E253140061.bin" Library="IEC61499.dll" BuildSnapshot="{820E0B97-528B-494C-ACB7-B8253DF44620}">
-          <Modified>2024-10-10T13:11:56</Modified>
-          <Hash>51AE2C22CC258DC4D595C65C73DCEF03CE61D79B4B4079E27871FD756D161C52</Hash>
+        <FileItem Name="Basics/Main#OPCUA_WRITE_247815A92EEC3FB0E.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
+          <Modified>2024-10-10T14:23:34</Modified>
+          <Hash>B1343FBA56550B7BBC1AFDD65E1C412CE34F11798E69403AAD40D83915F81244</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_124AAD7831CB0FFC2.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
+          <Modified>2024-10-10T13:47:24</Modified>
+          <Hash>C7A07FFA5A6779106847D7F69C70B8D0DD52B67EF1A5BFF01E142D3429DE5816</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin" Library="IEC61499.dll" BuildSnapshot="{936C75D5-4F48-4446-81BD-3457F9CD9286}">
+          <Modified>2024-10-10T14:49:50</Modified>
+          <Hash>CB1AD6C00F0606552BA44BC6E55DE732B2ED633E197E89C6384098EE2D391099</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin" Library="IEC61499.dll" BuildSnapshot="{936C75D5-4F48-4446-81BD-3457F9CD9286}">
+          <Modified>2024-10-10T14:49:50</Modified>
+          <Hash>D6C358EE918821FA626D83F50A1D1B4B9BAF66D97BFB2EBAAFC364E09E1E021B</Hash>
         </FileItem>
       </FileGroup>
       <FileGroup Name="DeployList">
         <FileItem Name="Basics/Main#PusherControl.bin" Library="IEC61499.dll" />
-        <FileItem Name="Basics/Main#CROSSCOMM_PEER_66DEE93E7DD8F4C0.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#OPCUA_CONNECT_13434D741E95123C0.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#OPCUA_READ_17210D0FAA2FB8D01.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#OPCUA_WRITE_247815A92EEC3FB0E.bin" Library="IEC61499.dll" />
         <FileItem Name="Basics/Main#CROSSCOMM_SENDER_124AAD7831CB0FFC2.bin" Library="IEC61499.dll" />
-        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_393C57E253140061.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin" Library="IEC61499.dll" />
       </FileGroup>
     </DeployInformation>
   </Deployable>

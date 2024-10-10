@@ -2,6 +2,7 @@ C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\
 C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\LiftingLuggage\HMI\bin\Windows\Debug\HMI.pdb
 C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\LiftingLuggage\HMI\bin\Windows\Debug\HMIBaseSymbols.dll
 C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\LiftingLuggage\HMI\bin\Windows\Debug\SE.DPAC.HMI.dll
+C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\LiftingLuggage\HMI\bin\Windows\Debug\Standard.OPCUAClient.HMI.dll
 C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\LiftingLuggage\HMI\bin\Windows\Debug\SE.DPAC.HMI.imgstore
 C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\LiftingLuggage\HMI\obj\Windows\Debug\HMI.csproj.AssemblyReference.cache
 C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\LiftingLuggage\HMI\obj\Windows\Debug\HMI.Main.Canvases.Canvas.resources

@@ -29,18 +29,11 @@
     <Endpoint Resource="PusherControlDEV.RES0" URI="nxtv3://0.0.0.0:51304/?proto=udp">
       <Peer Resource="DEV.RES0" URI="nxtv3://127.0.0.1:51301/?proto=udp&amp;alive=3000" PeerFB="CHAN_DEV_RES0" />
     </Endpoint>
-    <FBConnection Source="DEV.RES0.Model" Destination="PusherControlDEV.RES0.PusherControl" SourceProxy="SND_PROXY_115F7C1914C9D6D55" DestinationProxy="PROXY_115F7C1914C9D6D55" ProxyId="93176978C8A87107">
-      <Event Source="INITO" Destination="INIT" EventId="AB390ED7B3AAD160" EventHash="3172FA8EBF7968EB" />
-      <Event Source="CNF" Destination="REQ" EventId="10A3F8DE590086ED" EventHash="7F5E8B313AF49CB1" />
-      <Data Source="PushRetracted" Destination="PusherRetracted" />
-      <Data Source="PushExtended" Destination="PusherExtended" />
-      <Data Source="LuggageArrived" Destination="LuggageArrived" />
-      <Data Source="LuggageLifted" Destination="LuggageLifted" />
-    </FBConnection>
     <FBConnection Source="PusherControlDEV.RES0.PusherControl" Destination="DEV.RES0.Model" SourceProxy="SND_PROXY_1480A46B16BD48652" DestinationProxy="PROXY_1480A46B16BD48652" ProxyId="D552EDB7EE73BF52">
-      <Event Source="INITO" Destination="INIT" EventId="DFF7DC43027FF05A" EventHash="32C36B6BAD89423F" />
-      <Event Source="CNF" Destination="REQ" EventId="1E3DFED15943519A" EventHash="CEF3247E63B601BE" />
-      <Data Source="ExtendPusher" Destination="PushExt" />
+      <Event Source="INITO" Destination="INIT" EventId="DFF7DC43027FF05A" EventHash="14FFF8D43B42E21D" />
+    </FBConnection>
+    <FBConnection Source="DEV.RES0.Model" Destination="PusherControlDEV.RES0.PusherControl" SourceProxy="SND_PROXY_115F7C1914C9D6D55" DestinationProxy="PROXY_115F7C1914C9D6D55" ProxyId="93176978C8A87107">
+      <Event Source="INITO" Destination="INIT" EventId="AB390ED7B3AAD160" EventHash="14FFF8D43B42E21D" />
     </FBConnection>
   </Channel>
 </CommunicationDescription>

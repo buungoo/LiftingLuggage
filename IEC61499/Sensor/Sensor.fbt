@@ -58,7 +58,22 @@
         <AvoidsNodes>false</AvoidsNodes>
       </Connection>
       <Connection Source="position" Destination="FB1.pos" dx1="40" />
-      <Connection Source="range" Destination="FB1.Range" dx1="40" />
+      <Connection Source="range" Destination="FB1.Range">
+        <Points>
+          <Points>
+            <X>182.031235</X>
+            <Y>239.963531</Y>
+          </Points>
+          <Points>
+            <X>185</X>
+            <Y>239.963531</Y>
+          </Points>
+          <Points>
+            <X>185</X>
+            <Y>240</Y>
+          </Points>
+        </Points>
+      </Connection>
       <Connection Source="FB1.result" Destination="Interface1.sensRead">
         <Points>
           <Points>

@@ -23,6 +23,11 @@ namespace HMI.Main.Symbols.CylinderHSens
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
+			this.REQ_Fired += REQ_Fired_EventHandler;
+		}
+
+		void REQ_Fired_EventHandler(object sender, REQEventArgs e)
+		{
 		}
 	}
 }
