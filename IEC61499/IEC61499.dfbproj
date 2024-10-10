@@ -124,7 +124,7 @@
     <None Include="Sensor\Sensor_HMI.meta.xml">
       <DependentUpon>Sensor_HMI.fbt</DependentUpon>
     </None>
-    <None Include="SnapshotCompiles\{97B1A9C7-4457-453E-8D38-A8A42B90E046}\Default\IEC61499.snapshot" />
+    <None Include="SnapshotCompiles\{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}\Default\IEC61499.snapshot" />
     <None Include="System\snapshot.xml">
       <DependentUpon>System.sys</DependentUpon>
     </None>
@@ -265,8 +265,8 @@
     <Folder Include="License" />
     <Folder Include="Log" />
     <Folder Include="SnapshotCompiles" />
-    <Folder Include="SnapshotCompiles\{97B1A9C7-4457-453E-8D38-A8A42B90E046}" />
-    <Folder Include="SnapshotCompiles\{97B1A9C7-4457-453E-8D38-A8A42B90E046}\Default" />
+    <Folder Include="SnapshotCompiles\{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}" />
+    <Folder Include="SnapshotCompiles\{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}\Default" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CylinderHSensValve\CylinderHSensValve_CAT.offline.xml">
@@ -286,6 +286,16 @@
     </Content>
     <Content Include="CylinderHSensValve\CylinderHSensValve_HMI.opcua.xml">
       <DependentUpon>CylinderHSensValve.fbt</DependentUpon>
+      <Plugin>OPCUAConfigurator</Plugin>
+      <IEC61499Type>CAT_OPCUA</IEC61499Type>
+    </Content>
+    <Content Include="CylinderVSensValve\CylinderVSensValve_CAT.offline.xml">
+      <DependentUpon>CylinderVSensValve.fbt</DependentUpon>
+      <Plugin>OfflineParametrizationEditor</Plugin>
+      <IEC61499Type>CAT_OFFLINE</IEC61499Type>
+    </Content>
+    <Content Include="CylinderVSensValve\CylinderVSensValve_CAT.opcua.xml">
+      <DependentUpon>CylinderVSensValve.fbt</DependentUpon>
       <Plugin>OPCUAConfigurator</Plugin>
       <IEC61499Type>CAT_OPCUA</IEC61499Type>
     </Content>

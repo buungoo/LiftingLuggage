@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CommunicationDescription>
-  <Channel ChannelId="F431593127DBD617" LinkId="9E7DC7132C9B6272">
-    <Endpoint Resource="PusherControlDEV.RES0" URI="nxtv3://0.0.0.0:51305/?proto=udp">
-      <Peer Resource="LiftControlDEV.RES0" URI="nxtv3://${LiftControlDEV}:51303/?proto=udp&amp;alive=3000" PeerFB="CHAN_LiftControlDEV_RES0" />
-    </Endpoint>
-    <Endpoint Resource="LiftControlDEV.RES0" URI="nxtv3://0.0.0.0:51303/?proto=udp">
-      <Peer Resource="PusherControlDEV.RES0" URI="nxtv3://${PusherControlDEV}:51305/?proto=udp&amp;alive=3000" PeerFB="CHAN_PusherControlDEV_RES0" />
-    </Endpoint>
-    <FBConnection Source="PusherControlDEV.RES0.PusherControl" Destination="LiftControlDEV.RES0.LiftControl" SourceProxy="SND_PROXY_215481CFAF6AAF7F1" DestinationProxy="PROXY_215481CFAF6AAF7F1" ProxyId="151A91B758406FCD">
-      <Event Source="PUSHED" Destination="RETRACT" EventId="1C98959E14B20749" EventHash="160A9EBF83D8576E" />
-    </FBConnection>
-  </Channel>
   <Channel ChannelId="BBF42B61D0606F28" LinkId="1EB6950ED54C567B">
     <Endpoint Resource="PusherControlDEV.RES0" URI="nxtv3://0.0.0.0:51304/?proto=udp">
       <Peer Resource="DEV.RES0" URI="nxtv3://${DEV}:51301/?proto=udp&amp;alive=3000" PeerFB="CHAN_DEV_RES0" />
@@ -23,6 +12,17 @@
     </FBConnection>
     <FBConnection Source="DEV.RES0.Model" Destination="PusherControlDEV.RES0.PusherControl" SourceProxy="SND_PROXY_115F7C1914C9D6D55" DestinationProxy="PROXY_115F7C1914C9D6D55" ProxyId="93176978C8A87107">
       <Event Source="INITO" Destination="INIT" EventId="AB390ED7B3AAD160" EventHash="14FFF8D43B42E21D" />
+    </FBConnection>
+  </Channel>
+  <Channel ChannelId="F431593127DBD617" LinkId="9E7DC7132C9B6272">
+    <Endpoint Resource="PusherControlDEV.RES0" URI="nxtv3://0.0.0.0:51305/?proto=udp">
+      <Peer Resource="LiftControlDEV.RES0" URI="nxtv3://${LiftControlDEV}:51303/?proto=udp&amp;alive=3000" PeerFB="CHAN_LiftControlDEV_RES0" />
+    </Endpoint>
+    <Endpoint Resource="LiftControlDEV.RES0" URI="nxtv3://0.0.0.0:51303/?proto=udp">
+      <Peer Resource="PusherControlDEV.RES0" URI="nxtv3://${PusherControlDEV}:51305/?proto=udp&amp;alive=3000" PeerFB="CHAN_PusherControlDEV_RES0" />
+    </Endpoint>
+    <FBConnection Source="PusherControlDEV.RES0.PusherControl" Destination="LiftControlDEV.RES0.LiftControl" SourceProxy="SND_PROXY_215481CFAF6AAF7F1" DestinationProxy="PROXY_215481CFAF6AAF7F1" ProxyId="151A91B758406FCD">
+      <Event Source="PUSHED" Destination="RETRACT" EventId="1C98959E14B20749" EventHash="160A9EBF83D8576E" />
     </FBConnection>
   </Channel>
 </CommunicationDescription>

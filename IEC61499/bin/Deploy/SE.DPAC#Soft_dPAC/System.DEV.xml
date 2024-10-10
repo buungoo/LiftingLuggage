@@ -2,6 +2,16 @@
 <NxtOpcUaObjects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ComplexOPCUAObject DisplayName="Model" NodeId="093a9572-2491-6de0-b7ea-b53305c68e53" BrowseName="Model" IsDummyNode="false" Type="BaseObjectType">
     <ComplexOPCUAObject DisplayName="LiftCylinder" NodeId="424bc310-edf5-1a46-a32c-3586de0219e3" BrowseName="LiftCylinder" IsDummyNode="false" Type="BaseObjectType">
+      <OPCUAObject>
+        <NxtOpcUaObject DisplayName="FB3" BrowseName="FB3" id="c02c298c-2d10-58d0-c81f-92c58e06d97e" FbType="Cat" Type="BaseObjectType">
+          <OPCUAVariable UID="bb9d33f1-5f93-6534-4a65-05b89e9147da" DataType="BOOL" Extension="V1;Path=DEV.RES0.Model.LiftCylinder.FB3.FWD_OUT;Trigger=CNF" IsInput="false" Type="BaseDataVariableType" HasCondition="false">
+            <OPCUAAttribute Name="AccessLevel" Value="3" />
+            <OPCUAAttribute Name="BrowseName" Value="FWD_OUT" />
+            <OPCUAAttribute Name="DisplayName" Value="FWD_OUT" />
+            <OPCUAAttribute Name="Description" />
+          </OPCUAVariable>
+        </NxtOpcUaObject>
+      </OPCUAObject>
       <ComplexOPCUAObject DisplayName="FB1" NodeId="88e67a1f-a01b-f659-5a97-7de8866a804e" BrowseName="FB1" IsDummyNode="false" Type="BaseObjectType">
         <ComplexOPCUAObject DisplayName="EndSensor" NodeId="aff9498c-99b2-5c27-6904-90818be2f891" BrowseName="EndSensor" IsDummyNode="false" Type="BaseObjectType">
           <OPCUAObject>

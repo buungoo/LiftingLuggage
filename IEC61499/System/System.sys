@@ -8,7 +8,7 @@
     <SubAppNetwork>
       <FB ID="DFD43629BFCD4A5" Name="Model" Type="Model" x="1700" y="580" Namespace="Main" />
       <FB ID="FDAAC859A2745F2A" Name="ControlPanel" Type="ControlPanel" x="180" y="160" Namespace="Main" />
-      <FB ID="7A52D6A32DBE4D96" Name="LiftControl" Type="LiftControl" x="3620" y="580" Namespace="Main" />
+      <FB ID="7A52D6A32DBE4D96" Name="LiftControl" Type="LiftControl" x="3640" y="1840" Namespace="Main" />
       <FB ID="84AE69FC5D66198F" Name="PusherControl" Type="PusherControl" x="3620" y="3580" Namespace="Main" />
       <FB ID="7E81A9F5AC573014" Name="FB1" Type="OPCUA_CONNECT_13434D741E95123C0" x="1260" y="3400" Namespace="Main">
         <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=1" />
@@ -34,7 +34,7 @@
         <Parameter Name="CONNECTION_ID" Value="'Luggage_OPCUA'" />
         <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.PushCylinder.IThis.FWD_OUT'" />
       </FB>
-      <FB ID="9CB05CBF696646A" Name="FB4" Type="OPCUA_CONNECT_13434D741E95123C0" x="1120" y="1780" Namespace="Main">
+      <FB ID="9CB05CBF696646A" Name="FB4" Type="OPCUA_CONNECT_13434D741E95123C0" x="1240" y="1780" Namespace="Main">
         <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=1" />
         <Parameter Name="QI" Value="TRUE" />
         <Parameter Name="ID" Value="'Luggage_OPCUA'" />
@@ -51,20 +51,27 @@
         <Parameter Name="NODE_ID3" Value="'ns=2;s=DEV.RES0.Model.Luggage.IThis.LuggageLoaded'" />
         <Parameter Name="NODE_ID4" Value="'ns=2;s=DEV.RES0.Model.Luggage.IThis.LuggageLifted'" />
       </FB>
+      <FB ID="384DABC37763CC0F" UID="F016736A6254CEC6" Name="FB6" Type="OPCUA_WRITE_1322467A4CC663E9C" x="5060" y="1840" Namespace="Main">
+        <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=2;VALUE${CNTX}:BOOL,BOOL" />
+        <Parameter Name="ATTRIB_ID" Value="13" />
+        <Parameter Name="QI" Value="TRUE" />
+        <Parameter Name="CONNECTION_ID" Value="'Luggage_OPCUA'" />
+        <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.FWD_OUT'" />
+        <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.FWD_OUT'" />
+      </FB>
       <EventConnections>
-        <Connection Source="Model.INITO" Destination="LiftControl.INIT" />
-        <Connection Source="Model.CNF" Destination="LiftControl.REQ" />
-        <Connection Source="Model.INITO" Destination="PusherControl.INIT" dx1="919.6042">
+        <Connection Source="Model.INITO" Destination="LiftControl.INIT" dx1="1039.604">
           <AvoidsNodes>false</AvoidsNodes>
         </Connection>
-        <Connection Source="LiftControl.INITO" Destination="Model.INIT" dx1="40" dx2="30" dy="-110" />
-        <Connection Source="LiftControl.CNF" Destination="Model.REQ" dx1="103.8125" dx2="220" dy="-380">
+        <Connection Source="Model.INITO" Destination="PusherControl.INIT" dx1="919.6042">
           <AvoidsNodes>false</AvoidsNodes>
         </Connection>
         <Connection Source="PusherControl.INITO" Destination="Model.INIT" dx1="151.8125" dx2="120" dy="-3280">
           <AvoidsNodes>false</AvoidsNodes>
         </Connection>
-        <Connection Source="PusherControl.PUSHED" Destination="LiftControl.RETRACT" dx1="90" dx2="110" dy="-2030" />
+        <Connection Source="PusherControl.PUSHED" Destination="LiftControl.RETRACT" dx1="90" dx2="130" dy="-500">
+          <AvoidsNodes>false</AvoidsNodes>
+        </Connection>
         <Connection Source="FB1.INITO" Destination="FB2.INIT" />
         <Connection Source="FB2.INITO" Destination="FB2.REQ" dx1="35.896" dx2="70" dy="-110">
           <AvoidsNodes>false</AvoidsNodes>
@@ -81,22 +88,26 @@
         <Connection Source="FB5.CNF" Destination="FB5.REQ" dx1="75.896" dx2="30" dy="-200">
           <AvoidsNodes>false</AvoidsNodes>
         </Connection>
-        <Connection Source="FB5.INITO" Destination="FB5.START" dx1="45.896" dx2="70" dy="-110" />
-      </EventConnections>
-      <DataConnections>
-        <Connection Source="Model.LiftRetracted" Destination="LiftControl.LiftRetracted" dx1="109.6042" />
-        <Connection Source="Model.LiftExtended" Destination="LiftControl.LiftExtended" dx1="89.60425" />
-        <Connection Source="LiftControl.ExtendLift" Destination="Model.LiftExt" dx1="143.8125" dx2="100" dy="400">
+        <Connection Source="FB5.INITO" Destination="FB5.START" dx1="65.896" dx2="90" dy="-110" />
+        <Connection Source="FB5.IND" Destination="LiftControl.REQ" dx1="90" />
+        <Connection Source="LiftControl.INITO" Destination="FB6.INIT" />
+        <Connection Source="LiftControl.CNF" Destination="FB6.REQ" />
+        <Connection Source="LiftControl.INITO" Destination="Model.INIT" dx1="53.8125" dx2="30" dy="-1540">
           <AvoidsNodes>false</AvoidsNodes>
         </Connection>
-        <Connection Source="LiftControl.RetractLift" Destination="Model.LiftRet" dx1="113.8125" dx2="30" dy="270" />
-        <Connection Source="Model.LuggageArrived" Destination="LiftControl.LuggageArrived" dx1="130" />
-        <Connection Source="Model.LuggageLifted" Destination="LiftControl.LuggageLifted" dx1="150" />
+      </EventConnections>
+      <DataConnections>
         <Connection Source="FB2.VALUE1" Destination="PusherControl.PusherRetracted" dx1="110" />
         <Connection Source="FB2.VALUE2" Destination="PusherControl.PusherExtended" dx1="130" />
         <Connection Source="FB2.VALUE3" Destination="PusherControl.LuggageArrived" dx1="150" />
         <Connection Source="FB2.VALUE4" Destination="PusherControl.LuggageLifted" dx1="170" />
         <Connection Source="PusherControl.ExtendPusher" Destination="FB3.VALUE1" dx1="41.8125" />
+        <Connection Source="FB5.VALUE1" Destination="LiftControl.LiftRetracted" dx1="110" />
+        <Connection Source="FB5.VALUE2" Destination="LiftControl.LiftExtended" dx1="130" />
+        <Connection Source="FB5.VALUE3" Destination="LiftControl.LuggageArrived" dx1="150" />
+        <Connection Source="FB5.VALUE4" Destination="LiftControl.LuggageLifted" dx1="170" />
+        <Connection Source="LiftControl.ExtendLift" Destination="FB6.VALUE1" dx1="60" />
+        <Connection Source="LiftControl.RetractLift" Destination="FB6.VALUE2" dx1="40" />
       </DataConnections>
     </SubAppNetwork>
   </Application>
@@ -140,6 +151,14 @@
           <Parameter Name="NODE_ID3" Value="'ns=2;s=DEV.RES0.Model.Luggage.IThis.LuggageLoaded'" />
           <Parameter Name="NODE_ID4" Value="'ns=2;s=DEV.RES0.Model.Luggage.IThis.LuggageLifted'" />
         </FB>
+        <FB ID="94EA53076DCA3D2" Name="FB6" Type="OPCUA_WRITE_1322467A4CC663E9C" x="4800" y="1840" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=2;VALUE${CNTX}:BOOL,BOOL" />
+          <Parameter Name="ATTRIB_ID" Value="13" />
+          <Parameter Name="QI" Value="TRUE" />
+          <Parameter Name="CONNECTION_ID" Value="'Luggage_OPCUA'" />
+          <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.FWD_OUT'" />
+          <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.FWD_OUT'" />
+        </FB>
         <FB ID="74086308E425A255" Name="CHAN_DEV_RES0" Type="COMM_CHANN_DESC" x="500" y="300" Namespace="Runtime.System">
           <Attribute Name="Endpoint.Port" Value="51302" />
           <Parameter Name="PEERNAME" Value="'DEV.RES0'" />
@@ -151,9 +170,21 @@
         <EventConnections>
           <Connection Source="START.COLD" Destination="LiftControl.INIT" dx1="48.60419" />
           <Connection Source="FB4.INITO" Destination="FB5.INIT" />
-          <Connection Source="FB5.CNF" Destination="FB5.REQ" dx1="40" dx2="40" dy="868" />
-          <Connection Source="FB5.INITO" Destination="FB5.START" dx1="40" dx2="70" dy="928" />
+          <Connection Source="FB5.CNF" Destination="FB5.REQ" dx1="45.896" dx2="30" dy="-170" />
+          <Connection Source="FB5.INITO" Destination="FB5.START" dx1="165.896" dx2="90" dy="-110" />
+          <Connection Source="FB5.IND" Destination="LiftControl.REQ" dx1="90" />
+          <Connection Source="LiftControl.INITO" Destination="FB6.INIT" dx1="180" />
+          <Connection Source="LiftControl.CNF" Destination="FB6.REQ" dx1="80" />
+          <Connection Source="START.COLD" Destination="FB4.INIT" dx1="48.60419" />
         </EventConnections>
+        <DataConnections>
+          <Connection Source="FB5.VALUE1" Destination="LiftControl.LiftRetracted" dx1="110" />
+          <Connection Source="FB5.VALUE2" Destination="LiftControl.LiftExtended" dx1="130" />
+          <Connection Source="FB5.VALUE3" Destination="LiftControl.LuggageArrived" dx1="150" />
+          <Connection Source="FB5.VALUE4" Destination="LiftControl.LuggageLifted" dx1="170" />
+          <Connection Source="LiftControl.ExtendLift" Destination="FB6.VALUE1" dx1="60" />
+          <Connection Source="LiftControl.RetractLift" Destination="FB6.VALUE2" dx1="40" />
+        </DataConnections>
       </FBNetwork>
     </Resource>
     <FBNetwork />
@@ -186,13 +217,13 @@
           <Parameter Name="CONNECTION_ID" Value="'Luggage_OPCUA'" />
           <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.PushCylinder.IThis.FWD_OUT'" />
         </FB>
-        <FB ID="28D6BD2C325A3758" Name="CHAN_LiftControlDEV_RES0" Type="COMM_CHANN_DESC" x="500" y="300" Namespace="Runtime.System">
-          <Attribute Name="Endpoint.Port" Value="51305" />
-          <Parameter Name="PEERNAME" Value="'LiftControlDEV.RES0'" />
-        </FB>
-        <FB ID="6B01B5A1FEFBE3C" Name="CHAN_DEV_RES0" Type="COMM_CHANN_DESC" x="1900" y="300" Namespace="Runtime.System">
+        <FB ID="6B01B5A1FEFBE3C" Name="CHAN_DEV_RES0" Type="COMM_CHANN_DESC" x="500" y="300" Namespace="Runtime.System">
           <Attribute Name="Endpoint.Port" Value="51304" />
           <Parameter Name="PEERNAME" Value="'DEV.RES0'" />
+        </FB>
+        <FB ID="28D6BD2C325A3758" Name="CHAN_LiftControlDEV_RES0" Type="COMM_CHANN_DESC" x="1900" y="300" Namespace="Runtime.System">
+          <Attribute Name="Endpoint.Port" Value="51305" />
+          <Parameter Name="PEERNAME" Value="'LiftControlDEV.RES0'" />
         </FB>
         <EventConnections>
           <Connection Source="START.COLD" Destination="PusherControl.INIT" dx1="48.60419" />
@@ -223,4 +254,5 @@
   <Mapping From="LiftingLuggage.FB3" To="PusherControlDEV.RES0" />
   <Mapping From="LiftingLuggage.FB4" To="LiftControlDEV.RES0" />
   <Mapping From="LiftingLuggage.FB5" To="LiftControlDEV.RES0" />
+  <Mapping From="LiftingLuggage.FB6" To="LiftControlDEV.RES0" />
 </System>

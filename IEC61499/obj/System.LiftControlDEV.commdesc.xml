@@ -8,18 +8,10 @@
       <Peer Resource="LiftControlDEV.RES0" URI="nxtv3://${LiftControlDEV}:51302/?proto=udp&amp;alive=3000" PeerFB="CHAN_LiftControlDEV_RES0" />
     </Endpoint>
     <FBConnection Source="DEV.RES0.Model" Destination="LiftControlDEV.RES0.LiftControl" SourceProxy="SND_PROXY_69E8B4190621E80F" DestinationProxy="PROXY_69E8B4190621E80F" ProxyId="564EA666C04A387B">
-      <Event Source="INITO" Destination="INIT" EventId="AB390ED7B3AAD160" EventHash="6EF3094FF5B51251" />
-      <Event Source="CNF" Destination="REQ" EventId="10A3F8DE590086ED" EventHash="E9FDF4025665D314" />
-      <Data Source="LiftRetracted" Destination="LiftRetracted" />
-      <Data Source="LiftExtended" Destination="LiftExtended" />
-      <Data Source="LuggageArrived" Destination="LuggageArrived" />
-      <Data Source="LuggageLifted" Destination="LuggageLifted" />
+      <Event Source="INITO" Destination="INIT" EventId="AB390ED7B3AAD160" EventHash="14FFF8D43B42E21D" />
     </FBConnection>
     <FBConnection Source="LiftControlDEV.RES0.LiftControl" Destination="DEV.RES0.Model" SourceProxy="SND_PROXY_680C2A3C34354D8C" DestinationProxy="PROXY_680C2A3C34354D8C" ProxyId="2CA4FAE9035E9889">
-      <Event Source="INITO" Destination="INIT" EventId="69718C2035C2E0CC" EventHash="D13CC753BBAD19D1" />
-      <Event Source="CNF" Destination="REQ" EventId="61383014D1493F12" EventHash="D32B9517EAF1C2D6" />
-      <Data Source="ExtendLift" Destination="LiftExt" />
-      <Data Source="RetractLift" Destination="LiftRet" />
+      <Event Source="INITO" Destination="INIT" EventId="69718C2035C2E0CC" EventHash="14FFF8D43B42E21D" />
     </FBConnection>
   </Channel>
   <Channel ChannelId="F431593127DBD617" LinkId="9E7DC7132C9B6272">

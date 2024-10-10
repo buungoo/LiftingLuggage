@@ -3,105 +3,101 @@
   <Deployable>
     <DeployInformation Type="Working">
       <FileGroup Name="FileList">
-        <FileItem Name="Basics/Main#ValveControlDA.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T13:47:24</Modified>
-          <Hash>4B81AEC042FA099A2B13EB7A39123E98139857B92E39FDB5B97CF466EA0AF81D</Hash>
+        <FileItem Name="Basics/Main#ValveControlDA.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>564CBA2ED49E7964B888A49C60314931EB6329F1306819946E23AE5258F935B0</Hash>
         </FileItem>
-        <FileItem Name="Composites/Main#Sensor_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T16:51:00</Modified>
-          <Hash>83D6BB465B290CFA6A74CEA827DB17067442B7578D6E34EF9D683CF760190A11</Hash>
+        <FileItem Name="Composites/Main#Sensor_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>CBE83660A9DA5B21256F1AE39DC49EA1ADC28570E6531913959A2DBF75BC572D</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#InRange.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T13:47:24</Modified>
-          <Hash>A9B0344C7D9F19D9841863C6F4E532D04457861927A7267ABAF279043EB2069B</Hash>
+        <FileItem Name="Basics/Main#InRange.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>42544823DE86271149338ABE3F0881E1DAAF013594A91F21F8D72AE2BEC133F1</Hash>
         </FileItem>
-        <FileItem Name="Composites/Main#Sensor.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T16:51:00</Modified>
-          <Hash>EFE6D4C1ADD01FB31F26AE20D60B1A8A0FF26947A7878618C030F90017966EC5</Hash>
+        <FileItem Name="Composites/Main#Sensor.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>F4254ACAB0BE2FB113A082BDEE609A933AF6AF8256B25410F9A94BC76BC9F7AF</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#integEC.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T13:47:24</Modified>
-          <Hash>51395CBEA386E508D7AE52B6D9474EDB64FADEDAEEDB10784AD094CCBE6F32B6</Hash>
+        <FileItem Name="Basics/Main#integEC.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>6C2EE898C1F16A6DDE4E48A2FD30D49682766457E1854DF1AEC594BEB0015B9F</Hash>
         </FileItem>
-        <FileItem Name="Composites/Main#CylinderV_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T13:47:24</Modified>
-          <Hash>5A6239FA82CD14DA5E98ED53D8F26B9DBABE8207822CE7A5AF3E245C66D3301E</Hash>
+        <FileItem Name="Composites/Main#CylinderV_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>1B159A89F0FBE7E297ACE4A5A783CE6654DA1FBFF239973B696709388633BED6</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#ChangeDetect.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T13:47:24</Modified>
-          <Hash>7C97DA114B2096CBDC18E0A0A0D7C9FD4F06589EAA64F3A9308ECE049824E372</Hash>
+        <FileItem Name="Basics/Main#ChangeDetect.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>CD4AAD44AD36AE5D6057D5A8628DE0A3EB090B95B1F4E094CF299CE380D25E22</Hash>
         </FileItem>
-        <FileItem Name="Composites/Main#CylinderV.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T13:47:24</Modified>
-          <Hash>019E2BA906AE0B9C24D6AAA795824B2062B054A45958AC804F778CACBC15E02A</Hash>
+        <FileItem Name="Composites/Main#CylinderV.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>9D3BC07A642BAA331EBA9A1C06DF3C8C27E7B6510FE1529483013F4500F1DCF4</Hash>
         </FileItem>
-        <FileItem Name="Composites/Main#CylinderVSens.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T16:51:00</Modified>
-          <Hash>6C11D831F13531663B67EB150728D14EE240F554CF5FD19D820FE0594373C251</Hash>
+        <FileItem Name="Composites/Main#CylinderVSens.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>7B6D9C4E508D9D654C1483A76C668B6F6AE345D61B3D292187C9C220754837C9</Hash>
         </FileItem>
-        <FileItem Name="Composites/Main#CylinderVSensValve.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T13:47:24</Modified>
-          <Hash>FC3CFAE943AD2EB50D435D5A8626C2CD7CFADDF1043E624AFBE366EA853CD4E3</Hash>
+        <FileItem Name="Composites/Main#CylinderVSensValve_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:55:00</Modified>
+          <Hash>7684E9B9F6D10621C31743E9F4F163A308BB3E0FC209A31AC76981CF404ABEF1</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#ValveControlSR.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T13:47:24</Modified>
-          <Hash>6D31F3B5605F6B030F49682B11AF233416E1F360362EF3D4A26F1E5156C97547</Hash>
+        <FileItem Name="Composites/Main#CylinderVSensValve.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:55:00</Modified>
+          <Hash>B9217C6EC3AF53F2229DCB5B6AC3C8658CA1B01BE65FA176FFE29DC11871BF92</Hash>
         </FileItem>
-        <FileItem Name="Composites/Main#CylinderH_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T13:47:24</Modified>
-          <Hash>EB4CE53512C05F6D4339720F09A7DC0298022610B6870CC6C201EDD07CEEEEEE</Hash>
+        <FileItem Name="Basics/Main#ValveControlSR.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>452ECC31D53D4ABAD0261C9FD9E23AC731CF706B87538E2C505F6AC7A69BBE10</Hash>
         </FileItem>
-        <FileItem Name="Composites/Main#CylinderH.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T13:47:24</Modified>
-          <Hash>39FCBB143C5FC16176C3D7A57C80DEAA7276F52027BF707D6E19066D62DE7042</Hash>
+        <FileItem Name="Composites/Main#CylinderH_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>B20222849BC6C55A6C8C0A69AB95E483AD1119BF1199C2E1A3B6D87F34F02984</Hash>
         </FileItem>
-        <FileItem Name="Composites/Main#CylinderHSens.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T16:51:00</Modified>
-          <Hash>7CA6D6C2C2CB8BD9C6408E0796D95DB9E92859DF9061C584EFB7C246B9B2147B</Hash>
+        <FileItem Name="Composites/Main#CylinderH.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>F35C59A90A26E3C6AF73F04D0FFE52659AB2922BA490CD760FC10E7712EA2D6C</Hash>
         </FileItem>
-        <FileItem Name="Composites/Main#CylinderHSensValve_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{936C75D5-4F48-4446-81BD-3457F9CD9286}">
-          <Modified>2024-10-10T14:49:50</Modified>
-          <Hash>77E2607E5503F17315BEDEDC3F2EB28D47C1C87E56C0D83DC1C17BE0CE2F0B71</Hash>
+        <FileItem Name="Composites/Main#CylinderHSens.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>A0DEC9F7ECE0C3CA822904377FD243B4034CA9B37C8B379E4323654B1AE494EC</Hash>
         </FileItem>
-        <FileItem Name="Composites/Main#CylinderHSensValve.bin" Library="IEC61499.dll" BuildSnapshot="{936C75D5-4F48-4446-81BD-3457F9CD9286}">
-          <Modified>2024-10-10T14:49:50</Modified>
-          <Hash>ADD09F4FC0FD0082E3E3468636ED00B4CF09BDF156040441F6C56A3A81DA54BD</Hash>
+        <FileItem Name="Composites/Main#CylinderHSensValve_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>BDB8FECF4B413180DF5C44AA9C46C5364E040B180D28B97C06EAD7756A74E63D</Hash>
         </FileItem>
-        <FileItem Name="Composites/Main#Model_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T13:47:24</Modified>
-          <Hash>8DD15496A17293AFA4B25E775BC9F8D33828A22FD3AA6C072C976B25F2706AE6</Hash>
+        <FileItem Name="Composites/Main#CylinderHSensValve.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>BDF5C306CE135E48305B6B3E9EC170ED17F94B6C87A6176495E2591BEBA1DD5C</Hash>
         </FileItem>
-        <FileItem Name="Composites/Main#Luggage_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T13:47:24</Modified>
-          <Hash>A0840E50041270CB24051FBA0BDB4D70355F29CA24FCE67C16CA03EB231AB57B</Hash>
+        <FileItem Name="Composites/Main#Model_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>26F58D46AB12157095366F4DB304C6A96E24BB669FF046627BF68A05CB9131B3</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#LuggageMove.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T13:47:24</Modified>
-          <Hash>E29CE67B8DF93EE2C297D28F5CE1556095E4571A23C1BB22E5FEC2ACDFA9FA0D</Hash>
+        <FileItem Name="Composites/Main#Luggage_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>3250A8D095A5E1EAC2359081ECAEE892CAE07C9CF6199E2BE8FE7790A0D33318</Hash>
         </FileItem>
-        <FileItem Name="Composites/Main#Luggage.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T16:51:00</Modified>
-          <Hash>B5EA9D656F6D447B06628A82D4CEA1CA72C5AB61066F226ED2949AE5980CEA50</Hash>
+        <FileItem Name="Basics/Main#LuggageMove.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>779629E178BBC207745D1758D85A0151BFA139A6DD6BAC48E93EE80FF64E746F</Hash>
         </FileItem>
-        <FileItem Name="Composites/Main#Model.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T16:51:00</Modified>
-          <Hash>EF53608956A93BC57966FE5DFE1794135B013A092F5EEB658BFAB47485D570E2</Hash>
+        <FileItem Name="Composites/Main#Luggage.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>218F79757455406BCB43AAE95B4D78E1D247E5A0E12BB38C80F38909AFD50AD3</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_95FAF9232B073808.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T13:47:24</Modified>
-          <Hash>936830757869194967D5259829C75BBE529701DCBFFE52FCA87537B3AB1515A0</Hash>
+        <FileItem Name="Composites/Main#Model.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:55:00</Modified>
+          <Hash>2354F2D51CF647B6A85461A49F8CF4351812BE1C950B1950F4FFA4D2A383F1BB</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin" Library="IEC61499.dll" BuildSnapshot="{936C75D5-4F48-4446-81BD-3457F9CD9286}">
-          <Modified>2024-10-10T14:49:50</Modified>
-          <Hash>D6C358EE918821FA626D83F50A1D1B4B9BAF66D97BFB2EBAAFC364E09E1E021B</Hash>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>4EAC8F69AA6813592FFC0129AD3EBA3559FA623EE83C9BB858C0827AE2835A99</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin" Library="IEC61499.dll" BuildSnapshot="{936C75D5-4F48-4446-81BD-3457F9CD9286}">
-          <Modified>2024-10-10T14:49:50</Modified>
-          <Hash>CB1AD6C00F0606552BA44BC6E55DE732B2ED633E197E89C6384098EE2D391099</Hash>
-        </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_PEER_21793A890546FF994.bin" Library="IEC61499.dll" BuildSnapshot="{462BBB58-F1D4-4C35-8A39-1D57A827BABB}">
-          <Modified>2024-10-10T13:47:24</Modified>
-          <Hash>7A34D7F219AF36098AD5C803DBC489C3F839710BD7DAF8547D2AD2F36161A61A</Hash>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+          <Modified>2024-10-10T21:11:20</Modified>
+          <Hash>5E4D401D21701631715E155A3C2D67071022DD31A64F8BD3BA1AAF31107FE293</Hash>
         </FileItem>
       </FileGroup>
       <FileGroup Name="DeployList">
@@ -114,6 +110,7 @@
         <FileItem Name="Basics/Main#ChangeDetect.bin" Library="IEC61499.dll" />
         <FileItem Name="Composites/Main#CylinderV.bin" Library="IEC61499.dll" />
         <FileItem Name="Composites/Main#CylinderVSens.bin" Library="IEC61499.dll" />
+        <FileItem Name="Composites/Main#CylinderVSensValve_HMI.bin" Library="IEC61499.dll" />
         <FileItem Name="Composites/Main#CylinderVSensValve.bin" Library="IEC61499.dll" />
         <FileItem Name="Basics/Main#ValveControlSR.bin" Library="IEC61499.dll" />
         <FileItem Name="Composites/Main#CylinderH_HMI.bin" Library="IEC61499.dll" />
@@ -126,10 +123,8 @@
         <FileItem Name="Basics/Main#LuggageMove.bin" Library="IEC61499.dll" />
         <FileItem Name="Composites/Main#Luggage.bin" Library="IEC61499.dll" />
         <FileItem Name="Composites/Main#Model.bin" Library="IEC61499.dll" />
-        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_95FAF9232B073808.bin" Library="IEC61499.dll" />
-        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin" Library="IEC61499.dll" />
         <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin" Library="IEC61499.dll" />
-        <FileItem Name="Basics/Main#CROSSCOMM_PEER_21793A890546FF994.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin" Library="IEC61499.dll" />
       </FileGroup>
     </DeployInformation>
   </Deployable>

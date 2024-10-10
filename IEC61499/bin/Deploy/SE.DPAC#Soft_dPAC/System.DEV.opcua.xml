@@ -55,9 +55,32 @@
     <References>
       <Reference ReferenceType="Organizes" IsForward="false">ns=1;s=DEV.RES0.Model</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="Organizes">ns=1;s=DEV.RES0.Model.LiftCylinder.FB3</Reference>
       <Reference ReferenceType="Organizes">ns=1;s=DEV.RES0.Model.LiftCylinder.FB1</Reference>
     </References>
   </UAObject>
+  <UAObject NodeId="ns=1;s=DEV.RES0.Model.LiftCylinder.FB3" BrowseName="1:FB3">
+    <DisplayName>FB3</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;s=DEV.RES0.Model.LiftCylinder</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;s=DEV.RES0.Model.LiftCylinder.FB3.FWD_OUT</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;s=DEV.RES0.Model.LiftCylinder.FB3.FWD_OUT" BrowseName="1:FWD_OUT" DataType="Boolean" AccessLevel="3">
+    <DisplayName>FWD_OUT</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=DEV.RES0.Model.LiftCylinder.FB3</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Extensions>
+      <Extension>
+        <RTAddress xmlns="">V1;Path=DEV.RES0.Model.LiftCylinder.FB3.FWD_OUT;Trigger=CNF</RTAddress>
+      </Extension>
+    </Extensions>
+  </UAVariable>
   <UAObject NodeId="ns=1;s=DEV.RES0.Model.LiftCylinder.FB1" BrowseName="1:FB1">
     <DisplayName>FB1</DisplayName>
     <Description />
