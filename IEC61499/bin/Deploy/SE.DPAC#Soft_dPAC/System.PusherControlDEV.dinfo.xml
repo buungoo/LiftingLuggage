@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeployInformation ProjectName="LiftingLuggage" ProjectGuid="{A5C5F206-235D-47D9-8A3B-71E672475EE7}" System="System" DeviceName="PusherControlDEV" DeviceID="f52da1eb-1c96-483e-9b03-6c71f593bf08">
+  <UsedDll>IEC61499.dll|Runtime.Base.90E02843-42CC-4C2C-B657-AB6EE7D00471.dll</UsedDll>
+  <FileName>C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\LiftingLuggage\IEC61499\System\System.sys</FileName>
+  <BuildTime>2024-10-10 11:13:06Z</BuildTime>
+  <StudioVersion>IEC 61499 IDE, Panther UAOv23.0 g5173 4181ef5 Thu Oct 12 16:53:40 2023</StudioVersion>
+  <StudioInfo>V1;943FBC2191BC82AAF31547FEACA1C983A72068F3A8A0CF83A72043FCB6A0C8EF8B2D41FBABA097BDA72D41A995B79DA5AB2052DCA4A897F2822A40E6ACAB9583BB2441F3A2A0C99FBC2C4CF7A6B1B5BAA7271BE984F0B1FA887116A4E8F7C1FA8A6E12A581FCDFF78F7064BFF2F4B7F9F97112A5F080B7F8B378;</StudioInfo>
+  <ConfigFolder>C:\Users\2001a\Documents\Schneider Electric\EcoStruxureAutomationExpertProjects\LiftingLuggage\IEC61499\bin\Deploy\SE.DPAC#Soft_dPAC\Configuration</ConfigFolder>
+  <Actions />
+  <DeviceFileName>System.PusherControlDEV.smartdev.xml</DeviceFileName>
+  <DependenciesFileName>System.PusherControlDEV.fbdep.txt</DependenciesFileName>
+  <SnapshotGuid>{820E0B97-528B-494C-ACB7-B8253DF44620}</SnapshotGuid>
+</DeployInformation>

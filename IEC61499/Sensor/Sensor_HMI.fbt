@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
-<FBType Name="Sensor_HMI" Comment="Service Interface Function Block Type" Namespace="Main">
+<FBType GUID="4b007bc1-e058-48e3-be72-678b34b54593" Name="Sensor_HMI" Comment="Service Interface Function Block Type" Namespace="Main">
   <Attribute Name="Configuration.FB.IDCounter" Value="0" />
   <Identification Standard="61499-2" />
   <VersionInfo Organization="nxtControl GmbH " Version="0.0" Author="Horst Mayer" Date="9/14/2008" Remarks="template" />
   <InterfaceList>
     <EventInputs>
-      <Event Name="INIT">
+      <Event ID="378304B68847B351" Name="INIT">
         <With Var="QI" />
       </Event>
-      <Event Name="IND">
+      <Event ID="8EFA79230ED66E73" Name="IND">
         <With Var="sensRead" />
       </Event>
     </EventInputs>
     <EventOutputs>
-      <Event Name="INITO">
+      <Event ID="2B197B438299AB1" Name="INITO">
         <With Var="QO" />
         <With Var="STATUS" />
       </Event>
     </EventOutputs>
     <InputVars>
-      <VarDeclaration Name="QI" Type="BOOL" />
-      <VarDeclaration Name="sensRead" Type="BOOL" />
+      <VarDeclaration ID="E2EEF31765CC2932" Name="QI" Type="BOOL" />
+      <VarDeclaration ID="D4326F0655E85714" Name="sensRead" Type="BOOL" />
     </InputVars>
     <OutputVars>
-      <VarDeclaration Name="QO" Type="BOOL" Comment="Event Output Qualifier" />
-      <VarDeclaration Name="STATUS" Type="STRING" Comment="Service Status" />
+      <VarDeclaration ID="C23E7FCD3B0A490E" Name="QO" Type="BOOL" Comment="Event Output Qualifier" />
+      <VarDeclaration ID="E83A469BD53A9493" Name="STATUS" Type="STRING" Comment="Service Status" />
     </OutputVars>
   </InterfaceList>
   <Service RightInterface="" LeftInterface="">

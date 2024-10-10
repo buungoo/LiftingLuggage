@@ -3,39 +3,54 @@
   <DefaultProfile />
   <Profile Name="(Local Test)">
     <Device Name="DEV">
-      <ComplexProperty Name="Configuration" Expanded="true">
-        <ComplexProperty Name="Communication" Expanded="true">
-          <ComplexProperty Name="ReliableCrossComm" Expanded="true">
+      <GroupProperty Name="Configuration" Expanded="true" Enabled="false">
+        <GroupProperty Name="Communication" Expanded="true" Enabled="false">
+          <GroupProperty Name="ReliableCrossComm" Expanded="true" Enabled="false">
             <Property Name="URI" Value="udp://0.0.0.0:41500" IsPassword="false" />
-          </ComplexProperty>
-        </ComplexProperty>
-      </ComplexProperty>
+          </GroupProperty>
+        </GroupProperty>
+      </GroupProperty>
+      <GroupProperty Name="OPCUASettings" Expanded="true" Enabled="true">
+        <GroupProperty Name="endpoint" Expanded="true" Enabled="true">
+          <Property Name="endpoints/0/bind_port" Value="4841" IsPassword="false" />
+        </GroupProperty>
+      </GroupProperty>
     </Device>
     <Device Name="LiftControlDEV">
       <ComplexProperty Name="Ports" Expanded="true">
         <Property Name="Deploy" Value="51500" IsPassword="false" />
         <Property Name="Archive" Value="51497" IsPassword="false" />
       </ComplexProperty>
-      <ComplexProperty Name="Configuration" Expanded="true">
+      <GroupProperty Name="Configuration" Expanded="true" Enabled="false">
         <ComplexProperty Name="Communication" Expanded="true">
           <ComplexProperty Name="ReliableCrossComm" Expanded="true">
             <Property Name="URI" Value="udp://0.0.0.0:41502" IsPassword="false" />
           </ComplexProperty>
         </ComplexProperty>
-      </ComplexProperty>
+      </GroupProperty>
+      <GroupProperty Name="OPCUASettings" Expanded="true" Enabled="true">
+        <GroupProperty Name="endpoint" Expanded="true" Enabled="true">
+          <Property Name="endpoints/0/bind_port" Value="4842" IsPassword="false" />
+        </GroupProperty>
+      </GroupProperty>
     </Device>
     <Device Name="PusherControlDEV">
       <ComplexProperty Name="Ports" Expanded="true">
         <Property Name="Deploy" Value="51501" IsPassword="false" />
         <Property Name="Archive" Value="51498" IsPassword="false" />
       </ComplexProperty>
-      <ComplexProperty Name="Configuration" Expanded="true">
+      <GroupProperty Name="Configuration" Expanded="true" Enabled="false">
         <ComplexProperty Name="Communication" Expanded="true">
           <ComplexProperty Name="ReliableCrossComm" Expanded="true">
             <Property Name="URI" Value="udp://0.0.0.0:41503" IsPassword="false" />
           </ComplexProperty>
         </ComplexProperty>
-      </ComplexProperty>
+      </GroupProperty>
+      <GroupProperty Name="OPCUASettings" Expanded="true" Enabled="true">
+        <GroupProperty Name="endpoint" Expanded="true" Enabled="true">
+          <Property Name="endpoints/0/bind_port" Value="4843" IsPassword="false" />
+        </GroupProperty>
+      </GroupProperty>
     </Device>
   </Profile>
 </DeviceProperties>

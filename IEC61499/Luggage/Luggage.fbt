@@ -59,26 +59,32 @@
       <Connection Source="FB3.INITO" Destination="FB1.START" dx1="72.33228" dx2="140" dy="-698">
         <AvoidsNodes>false</AvoidsNodes>
       </Connection>
+      <Connection Source="FB3.CNF" Destination="CNF" />
       <Connection Source="FB3.INITO" Destination="IThis.INIT" dx1="75.14478">
         <AvoidsNodes>false</AvoidsNodes>
       </Connection>
       <Connection Source="FB3.CNF" Destination="IThis.REQ" dx1="135.1448">
         <AvoidsNodes>false</AvoidsNodes>
       </Connection>
-      <Connection Source="IThis.INITO" Destination="INITO" />
-      <Connection Source="FB3.CNF" Destination="CNF" />
+      <Connection Source="IThis.INITO" Destination="INITO" dx1="253.2085" dx2="610" dy="-110" />
     </EventConnections>
     <DataConnections>
       <Connection Source="LiftPosY" Destination="FB3.LiftPos" />
       <Connection Source="PushPosX" Destination="FB3.PushPos" />
       <Connection Source="FB3.HSens" Destination="LuggLifted" />
+      <Connection Source="FB3.LSens" Destination="LuggLoaded" dx1="130" />
       <Connection Source="FB3.LuggPosX" Destination="IThis.PositionX" dx1="235.145">
         <AvoidsNodes>false</AvoidsNodes>
       </Connection>
       <Connection Source="FB3.LuggPosY" Destination="IThis.PositionY" dx1="295.145">
         <AvoidsNodes>false</AvoidsNodes>
       </Connection>
-      <Connection Source="FB3.LSens" Destination="LuggLoaded" dx1="130" />
+      <Connection Source="FB3.LSens" Destination="IThis.LuggageLoaded" dx1="192.3335">
+        <AvoidsNodes>false</AvoidsNodes>
+      </Connection>
+      <Connection Source="FB3.HSens" Destination="IThis.LuggageLifted" dx1="352.3335">
+        <AvoidsNodes>false</AvoidsNodes>
+      </Connection>
     </DataConnections>
   </FBNetwork>
 </FBType>

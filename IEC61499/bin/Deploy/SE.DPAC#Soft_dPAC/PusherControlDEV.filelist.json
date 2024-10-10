@@ -1,0 +1,17 @@
+{
+  "snapshot": {
+    "guid": "820e0b97-528b-494c-acb7-b8253df44620",
+    "hash": "F1DCE16F1CFE0508480F767B5D060D21239FDCCD3A9284E7731409E8BEF9B386",
+    "app": {
+      "hash": "F1DCE16F1CFE0508480F767B5D060D21239FDCCD3A9284E7731409E8BEF9B386",
+      "items": [
+        "Main#PusherControl.bin",
+        "Main#CROSSCOMM_PEER_66DEE93E7DD8F4C0.bin",
+        "Main#CROSSCOMM_SENDER_124AAD7831CB0FFC2.bin",
+        "Main#CROSSCOMM_SENDER_393C57E253140061.bin",
+        "Device.bin",
+        "CommDesc.xml"
+      ]
+    }
+  }
+}

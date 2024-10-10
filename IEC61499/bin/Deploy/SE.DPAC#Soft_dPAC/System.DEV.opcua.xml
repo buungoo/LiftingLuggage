@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <NamespaceUris>
+    <Uri>http://se.com/EcostruxureSystemExpert</Uri>
+  </NamespaceUris>
+  <Models>
+    <Model ModelUri="http://opcfoundation.org/UA/" />
+  </Models>
+  <Aliases>
+    <Alias Alias="Boolean">i=1</Alias>
+    <Alias Alias="SByte">i=2</Alias>
+    <Alias Alias="Byte">i=3</Alias>
+    <Alias Alias="Int16">i=4</Alias>
+    <Alias Alias="UInt16">i=5</Alias>
+    <Alias Alias="Int32">i=6</Alias>
+    <Alias Alias="UInt32">i=7</Alias>
+    <Alias Alias="Int64">i=8</Alias>
+    <Alias Alias="UInt64">i=9</Alias>
+    <Alias Alias="Float">i=10</Alias>
+    <Alias Alias="Double">i=11</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="DateTime">i=13</Alias>
+    <Alias Alias="ByteString">i=15</Alias>
+    <Alias Alias="NodeId">i=17</Alias>
+    <Alias Alias="StatusCode">i=19</Alias>
+    <Alias Alias="LocalizedText">i=21</Alias>
+    <Alias Alias="Duration">i=290</Alias>
+    <Alias Alias="Date">i=293</Alias>
+    <Alias Alias="UtcTime">i=294</Alias>
+    <Alias Alias="Argument">i=296</Alias>
+    <Alias Alias="Organizes">i=35</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+    <Alias Alias="BaseDataVariableType">i=63</Alias>
+    <Alias Alias="HasEventSource">i=36</Alias>
+    <Alias Alias="HasCondition">i=9006</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="AlwaysGeneratesEvent">i=3065</Alias>
+    <Alias Alias="HasNotifier">i=48</Alias>
+    <Alias Alias="HasTrueSubState">i=9004</Alias>
+  </Aliases>
+  <UAObject NodeId="ns=1;g=093a9572-2491-6de0-b7ea-b53305c68e53" BrowseName="1:Model">
+    <DisplayName>Model</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="Organizes">ns=1;g=424bc310-edf5-1a46-a32c-3586de0219e3</Reference>
+      <Reference ReferenceType="Organizes">ns=1;g=9a0b3be3-c86b-c286-4232-68715b995435</Reference>
+      <Reference ReferenceType="Organizes">ns=1;g=94a03f55-05b0-9bf7-c5ec-c31d9363d5df</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;g=424bc310-edf5-1a46-a32c-3586de0219e3" BrowseName="1:LiftCylinder">
+    <DisplayName>LiftCylinder</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;g=093a9572-2491-6de0-b7ea-b53305c68e53</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="Organizes">ns=1;g=88e67a1f-a01b-f659-5a97-7de8866a804e</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;g=88e67a1f-a01b-f659-5a97-7de8866a804e" BrowseName="1:FB1">
+    <DisplayName>FB1</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;g=424bc310-edf5-1a46-a32c-3586de0219e3</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="Organizes">ns=1;g=aff9498c-99b2-5c27-6904-90818be2f891</Reference>
+      <Reference ReferenceType="Organizes">ns=1;g=56a6312d-6658-d71a-2632-8755db31de6d</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;g=aff9498c-99b2-5c27-6904-90818be2f891" BrowseName="1:EndSensor">
+    <DisplayName>EndSensor</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;g=88e67a1f-a01b-f659-5a97-7de8866a804e</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="Organizes">ns=1;g=87fd2d99-fcf4-398a-7bfc-636e9e1a3e80</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;g=87fd2d99-fcf4-398a-7bfc-636e9e1a3e80" BrowseName="1:Interface1">
+    <DisplayName>Interface1</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;g=aff9498c-99b2-5c27-6904-90818be2f891</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;g=fbd52476-8f18-5aa9-9285-918c0333d3dc</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;g=fbd52476-8f18-5aa9-9285-918c0333d3dc" BrowseName="1:sensRead" DataType="Boolean">
+    <DisplayName>sensRead</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;g=87fd2d99-fcf4-398a-7bfc-636e9e1a3e80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Extensions>
+      <Extension>
+        <RTAddress xmlns="">V1;Path=DEV.RES0.Model.LiftCylinder.FB1.EndSensor.Interface1.sensRead</RTAddress>
+      </Extension>
+    </Extensions>
+  </UAVariable>
+  <UAObject NodeId="ns=1;g=56a6312d-6658-d71a-2632-8755db31de6d" BrowseName="1:StartSensor">
+    <DisplayName>StartSensor</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;g=88e67a1f-a01b-f659-5a97-7de8866a804e</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="Organizes">ns=1;g=37614729-759a-8956-d9d6-d62120d1c806</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;g=37614729-759a-8956-d9d6-d62120d1c806" BrowseName="1:Interface1">
+    <DisplayName>Interface1</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;g=56a6312d-6658-d71a-2632-8755db31de6d</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;g=25370070-3a08-dc04-0b64-0af7ddb8f56c</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;g=25370070-3a08-dc04-0b64-0af7ddb8f56c" BrowseName="1:sensRead" DataType="Boolean">
+    <DisplayName>sensRead</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;g=37614729-759a-8956-d9d6-d62120d1c806</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Extensions>
+      <Extension>
+        <RTAddress xmlns="">V1;Path=DEV.RES0.Model.LiftCylinder.FB1.StartSensor.Interface1.sensRead</RTAddress>
+      </Extension>
+    </Extensions>
+  </UAVariable>
+  <UAObject NodeId="ns=1;g=9a0b3be3-c86b-c286-4232-68715b995435" BrowseName="1:PushCylinder">
+    <DisplayName>PushCylinder</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;g=093a9572-2491-6de0-b7ea-b53305c68e53</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="Organizes">ns=1;g=435c52fd-3248-860d-9946-e580606d8aa8</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;g=435c52fd-3248-860d-9946-e580606d8aa8" BrowseName="1:FB1">
+    <DisplayName>FB1</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;g=9a0b3be3-c86b-c286-4232-68715b995435</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="Organizes">ns=1;g=c07ebfe9-001a-6cd8-dec8-67d229262001</Reference>
+      <Reference ReferenceType="Organizes">ns=1;g=3fcd14b6-67e8-a361-21ea-1ac4053d15d9</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;g=c07ebfe9-001a-6cd8-dec8-67d229262001" BrowseName="1:LeftSensor">
+    <DisplayName>LeftSensor</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;g=435c52fd-3248-860d-9946-e580606d8aa8</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="Organizes">ns=1;g=3e3fa654-9178-f920-1fcd-f136bc181473</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;g=3e3fa654-9178-f920-1fcd-f136bc181473" BrowseName="1:Interface1">
+    <DisplayName>Interface1</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;g=c07ebfe9-001a-6cd8-dec8-67d229262001</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;g=722410d7-5f45-4b86-6713-b4a24c1e4381</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;g=722410d7-5f45-4b86-6713-b4a24c1e4381" BrowseName="1:sensRead" DataType="Boolean">
+    <DisplayName>sensRead</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;g=3e3fa654-9178-f920-1fcd-f136bc181473</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Extensions>
+      <Extension>
+        <RTAddress xmlns="">V1;Path=DEV.RES0.Model.PushCylinder.FB1.LeftSensor.Interface1.sensRead</RTAddress>
+      </Extension>
+    </Extensions>
+  </UAVariable>
+  <UAObject NodeId="ns=1;g=3fcd14b6-67e8-a361-21ea-1ac4053d15d9" BrowseName="1:RightSensor">
+    <DisplayName>RightSensor</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;g=435c52fd-3248-860d-9946-e580606d8aa8</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="Organizes">ns=1;g=9d17cb85-f702-c49f-a59e-13e9ec29a91e</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;g=9d17cb85-f702-c49f-a59e-13e9ec29a91e" BrowseName="1:Interface1">
+    <DisplayName>Interface1</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;g=3fcd14b6-67e8-a361-21ea-1ac4053d15d9</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;g=886f408e-861e-3b06-7cd7-f50b01dd576d</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;g=886f408e-861e-3b06-7cd7-f50b01dd576d" BrowseName="1:sensRead" DataType="Boolean">
+    <DisplayName>sensRead</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;g=9d17cb85-f702-c49f-a59e-13e9ec29a91e</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Extensions>
+      <Extension>
+        <RTAddress xmlns="">V1;Path=DEV.RES0.Model.PushCylinder.FB1.RightSensor.Interface1.sensRead</RTAddress>
+      </Extension>
+    </Extensions>
+  </UAVariable>
+  <UAObject NodeId="ns=1;g=94a03f55-05b0-9bf7-c5ec-c31d9363d5df" BrowseName="1:Luggage">
+    <DisplayName>Luggage</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;g=093a9572-2491-6de0-b7ea-b53305c68e53</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="Organizes">ns=1;g=0d5aebad-d12e-fbbc-09c1-8fb5dc11f265</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;g=0d5aebad-d12e-fbbc-09c1-8fb5dc11f265" BrowseName="1:IThis">
+    <DisplayName>IThis</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;g=94a03f55-05b0-9bf7-c5ec-c31d9363d5df</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;g=91cbd3b5-9859-d5cc-15c7-8d9230e2399d</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;g=2550ddf9-2cdc-453e-cf7a-0356f2339e9c</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;g=91cbd3b5-9859-d5cc-15c7-8d9230e2399d" BrowseName="1:LuggageLoaded" DataType="Boolean">
+    <DisplayName>LuggageLoaded</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;g=0d5aebad-d12e-fbbc-09c1-8fb5dc11f265</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Extensions>
+      <Extension>
+        <RTAddress xmlns="">V1;Path=DEV.RES0.Model.Luggage.IThis.LuggageLoaded</RTAddress>
+      </Extension>
+    </Extensions>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;g=2550ddf9-2cdc-453e-cf7a-0356f2339e9c" BrowseName="1:LuggageLifted" DataType="Boolean">
+    <DisplayName>LuggageLifted</DisplayName>
+    <Description />
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;g=0d5aebad-d12e-fbbc-09c1-8fb5dc11f265</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <Extensions>
+      <Extension>
+        <RTAddress xmlns="">V1;Path=DEV.RES0.Model.Luggage.IThis.LuggageLifted</RTAddress>
+      </Extension>
+    </Extensions>
+  </UAVariable>
+</UANodeSet>

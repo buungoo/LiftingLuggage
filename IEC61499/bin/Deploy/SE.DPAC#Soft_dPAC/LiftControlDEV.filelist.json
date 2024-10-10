@@ -1,0 +1,17 @@
+{
+  "snapshot": {
+    "guid": "820e0b97-528b-494c-acb7-b8253df44620",
+    "hash": "672D16D42208535DD32812D67214978EDB58EA03C52757D9733679D9C2C00257",
+    "app": {
+      "hash": "672D16D42208535DD32812D67214978EDB58EA03C52757D9733679D9C2C00257",
+      "items": [
+        "Main#LiftControl.bin",
+        "Main#CROSSCOMM_PEER_228F417525871BB3.bin",
+        "Main#CROSSCOMM_PEER_16697678DCF9C13D3.bin",
+        "Main#CROSSCOMM_SENDER_2076C99863D8052D3.bin",
+        "Device.bin",
+        "CommDesc.xml"
+      ]
+    }
+  }
+}

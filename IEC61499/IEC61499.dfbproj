@@ -90,7 +90,10 @@
       <DependentUpon>Sensor.fbt</DependentUpon>
       <IEC61499Type>CAT</IEC61499Type>
     </None>
-    <None Include="SnapshotCompiles\{E4D43FBD-0BAA-46DA-B7E2-F10C40D5DEBC}\Default\IEC61499.snapshot" />
+    <None Include="Sensor\Sensor_HMI.meta.xml">
+      <DependentUpon>Sensor_HMI.fbt</DependentUpon>
+    </None>
+    <None Include="SnapshotCompiles\{820E0B97-528B-494C-ACB7-B8253DF44620}\Default\IEC61499.snapshot" />
     <None Include="System\snapshot.xml">
       <DependentUpon>System.sys</DependentUpon>
     </None>
@@ -231,8 +234,8 @@
     <Folder Include="License" />
     <Folder Include="Log" />
     <Folder Include="SnapshotCompiles" />
-    <Folder Include="SnapshotCompiles\{E4D43FBD-0BAA-46DA-B7E2-F10C40D5DEBC}" />
-    <Folder Include="SnapshotCompiles\{E4D43FBD-0BAA-46DA-B7E2-F10C40D5DEBC}\Default" />
+    <Folder Include="SnapshotCompiles\{820E0B97-528B-494C-ACB7-B8253DF44620}" />
+    <Folder Include="SnapshotCompiles\{820E0B97-528B-494C-ACB7-B8253DF44620}\Default" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Luggage\Luggage_CAT.offline.xml">
@@ -242,6 +245,16 @@
     </Content>
     <Content Include="Luggage\Luggage_CAT.opcua.xml">
       <DependentUpon>Luggage.fbt</DependentUpon>
+      <Plugin>OPCUAConfigurator</Plugin>
+      <IEC61499Type>CAT_OPCUA</IEC61499Type>
+    </Content>
+    <Content Include="Luggage\Luggage_HMI.opcua.xml">
+      <DependentUpon>Luggage.fbt</DependentUpon>
+      <Plugin>OPCUAConfigurator</Plugin>
+      <IEC61499Type>CAT_OPCUA</IEC61499Type>
+    </Content>
+    <Content Include="Sensor\Sensor_HMI.opcua.xml">
+      <DependentUpon>Sensor.fbt</DependentUpon>
       <Plugin>OPCUAConfigurator</Plugin>
       <IEC61499Type>CAT_OPCUA</IEC61499Type>
     </Content>

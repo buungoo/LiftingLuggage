@@ -1,0 +1,38 @@
+{
+  "snapshot": {
+    "guid": "820e0b97-528b-494c-acb7-b8253df44620",
+    "hash": "D52E5516277F93CA6E59E789820BD05CA5B0C47454BF10E88BA5C836D3E8A26A",
+    "app": {
+      "hash": "D52E5516277F93CA6E59E789820BD05CA5B0C47454BF10E88BA5C836D3E8A26A",
+      "items": [
+        "Main#ValveControlDA.bin",
+        "Main#Sensor_HMI.bin",
+        "Main#InRange.bin",
+        "Main#Sensor.bin",
+        "Main#integEC.bin",
+        "Main#CylinderV_HMI.bin",
+        "Main#ChangeDetect.bin",
+        "Main#CylinderV.bin",
+        "Main#CylinderVSens.bin",
+        "Main#CylinderVSensValve.bin",
+        "Main#ValveControlSR.bin",
+        "Main#CylinderH_HMI.bin",
+        "Main#CylinderH.bin",
+        "Main#CylinderHSens.bin",
+        "Main#CylinderHSensValve.bin",
+        "Main#Model_HMI.bin",
+        "Main#Luggage_HMI.bin",
+        "Main#LuggageMove.bin",
+        "Main#Luggage.bin",
+        "Main#Model.bin",
+        "Main#CROSSCOMM_SENDER_95FAF9232B073808.bin",
+        "Main#CROSSCOMM_SENDER_160EC6DC30B01CA3B.bin",
+        "Main#CROSSCOMM_PEER_870DEA938BB7E735.bin",
+        "Main#CROSSCOMM_PEER_21793A890546FF994.bin",
+        "Device.bin",
+        "CommDesc.xml",
+        "ecort_opcua_ns2.bin"
+      ]
+    }
+  }
+}

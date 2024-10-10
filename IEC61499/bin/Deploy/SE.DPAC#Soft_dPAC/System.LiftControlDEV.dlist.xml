@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeployFiles xmlns="http://tempuri.org/DeploySnapshot.xsd">
+  <Deployable>
+    <DeployInformation Type="Working">
+      <FileGroup Name="FileList">
+        <FileItem Name="Basics/Main#LiftControl.bin" Library="IEC61499.dll" BuildSnapshot="{820E0B97-528B-494C-ACB7-B8253DF44620}">
+          <Modified>2024-01-14T09:18:04</Modified>
+          <Hash>51738C19D58FF13DF8B7AA6E7E1C5ECFA96B64ED67E776E00CE6A5C0624FB0FA</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_228F417525871BB3.bin" Library="IEC61499.dll" BuildSnapshot="{820E0B97-528B-494C-ACB7-B8253DF44620}">
+          <Modified>2024-10-10T13:11:56</Modified>
+          <Hash>CA497A79BEB1380A8C1ED68CD07EDAEDCAD6C4BE3707EF3134F6FC67B5F1505C</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_16697678DCF9C13D3.bin" Library="IEC61499.dll" BuildSnapshot="{820E0B97-528B-494C-ACB7-B8253DF44620}">
+          <Modified>2024-10-10T13:11:56</Modified>
+          <Hash>79E2D49FC8C0EF5694D8985CCC50ED15F658CD6EAC268D7087381EED46E252EF</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_2076C99863D8052D3.bin" Library="IEC61499.dll" BuildSnapshot="{820E0B97-528B-494C-ACB7-B8253DF44620}">
+          <Modified>2024-10-10T13:11:56</Modified>
+          <Hash>C5ECEF9BA71B668F978E464D3C3D70995E1B4681648BF65627D6567472B01BE9</Hash>
+        </FileItem>
+      </FileGroup>
+      <FileGroup Name="DeployList">
+        <FileItem Name="Basics/Main#LiftControl.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_228F417525871BB3.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_16697678DCF9C13D3.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_2076C99863D8052D3.bin" Library="IEC61499.dll" />
+      </FileGroup>
+    </DeployInformation>
+  </Deployable>
+</DeployFiles>

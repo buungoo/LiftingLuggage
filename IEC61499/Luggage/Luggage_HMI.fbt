@@ -1,36 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
-<FBType Name="Luggage_HMI" Comment="Service Interface Function Block Type" Namespace="Main">
+<FBType GUID="1aa1b74d-f043-4a0f-a348-66832760a3bc" Name="Luggage_HMI" Comment="Service Interface Function Block Type" Namespace="Main">
   <Attribute Name="Runtime.Persistence.Storage" Value="0" />
   <Attribute Name="Configuration.FB.IDCounter" Value="0" />
   <Identification Standard="61499-2" />
   <VersionInfo Organization="nxtControl GmbH " Version="0.0" Author="Andrei" Date="5/29/2016" Remarks="template" />
   <InterfaceList>
     <EventInputs>
-      <Event Name="INIT">
+      <Event ID="ED2CFB44CF96472A" Name="INIT">
         <With Var="QI" />
       </Event>
-      <Event Name="REQ">
+      <Event ID="56801BD1EDBE1BC9" Name="REQ">
         <With Var="PositionX" />
         <With Var="PositionY" />
         <With Var="Rotation" />
+        <With Var="LuggageLoaded" />
+        <With Var="LuggageLifted" />
       </Event>
     </EventInputs>
     <EventOutputs>
-      <Event Name="INITO">
+      <Event ID="61EF0030C369C926" Name="INITO">
         <With Var="QO" />
         <With Var="STATUS" />
       </Event>
     </EventOutputs>
     <InputVars>
-      <VarDeclaration Name="QI" Type="BOOL" />
-      <VarDeclaration Name="PositionX" Type="REAL" />
-      <VarDeclaration Name="PositionY" Type="REAL" />
-      <VarDeclaration Name="Rotation" Type="REAL" />
+      <VarDeclaration ID="78B91A13CDF8E9D0" Name="QI" Type="BOOL" />
+      <VarDeclaration ID="7DFFB90DFC90F0C2" Name="PositionX" Type="REAL" />
+      <VarDeclaration ID="8F2AE0EC975B21AB" Name="PositionY" Type="REAL" />
+      <VarDeclaration ID="59C8D08C2A0164FA" Name="Rotation" Type="REAL" />
+      <VarDeclaration ID="26BD769300BD3883" Name="LuggageLoaded" Type="BOOL" />
+      <VarDeclaration ID="AEBF5527CF6530A8" Name="LuggageLifted" Type="BOOL" />
     </InputVars>
     <OutputVars>
-      <VarDeclaration Name="QO" Type="BOOL" Comment="Event Output Qualifier" />
-      <VarDeclaration Name="STATUS" Type="STRING" Comment="Service Status" />
+      <VarDeclaration ID="89CAEFE37CEFCE7B" Name="QO" Type="BOOL" Comment="Event Output Qualifier" />
+      <VarDeclaration ID="320AD8876EE5588E" Name="STATUS" Type="STRING" Comment="Service Status" />
     </OutputVars>
   </InterfaceList>
   <Service RightInterface="" LeftInterface="">
