@@ -3,14 +3,14 @@
   <ComplexOPCUAObject DisplayName="Model" NodeId="093a9572-2491-6de0-b7ea-b53305c68e53" BrowseName="Model" IsDummyNode="false" Type="BaseObjectType">
     <ComplexOPCUAObject DisplayName="LiftCylinder" NodeId="424bc310-edf5-1a46-a32c-3586de0219e3" BrowseName="LiftCylinder" IsDummyNode="false" Type="BaseObjectType">
       <OPCUAObject>
-        <NxtOpcUaObject DisplayName="FB3" BrowseName="FB3" id="c02c298c-2d10-58d0-c81f-92c58e06d97e" FbType="Cat" Type="BaseObjectType">
-          <OPCUAVariable UID="bb9d33f1-5f93-6534-4a65-05b89e9147da" DataType="BOOL" Extension="V1;Path=DEV.RES0.Model.LiftCylinder.FB3.FWD_OUT;Trigger=CNF" IsInput="false" Type="BaseDataVariableType" HasCondition="false">
+        <NxtOpcUaObject DisplayName="IThis" BrowseName="IThis" id="c02c298c-2d10-58d0-c81f-92c58e06d97e" FbType="Cat" Type="BaseObjectType">
+          <OPCUAVariable UID="bb9d33f1-5f93-6534-4a65-05b89e9147da" DataType="BOOL" Extension="V1;Path=DEV.RES0.Model.LiftCylinder.IThis.FWD_OUT;Trigger=CNF" IsInput="false" Type="BaseDataVariableType" HasCondition="false">
             <OPCUAAttribute Name="AccessLevel" Value="3" />
             <OPCUAAttribute Name="BrowseName" Value="FWD_OUT" />
             <OPCUAAttribute Name="DisplayName" Value="FWD_OUT" />
             <OPCUAAttribute Name="Description" />
           </OPCUAVariable>
-          <OPCUAVariable UID="52b9540c-fbfd-d834-9332-3f061a9c899c" DataType="BOOL" Extension="V1;Path=DEV.RES0.Model.LiftCylinder.FB3.BKWD_OUT;Trigger=CNF" IsInput="false" Type="BaseDataVariableType" HasCondition="false">
+          <OPCUAVariable UID="52b9540c-fbfd-d834-9332-3f061a9c899c" DataType="BOOL" Extension="V1;Path=DEV.RES0.Model.LiftCylinder.IThis.BKWD_OUT;Trigger=CNF" IsInput="false" Type="BaseDataVariableType" HasCondition="false">
             <OPCUAAttribute Name="AccessLevel" Value="3" />
             <OPCUAAttribute Name="BrowseName" Value="BKWD_OUT" />
             <OPCUAAttribute Name="DisplayName" Value="BKWD_OUT" />

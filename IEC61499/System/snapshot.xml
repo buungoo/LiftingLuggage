@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <baseline xmlns:xsd="http://www.nxtControl.com/Snapshot" xmlns="http://tempuri.org/XMLSchema1.xsd">
-  <snapshot guid="{63F80B0F-06D7-4234-9435-DD2E233906EE}" compiler="Default" created="2024-10-11T11:21:42" base="{00000000-0000-0000-0000-000000000000}">
+  <snapshot guid="{935FC4D1-4B6E-4D6D-9710-43C769E0B7E4}" compiler="Default" created="2024-10-11T11:57:16" base="{00000000-0000-0000-0000-000000000000}">
     <DeployInformation Type="Working">
       <FileGroup Name="FileList" xmlns="http://tempuri.org/DeploySnapshot.xsd">
         <FileItem Name="Main#CentralController.bin" Library="IEC61499.dll" BuildSnapshot="{EB7D38E8-A477-44DC-9DC7-03E6A3997AA7}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
@@ -79,9 +79,9 @@
           <Modified>2024-10-10T21:11:21</Modified>
           <Hash>1060B75C5072136CF</Hash>
         </FileItem>
-        <FileItem Name="Main#CylinderVSensValve.bin" Library="IEC61499.dll" BuildSnapshot="{1510501F-42F1-41B7-A73B-20D7C9387105}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
-          <Modified>2024-10-11T10:59:23</Modified>
-          <Hash>201549BFA7A2600DE</Hash>
+        <FileItem Name="Main#CylinderVSensValve.bin" Library="IEC61499.dll" BuildSnapshot="{935FC4D1-4B6E-4D6D-9710-43C769E0B7E4}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2024-10-11T11:57:15</Modified>
+          <Hash>2203743351DAD08AE</Hash>
         </FileItem>
         <FileItem Name="Main#CylinderVSensValve_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{1510501F-42F1-41B7-A73B-20D7C9387105}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
           <Modified>2024-10-11T10:59:23</Modified>
@@ -111,8 +111,8 @@
           <Modified>2024-10-10T21:11:21</Modified>
           <Hash>61E1EA71860C2AFE</Hash>
         </FileItem>
-        <FileItem Name="Main#Model.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
-          <Modified>2024-10-10T21:55:01</Modified>
+        <FileItem Name="Main#Model.bin" Library="IEC61499.dll" BuildSnapshot="{935FC4D1-4B6E-4D6D-9710-43C769E0B7E4}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2024-10-11T11:57:15</Modified>
           <Hash>20018FC7A4C413EEE</Hash>
         </FileItem>
         <FileItem Name="Main#PusherControl.bin" Library="IEC61499.dll" BuildSnapshot="{EB7D38E8-A477-44DC-9DC7-03E6A3997AA7}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
@@ -184,32 +184,9 @@
         <LibraryItem Name="SE.Standard" Version="23.0.0.14" />
         <LibraryItem Name="Standard.OPCUAClient" Version="23.0.0.6" />
         <DeviceItem ID="8e25662b-7163-43d9-a62e-5110e1ee3534" Hash="232E44D83487D9CF7" />
-        <DeviceItem ID="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e" Hash="83BC38F824B62A64" />
+        <DeviceItem ID="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e" Hash="41B157072386D6B6" />
         <DeviceItem ID="f52da1eb-1c96-483e-9b03-6c71f593bf08" Hash="17B504F08DFE3A9" />
       </FileGroup>
-      <Device Name="PusherControlDEV" ID="f52da1eb-1c96-483e-9b03-6c71f593bf08" xmlns="http://tempuri.org/DeploySnapshot.xsd">
-        <FileItem Name="Basics/Main#PusherControl.bin">
-          <Hash>774FDA661F54FB6689BE6AF3E1EBF9832C359AD978B967D64F53AD7E5E0ECD6D</Hash>
-        </FileItem>
-        <FileItem Name="Basics/Main#OPCUA_CONNECT_13434D741E95123C0.bin">
-          <Hash>579E8D9328224D848E6728F9ED7C72C04CDB44EBE839175A161BF96D7B9C3CA8</Hash>
-        </FileItem>
-        <FileItem Name="Basics/Main#OPCUA_READ_17210D0FAA2FB8D01.bin">
-          <Hash>F3C60638A03000BAE1954CF033154B8427FA4BF973C2A7E874DBF03249F35407</Hash>
-        </FileItem>
-        <FileItem Name="Basics/Main#OPCUA_WRITE_247815A92EEC3FB0E.bin">
-          <Hash>0875EFCB68B52A314134B9421F128FB4ABBB24A7531AD7A28EA895B47EF1A3EB</Hash>
-        </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin">
-          <Hash>4EAC8F69AA6813592FFC0129AD3EBA3559FA623EE83C9BB858C0827AE2835A99</Hash>
-        </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin">
-          <Hash>5E4D401D21701631715E155A3C2D67071022DD31A64F8BD3BA1AAF31107FE293</Hash>
-        </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_124AAD7831CB0FFC2.bin">
-          <Hash>6EB9399775439F6DA66DB0E2EBB9F7EF13B3AAD4B9997372BC4BE6D51EA80248</Hash>
-        </FileItem>
-      </Device>
       <Device Name="DEV" ID="8e25662b-7163-43d9-a62e-5110e1ee3534" xmlns="http://tempuri.org/DeploySnapshot.xsd">
         <FileItem Name="Basics/Main#ValveControlDA.bin">
           <Hash>564CBA2ED49E7964B888A49C60314931EB6329F1306819946E23AE5258F935B0</Hash>
@@ -242,7 +219,7 @@
           <Hash>BA5CD59DFC248326A0070D4F78E17715974B3A50F1A07FCE121972A9C2E4A974</Hash>
         </FileItem>
         <FileItem Name="Composites/Main#CylinderVSensValve.bin">
-          <Hash>606135609C872C43BEB914E2A3DE38FDF1851D50CF54063BDE826CB496BE2EAC</Hash>
+          <Hash>69F05D03643AC7415C09BBBC292074D330D881FDC68ECE3827116D830A2D5384</Hash>
         </FileItem>
         <FileItem Name="Basics/Main#ValveControlSR.bin">
           <Hash>452ECC31D53D4ABAD0261C9FD9E23AC731CF706B87538E2C505F6AC7A69BBE10</Hash>
@@ -275,7 +252,7 @@
           <Hash>218F79757455406BCB43AAE95B4D78E1D247E5A0E12BB38C80F38909AFD50AD3</Hash>
         </FileItem>
         <FileItem Name="Composites/Main#Model.bin">
-          <Hash>2354F2D51CF647B6A85461A49F8CF4351812BE1C950B1950F4FFA4D2A383F1BB</Hash>
+          <Hash>6E1258116C049DAF6BAC73F58D8A7D09AE0DBC0242B9E15C7EEC26ACB07AD4DF</Hash>
         </FileItem>
         <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin">
           <Hash>4EAC8F69AA6813592FFC0129AD3EBA3559FA623EE83C9BB858C0827AE2835A99</Hash>
@@ -307,19 +284,40 @@
           <Hash>2DDE316D82F3D65E8806418ACACF1F8D2B3C8F3C79A54D949896667C4D8C01F7</Hash>
         </FileItem>
       </Device>
+      <Device Name="PusherControlDEV" ID="f52da1eb-1c96-483e-9b03-6c71f593bf08" xmlns="http://tempuri.org/DeploySnapshot.xsd">
+        <FileItem Name="Basics/Main#PusherControl.bin">
+          <Hash>774FDA661F54FB6689BE6AF3E1EBF9832C359AD978B967D64F53AD7E5E0ECD6D</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#OPCUA_CONNECT_13434D741E95123C0.bin">
+          <Hash>579E8D9328224D848E6728F9ED7C72C04CDB44EBE839175A161BF96D7B9C3CA8</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#OPCUA_READ_17210D0FAA2FB8D01.bin">
+          <Hash>F3C60638A03000BAE1954CF033154B8427FA4BF973C2A7E874DBF03249F35407</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#OPCUA_WRITE_247815A92EEC3FB0E.bin">
+          <Hash>0875EFCB68B52A314134B9421F128FB4ABBB24A7531AD7A28EA895B47EF1A3EB</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin">
+          <Hash>4EAC8F69AA6813592FFC0129AD3EBA3559FA623EE83C9BB858C0827AE2835A99</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin">
+          <Hash>5E4D401D21701631715E155A3C2D67071022DD31A64F8BD3BA1AAF31107FE293</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_124AAD7831CB0FFC2.bin">
+          <Hash>6EB9399775439F6DA66DB0E2EBB9F7EF13B3AAD4B9997372BC4BE6D51EA80248</Hash>
+        </FileItem>
+      </Device>
     </DeployInformation>
   </snapshot>
   <deployment>
     <network_profile name="(Local Test)">
-      <device id="f52da1eb-1c96-483e-9b03-6c71f593bf08">
-        <sref snapshot="{63F80B0F-06D7-4234-9435-DD2E233906EE}" state="ACTIVE" />
-      </device>
       <device id="8e25662b-7163-43d9-a62e-5110e1ee3534">
-        <sref snapshot="{63F80B0F-06D7-4234-9435-DD2E233906EE}" state="ACTIVE" />
+        <sref snapshot="{935FC4D1-4B6E-4D6D-9710-43C769E0B7E4}" state="ACTIVE" />
       </device>
       <device id="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e">
-        <sref snapshot="{63F80B0F-06D7-4234-9435-DD2E233906EE}" state="ACTIVE" />
+        <sref snapshot="{935FC4D1-4B6E-4D6D-9710-43C769E0B7E4}" state="ACTIVE" />
       </device>
+      <device id="f52da1eb-1c96-483e-9b03-6c71f593bf08" />
     </network_profile>
   </deployment>
 </baseline>

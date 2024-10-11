@@ -56,8 +56,8 @@
         <Parameter Name="ATTRIB_ID" Value="13" />
         <Parameter Name="QI" Value="TRUE" />
         <Parameter Name="CONNECTION_ID" Value="'Luggage_OPCUA'" />
-        <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.FB3.FWD_OUT'" />
-        <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.FB3.BKWD_OUT'" />
+        <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.FWD_OUT'" />
+        <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.BKWD_OUT'" />
       </FB>
       <EventConnections>
         <Connection Source="Model.INITO" Destination="LiftControl.INIT" dx1="1039.604">
@@ -158,8 +158,8 @@
           <Parameter Name="ATTRIB_ID" Value="13" />
           <Parameter Name="QI" Value="TRUE" />
           <Parameter Name="CONNECTION_ID" Value="'Luggage_OPCUA'" />
-          <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.FB3.FWD_OUT'" />
-          <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.FB3.BKWD_OUT'" />
+          <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.FWD_OUT'" />
+          <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.BKWD_OUT'" />
         </FB>
         <FB ID="74086308E425A255" Name="CHAN_DEV_RES0" Type="COMM_CHANN_DESC" x="500" y="300" Namespace="Runtime.System">
           <Attribute Name="Endpoint.Port" Value="51302" />
@@ -173,7 +173,7 @@
           <Connection Source="START.COLD" Destination="LiftControl.INIT" dx1="48.60419" />
           <Connection Source="FB4.INITO" Destination="FB5.INIT" />
           <Connection Source="FB5.IND" Destination="LiftControl.REQ" dx1="90" />
-          <Connection Source="LiftControl.INITO" Destination="FB6.INIT" dx1="260" />
+          <Connection Source="LiftControl.INITO" Destination="FB6.INIT" dx1="340" />
           <Connection Source="LiftControl.CNF" Destination="FB6.REQ" dx1="80" />
           <Connection Source="START.COLD" Destination="FB4.INIT" dx1="48.60419" />
           <Connection Source="FB5.INITO" Destination="FB5.REQ" dx1="145.896" dx2="70" dy="-110" />

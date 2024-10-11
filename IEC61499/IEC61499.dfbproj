@@ -127,7 +127,7 @@
     <None Include="Sensor\Sensor_HMI.meta.xml">
       <DependentUpon>Sensor_HMI.fbt</DependentUpon>
     </None>
-    <None Include="SnapshotCompiles\{63F80B0F-06D7-4234-9435-DD2E233906EE}\Default\IEC61499.snapshot" />
+    <None Include="SnapshotCompiles\{935FC4D1-4B6E-4D6D-9710-43C769E0B7E4}\Default\IEC61499.snapshot" />
     <None Include="System\snapshot.xml">
       <DependentUpon>System.sys</DependentUpon>
     </None>
@@ -268,8 +268,8 @@
     <Folder Include="License" />
     <Folder Include="Log" />
     <Folder Include="SnapshotCompiles" />
-    <Folder Include="SnapshotCompiles\{63F80B0F-06D7-4234-9435-DD2E233906EE}" />
-    <Folder Include="SnapshotCompiles\{63F80B0F-06D7-4234-9435-DD2E233906EE}\Default" />
+    <Folder Include="SnapshotCompiles\{935FC4D1-4B6E-4D6D-9710-43C769E0B7E4}" />
+    <Folder Include="SnapshotCompiles\{935FC4D1-4B6E-4D6D-9710-43C769E0B7E4}\Default" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CylinderHSensValve\CylinderHSensValve_CAT.offline.xml">
