@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<System Name="System" ProjectName="LiftingLuggage" ProjectGuid="{A5C5F206-235D-47D9-8A3B-71E672475EE7}" BuildTime="2024-10-10 19:55:01Z" DeployTime="" StudioVersion="IEC 61499 IDE, Panther UAOv23.0 g5173 4181ef5 Thu Oct 12 16:53:40 2023" SnapshotGuid="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+<System Name="System" ProjectName="LiftingLuggage" ProjectGuid="{A5C5F206-235D-47D9-8A3B-71E672475EE7}" BuildTime="2024-10-11 09:02:04Z" DeployTime="" StudioVersion="IEC 61499 IDE, Panther UAOv23.0 g5173 4181ef5 Thu Oct 12 16:53:40 2023" SnapshotGuid="{669DEF83-ECEB-49C8-A56D-F497B705E7F5}">
   <Device ID="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e" Name="LiftControlDEV" Type="Soft_dPAC" Namespace="SE.DPAC">
     <Resource ID="BFE98C09D52D13D7" Name="RES0" Type="EMB_RES_ECO" Namespace="Runtime.Management">
       <FBNetwork>
@@ -16,8 +16,8 @@
           <Parameter Name="CONNECTION_ID" Value="'Luggage_OPCUA'" />
           <Parameter Name="SCAN_RATE" Value="50" />
           <Parameter Name="ATTRIB_ID" Value="13" />
-          <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.FB1.RightSensor.Interface1.sensRead'" />
-          <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.FB1.LeftSensor.Interface1.sensRead'" />
+          <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.FB1.StartSensor.Interface1.sensRead'" />
+          <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.FB1.EndSensor.Interface1.sensRead'" />
           <Parameter Name="NODE_ID3" Value="'ns=2;s=DEV.RES0.Model.Luggage.IThis.LuggageLoaded'" />
           <Parameter Name="NODE_ID4" Value="'ns=2;s=DEV.RES0.Model.Luggage.IThis.LuggageLifted'" />
         </FB>
@@ -27,7 +27,7 @@
           <Parameter Name="QI" Value="TRUE" />
           <Parameter Name="CONNECTION_ID" Value="'Luggage_OPCUA'" />
           <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.FWD_OUT'" />
-          <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.FWD_OUT'" />
+          <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.BKWD_OUT'" />
         </FB>
         <FB ID="74086308E425A255" Name="CHAN_DEV_RES0" Type="COMM_CHANN_DESC" Namespace="Runtime.System">
           <Attribute Name="Endpoint.Port" Value="51302" />
@@ -50,12 +50,12 @@
         <EventConnections>
           <Connection Source="START.COLD" Destination="LiftControl.INIT" />
           <Connection Source="FB4.INITO" Destination="FB5.INIT" />
-          <Connection Source="FB5.CNF" Destination="FB5.REQ" />
-          <Connection Source="FB5.INITO" Destination="FB5.START" />
           <Connection Source="FB5.IND" Destination="LiftControl.REQ" />
           <Connection Source="LiftControl.INITO" Destination="FB6.INIT" />
           <Connection Source="LiftControl.CNF" Destination="FB6.REQ" />
           <Connection Source="START.COLD" Destination="FB4.INIT" />
+          <Connection Source="FB5.INITO" Destination="FB5.REQ" />
+          <Connection Source="FB5.CNF" Destination="FB5.START" />
           <Connection Source="PROXY_69E8B4190621E80F.INITO" Destination="LiftControl.INIT" />
           <Connection Source="LiftControl.INITO" Destination="SND_PROXY_680C2A3C34354D8C.INITO" />
           <Connection Source="PROXY_215481CFAF6AAF7F1.PUSHED" Destination="LiftControl.RETRACT" />

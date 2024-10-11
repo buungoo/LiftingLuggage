@@ -28,8 +28,10 @@ namespace HMI.Main.Symbols.CylinderVSensValve
 
 		void REQ_Fired_EventHandler(object sender, REQEventArgs e)
 		{
-			bool output = e.FWD_IN.Value;
-			this.FireEvent_CNF(output);
+			bool fwdOutput = e.FWD_IN.Value;
+			bool bkwdOutput = e.BKWD_IN.Value;
+			
+			this.FireEvent_CNF(fwdOutput, bkwdOutput);
 		}
 	}
 }

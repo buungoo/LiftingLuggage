@@ -49,6 +49,26 @@ namespace HMI.Main.Symbols.CylinderVSensValve
       return (System.Boolean) var;
     }  }
 
+    public bool Get_BKWD_IN(ref System.Boolean value)
+    {
+      if (accessorService == null)
+        return false;
+      bool var = false;
+      bool ret = accessorService.GetBoolValue(channelId, cookie, eventIndex, true,1, ref var);
+      if (ret) value = (System.Boolean) var;
+      return ret;
+    }
+
+    public System.Boolean? BKWD_IN
+    { get {
+      if (accessorService == null)
+        return null;
+      bool var = false;
+      bool ret = accessorService.GetBoolValue(channelId, cookie, eventIndex, true,1, ref var);
+      if (!ret) return null;
+      return (System.Boolean) var;
+    }  }
+
 
   }
 
@@ -67,6 +87,12 @@ namespace HMI.Main.Symbols.CylinderVSensValve
     {
        get { return FWD_OUT_field; }
        set { FWD_OUT_field = value; }
+    }
+    private System.Boolean? BKWD_OUT_field = null;
+    public System.Boolean? BKWD_OUT
+    {
+       get { return BKWD_OUT_field; }
+       set { BKWD_OUT_field = value; }
     }
 
   }
@@ -111,20 +137,22 @@ stack Trace:
 
       }
     }
-    public bool FireEvent_CNF(System.Boolean FWD_OUT)
+    public bool FireEvent_CNF(System.Boolean FWD_OUT, System.Boolean BKWD_OUT)
     {
-      return ((IHMIAccessorOutput)this).FireEvent(0, new object[] {FWD_OUT});
+      return ((IHMIAccessorOutput)this).FireEvent(0, new object[] {FWD_OUT, BKWD_OUT});
     }
     public bool FireEvent_CNF(HMI.Main.Symbols.CylinderVSensValve.CNFEventArgs ea)
     {
-      object[] _values_ = new object[1];
+      object[] _values_ = new object[2];
       if (ea.FWD_OUT.HasValue) _values_[0] = ea.FWD_OUT.Value;
+      if (ea.BKWD_OUT.HasValue) _values_[1] = ea.BKWD_OUT.Value;
       return ((IHMIAccessorOutput)this).FireEvent(0, _values_);
     }
-    public bool FireEvent_CNF(System.Boolean FWD_OUT, bool ignore_FWD_OUT)
+    public bool FireEvent_CNF(System.Boolean FWD_OUT, bool ignore_FWD_OUT, System.Boolean BKWD_OUT, bool ignore_BKWD_OUT)
     {
-      object[] _values_ = new object[1];
+      object[] _values_ = new object[2];
       if (!ignore_FWD_OUT) _values_[0] = FWD_OUT;
+      if (!ignore_BKWD_OUT) _values_[1] = BKWD_OUT;
       return ((IHMIAccessorOutput)this).FireEvent(0, _values_);
     }
 

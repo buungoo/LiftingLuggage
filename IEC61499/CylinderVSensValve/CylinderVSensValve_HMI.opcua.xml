@@ -8,7 +8,23 @@
       </Extension>
     </Extensions>
   </OPCUAVariable>
+  <OPCUAVariable UID="AB8D87B1EEC30BDD" Enabled="false">
+    <OPCUAAttribute Name="AccessLevel" Value="1" Locked="true" AttributeMask="CurrentRead;True" />
+    <Extensions>
+      <Extension>
+        <RTAddress>V1;${VariableFullPath}</RTAddress>
+      </Extension>
+    </Extensions>
+  </OPCUAVariable>
   <OPCUAVariable UID="AF558A3B6267D0D1" Enabled="false">
+    <OPCUAAttribute Name="Exposed" Value="True" Locked="false" AttributeMask="True;True|False;True" />
+    <Extensions>
+      <Extension>
+        <RTAddress>V1;${VariableFullPath};Trigger=CNF</RTAddress>
+      </Extension>
+    </Extensions>
+  </OPCUAVariable>
+  <OPCUAVariable UID="BF0B80D4458E3A1B" Enabled="false">
     <OPCUAAttribute Name="Exposed" Value="True" Locked="false" AttributeMask="True;True|False;True" />
     <Extensions>
       <Extension>

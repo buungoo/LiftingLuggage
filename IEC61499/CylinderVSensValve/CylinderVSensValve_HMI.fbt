@@ -11,6 +11,7 @@
       </Event>
       <Event ID="CA2E27A3A4C51EF2" Name="REQ">
         <With Var="FWD_IN" />
+        <With Var="BKWD_IN" />
       </Event>
     </EventInputs>
     <EventOutputs>
@@ -20,16 +21,19 @@
       </Event>
       <Event ID="D2F7E28C21BB8010" Name="CNF">
         <With Var="FWD_OUT" />
+        <With Var="BKWD_OUT" />
       </Event>
     </EventOutputs>
     <InputVars>
       <VarDeclaration ID="A7742DBFE392B229" Name="QI" Type="BOOL" />
       <VarDeclaration ID="E26E45C94D1AE7ED" Name="FWD_IN" Type="BOOL" />
+      <VarDeclaration ID="AB8D87B1EEC30BDD" Name="BKWD_IN" Type="BOOL" />
     </InputVars>
     <OutputVars>
       <VarDeclaration ID="E65FE7275F3956AB" Name="QO" Type="BOOL" Comment="Event Output Qualifier" />
       <VarDeclaration ID="7C360041A8234BC7" Name="STATUS" Type="STRING" Comment="Service Status" />
       <VarDeclaration ID="AF558A3B6267D0D1" Name="FWD_OUT" Type="BOOL" />
+      <VarDeclaration ID="BF0B80D4458E3A1B" Name="BKWD_OUT" Type="BOOL" />
     </OutputVars>
   </InterfaceList>
   <Service RightInterface="" LeftInterface="">

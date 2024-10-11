@@ -10,6 +10,12 @@
             <OPCUAAttribute Name="DisplayName" Value="FWD_OUT" />
             <OPCUAAttribute Name="Description" />
           </OPCUAVariable>
+          <OPCUAVariable UID="52b9540c-fbfd-d834-9332-3f061a9c899c" DataType="BOOL" Extension="V1;Path=DEV.RES0.Model.LiftCylinder.FB3.BKWD_OUT;Trigger=CNF" IsInput="false" Type="BaseDataVariableType" HasCondition="false">
+            <OPCUAAttribute Name="AccessLevel" Value="3" />
+            <OPCUAAttribute Name="BrowseName" Value="BKWD_OUT" />
+            <OPCUAAttribute Name="DisplayName" Value="BKWD_OUT" />
+            <OPCUAAttribute Name="Description" />
+          </OPCUAVariable>
         </NxtOpcUaObject>
       </OPCUAObject>
       <ComplexOPCUAObject DisplayName="FB1" NodeId="88e67a1f-a01b-f659-5a97-7de8866a804e" BrowseName="FB1" IsDummyNode="false" Type="BaseObjectType">

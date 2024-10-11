@@ -3,31 +3,31 @@
   <Deployable>
     <DeployInformation Type="Working">
       <FileGroup Name="FileList">
-        <FileItem Name="Basics/Main#PusherControl.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+        <FileItem Name="Basics/Main#PusherControl.bin" Library="IEC61499.dll" BuildSnapshot="{669DEF83-ECEB-49C8-A56D-F497B705E7F5}">
           <Modified>2024-10-10T21:11:20</Modified>
           <Hash>774FDA661F54FB6689BE6AF3E1EBF9832C359AD978B967D64F53AD7E5E0ECD6D</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#OPCUA_CONNECT_13434D741E95123C0.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+        <FileItem Name="Basics/Main#OPCUA_CONNECT_13434D741E95123C0.bin" Library="IEC61499.dll" BuildSnapshot="{669DEF83-ECEB-49C8-A56D-F497B705E7F5}">
           <Modified>2024-10-10T21:11:20</Modified>
           <Hash>579E8D9328224D848E6728F9ED7C72C04CDB44EBE839175A161BF96D7B9C3CA8</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#OPCUA_READ_17210D0FAA2FB8D01.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+        <FileItem Name="Basics/Main#OPCUA_READ_17210D0FAA2FB8D01.bin" Library="IEC61499.dll" BuildSnapshot="{669DEF83-ECEB-49C8-A56D-F497B705E7F5}">
           <Modified>2024-10-10T21:11:20</Modified>
           <Hash>F3C60638A03000BAE1954CF033154B8427FA4BF973C2A7E874DBF03249F35407</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#OPCUA_WRITE_247815A92EEC3FB0E.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+        <FileItem Name="Basics/Main#OPCUA_WRITE_247815A92EEC3FB0E.bin" Library="IEC61499.dll" BuildSnapshot="{669DEF83-ECEB-49C8-A56D-F497B705E7F5}">
           <Modified>2024-10-10T21:11:20</Modified>
           <Hash>0875EFCB68B52A314134B9421F128FB4ABBB24A7531AD7A28EA895B47EF1A3EB</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin" Library="IEC61499.dll" BuildSnapshot="{669DEF83-ECEB-49C8-A56D-F497B705E7F5}">
           <Modified>2024-10-10T21:11:20</Modified>
           <Hash>4EAC8F69AA6813592FFC0129AD3EBA3559FA623EE83C9BB858C0827AE2835A99</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin" Library="IEC61499.dll" BuildSnapshot="{669DEF83-ECEB-49C8-A56D-F497B705E7F5}">
           <Modified>2024-10-10T21:11:20</Modified>
           <Hash>5E4D401D21701631715E155A3C2D67071022DD31A64F8BD3BA1AAF31107FE293</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_124AAD7831CB0FFC2.bin" Library="IEC61499.dll" BuildSnapshot="{71DE24B8-78E6-4FDE-B02D-A763A6FA7632}">
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_124AAD7831CB0FFC2.bin" Library="IEC61499.dll" BuildSnapshot="{669DEF83-ECEB-49C8-A56D-F497B705E7F5}">
           <Modified>2024-10-10T21:11:20</Modified>
           <Hash>6EB9399775439F6DA66DB0E2EBB9F7EF13B3AAD4B9997372BC4BE6D51EA80248</Hash>
         </FileItem>
