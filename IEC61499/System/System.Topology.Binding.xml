@@ -12,4 +12,8 @@
     <LogicalDeviceService ServiceId="F7C90C9D-BD8B-4D0B-B8DE-C659AF6EABCC" LogicalPort="51501" />
     <LogicalDeviceService ServiceId="32B24F96-50F3-429E-9586-58A14DEB5DD5" LogicalPort="51498" />
   </LogicalDeviceBinding>
+  <LogicalDeviceBinding LogicalDeviceId="4f2320c7-dee5-4b95-9446-937b7dc35500" PhysicalDeviceId="">
+    <LogicalDeviceService ServiceId="F7C90C9D-BD8B-4D0B-B8DE-C659AF6EABCC" LogicalPort="51503" />
+    <LogicalDeviceService ServiceId="32B24F96-50F3-429E-9586-58A14DEB5DD5" LogicalPort="51502" />
+  </LogicalDeviceBinding>
 </Bindings>

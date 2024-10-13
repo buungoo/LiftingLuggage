@@ -68,6 +68,9 @@
       <DependentUpon>ControlPanel.fbt</DependentUpon>
       <IEC61499Type>CAT</IEC61499Type>
     </None>
+    <None Include="ControlPanel\ControlPanel_HMI.meta.xml">
+      <DependentUpon>ControlPanel_HMI.fbt</DependentUpon>
+    </None>
     <None Include="CylinderHSensValve\CylinderHSensValve.cfg">
       <DependentUpon>CylinderHSensValve.fbt</DependentUpon>
       <IEC61499Type>CAT</IEC61499Type>
@@ -127,7 +130,7 @@
     <None Include="Sensor\Sensor_HMI.meta.xml">
       <DependentUpon>Sensor_HMI.fbt</DependentUpon>
     </None>
-    <None Include="SnapshotCompiles\{935FC4D1-4B6E-4D6D-9710-43C769E0B7E4}\Default\IEC61499.snapshot" />
+    <None Include="SnapshotCompiles\{795688BF-DDD1-45F5-B43A-FC216D473B4C}\Default\IEC61499.snapshot" />
     <None Include="System\snapshot.xml">
       <DependentUpon>System.sys</DependentUpon>
     </None>
@@ -268,8 +271,8 @@
     <Folder Include="License" />
     <Folder Include="Log" />
     <Folder Include="SnapshotCompiles" />
-    <Folder Include="SnapshotCompiles\{935FC4D1-4B6E-4D6D-9710-43C769E0B7E4}" />
-    <Folder Include="SnapshotCompiles\{935FC4D1-4B6E-4D6D-9710-43C769E0B7E4}\Default" />
+    <Folder Include="SnapshotCompiles\{795688BF-DDD1-45F5-B43A-FC216D473B4C}" />
+    <Folder Include="SnapshotCompiles\{795688BF-DDD1-45F5-B43A-FC216D473B4C}\Default" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CylinderHSensValve\CylinderHSensValve_CAT.offline.xml">

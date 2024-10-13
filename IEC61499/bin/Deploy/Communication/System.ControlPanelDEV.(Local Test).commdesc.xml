@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommunicationDescription>
+  <Channel ChannelId="25D95E718B31B68A" LinkId="FECAFDEFE2934D62">
+    <Endpoint Resource="ControlPanelDEV.RES0" URI="nxtv3://0.0.0.0:51307/?proto=udp">
+      <Peer Resource="DEV.RES0" URI="nxtv3://127.0.0.1:51306/?proto=udp&amp;alive=3000" PeerFB="CHAN_DEV_RES0" />
+    </Endpoint>
+    <Endpoint Resource="DEV.RES0" URI="nxtv3://0.0.0.0:51306/?proto=udp">
+      <Peer Resource="ControlPanelDEV.RES0" URI="nxtv3://127.0.0.1:51307/?proto=udp&amp;alive=3000" PeerFB="CHAN_ControlPanelDEV_RES0" />
+    </Endpoint>
+    <FBConnection Source="ControlPanelDEV.RES0.ControlPanel" Destination="DEV.RES0.Model" SourceProxy="SND_PROXY_119A330F2BF9FA3CA" DestinationProxy="PROXY_119A330F2BF9FA3CA" ProxyId="15DCE3EC6E52D184">
+      <Event Source="INITO" Destination="INIT" EventId="18E70CA4DF067DC5" EventHash="14FFF8D43B42E21D" />
+    </FBConnection>
+  </Channel>
+</CommunicationDescription>

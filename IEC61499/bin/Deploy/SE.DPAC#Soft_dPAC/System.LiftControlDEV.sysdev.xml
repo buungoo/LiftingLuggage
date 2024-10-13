@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<System Name="System" ProjectName="LiftingLuggage" ProjectGuid="{A5C5F206-235D-47D9-8A3B-71E672475EE7}" BuildTime="2024-10-11 09:57:15Z" DeployTime="" StudioVersion="IEC 61499 IDE, Panther UAOv23.0 g5173 4181ef5 Thu Oct 12 16:53:40 2023" SnapshotGuid="{935FC4D1-4B6E-4D6D-9710-43C769E0B7E4}">
+<System Name="System" ProjectName="LiftingLuggage" ProjectGuid="{A5C5F206-235D-47D9-8A3B-71E672475EE7}" BuildTime="2024-10-13 11:14:41Z" DeployTime="" StudioVersion="IEC 61499 IDE, Panther UAOv23.0 g5173 4181ef5 Thu Oct 12 16:53:40 2023" SnapshotGuid="{795688BF-DDD1-45F5-B43A-FC216D473B4C}">
   <Device ID="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e" Name="LiftControlDEV" Type="Soft_dPAC" Namespace="SE.DPAC">
     <Resource ID="BFE98C09D52D13D7" Name="RES0" Type="EMB_RES_ECO" Namespace="Runtime.Management">
       <FBNetwork>
@@ -29,22 +29,22 @@
           <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.FWD_OUT'" />
           <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.BKWD_OUT'" />
         </FB>
-        <FB ID="74086308E425A255" Name="CHAN_DEV_RES0" Type="COMM_CHANN_DESC" Namespace="Runtime.System">
-          <Attribute Name="Endpoint.Port" Value="51302" />
-          <Parameter Name="PEERNAME" Value="'DEV.RES0'" />
-        </FB>
         <FB ID="C117D9E0A2904543" Name="CHAN_PusherControlDEV_RES0" Type="COMM_CHANN_DESC" Namespace="Runtime.System">
           <Attribute Name="Endpoint.Port" Value="51303" />
           <Parameter Name="PEERNAME" Value="'PusherControlDEV.RES0'" />
         </FB>
-        <FB Name="PROXY_69E8B4190621E80F" Type="CROSSCOMM_PEER_195C19FF067434822" Comment="LiftControlDEV_RES0_LiftingLuggage_Model" Namespace="Main">
-          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventOutputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;INITO&quot; /&gt;&#xD;&#xA;  &lt;/EventOutputs&gt;&#xD;&#xA;  &lt;OutputVars /&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        <FB ID="74086308E425A255" Name="CHAN_DEV_RES0" Type="COMM_CHANN_DESC" Namespace="Runtime.System">
+          <Attribute Name="Endpoint.Port" Value="51302" />
+          <Parameter Name="PEERNAME" Value="'DEV.RES0'" />
+        </FB>
+        <FB Name="PROXY_215481CFAF6AAF7F1" Type="CROSSCOMM_PEER_16697678DCF9C13D3" Comment="LiftControlDEV_RES0_LiftingLuggage_PusherControl" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventOutputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;PUSHED&quot; /&gt;&#xD;&#xA;  &lt;/EventOutputs&gt;&#xD;&#xA;  &lt;OutputVars /&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
         </FB>
         <FB Name="SND_PROXY_680C2A3C34354D8C" Type="CROSSCOMM_SENDER_45FE03D7848F2EB2" Comment="DEV_RES0_LiftingLuggage_LiftControl" Namespace="Main">
           <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventInputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;INITO&quot; /&gt;&#xD;&#xA;  &lt;/EventInputs&gt;&#xD;&#xA;  &lt;InputVars /&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
         </FB>
-        <FB Name="PROXY_215481CFAF6AAF7F1" Type="CROSSCOMM_PEER_16697678DCF9C13D3" Comment="LiftControlDEV_RES0_LiftingLuggage_PusherControl" Namespace="Main">
-          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventOutputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;PUSHED&quot; /&gt;&#xD;&#xA;  &lt;/EventOutputs&gt;&#xD;&#xA;  &lt;OutputVars /&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+        <FB Name="PROXY_69E8B4190621E80F" Type="CROSSCOMM_PEER_195C19FF067434822" Comment="LiftControlDEV_RES0_LiftingLuggage_Model" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventOutputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;INITO&quot; /&gt;&#xD;&#xA;  &lt;/EventOutputs&gt;&#xD;&#xA;  &lt;OutputVars /&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
         </FB>
         <FB Name="START" Type="E_RESTART" Namespace="IEC61499.Standard" />
         <EventConnections>
@@ -56,9 +56,9 @@
           <Connection Source="START.COLD" Destination="FB4.INIT" />
           <Connection Source="FB5.INITO" Destination="FB5.REQ" />
           <Connection Source="FB5.CNF" Destination="FB5.START" />
-          <Connection Source="PROXY_69E8B4190621E80F.INITO" Destination="LiftControl.INIT" />
-          <Connection Source="LiftControl.INITO" Destination="SND_PROXY_680C2A3C34354D8C.INITO" />
           <Connection Source="PROXY_215481CFAF6AAF7F1.PUSHED" Destination="LiftControl.RETRACT" />
+          <Connection Source="LiftControl.INITO" Destination="SND_PROXY_680C2A3C34354D8C.INITO" />
+          <Connection Source="PROXY_69E8B4190621E80F.INITO" Destination="LiftControl.INIT" />
         </EventConnections>
         <DataConnections>
           <Connection Source="FB5.VALUE1" Destination="LiftControl.LiftRetracted" />

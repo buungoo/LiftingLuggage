@@ -7,6 +7,20 @@
       <OpcUaAttribute Name="AuthenticationMode" Value="Anonymous" Locked="false" MaxOccurs="0" SubItems="" />
     </OpcUaAttribute>
   </OpcUaClientComplexObject>
+  <OpcUaClientComplexObject UID="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e">
+    <OpcUaAttribute Name="SecurityConfiguration" Locked="false" MaxOccurs="0" Context="81DBC88C158CDE6C" SubItems="">
+      <OpcUaAttribute Name="SecurityPolicy" Value="None" Locked="false" MaxOccurs="0" SubItems="" />
+      <OpcUaAttribute Name="SecurityMode" Value="None" Locked="false" MaxOccurs="0" SubItems="" />
+      <OpcUaAttribute Name="AuthenticationMode" Value="Anonymous" Locked="false" MaxOccurs="0" SubItems="" />
+    </OpcUaAttribute>
+  </OpcUaClientComplexObject>
+  <OpcUaClientComplexObject UID="4f2320c7-dee5-4b95-9446-937b7dc35500">
+    <OpcUaAttribute Name="SecurityConfiguration" Locked="false" MaxOccurs="0" Context="B72A6778D403A0ED" SubItems="">
+      <OpcUaAttribute Name="SecurityPolicy" Value="None" Locked="false" MaxOccurs="0" SubItems="" />
+      <OpcUaAttribute Name="SecurityMode" Value="None" Locked="false" MaxOccurs="0" SubItems="" />
+      <OpcUaAttribute Name="AuthenticationMode" Value="Anonymous" Locked="false" MaxOccurs="0" SubItems="" />
+    </OpcUaAttribute>
+  </OpcUaClientComplexObject>
   <OpcUaClientComplexObject UID="A4ABD8400116F035">
     <OpcUaAttribute Name="SecurityConfiguration" Locked="false" MaxOccurs="0" Context="7E81A9F5AC573014" SubItems="">
       <OpcUaAttribute Name="SecurityPolicy" Value="None" Locked="false" MaxOccurs="0" SubItems="" />
@@ -18,9 +32,7 @@
       <OpcUaAttribute Name="SecurityMode" Value="None" Locked="false" MaxOccurs="0" SubItems="" />
       <OpcUaAttribute Name="AuthenticationMode" Value="Anonymous" Locked="false" MaxOccurs="0" SubItems="" />
     </OpcUaAttribute>
-  </OpcUaClientComplexObject>
-  <OpcUaClientComplexObject UID="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e">
-    <OpcUaAttribute Name="SecurityConfiguration" Locked="false" MaxOccurs="0" Context="81DBC88C158CDE6C" SubItems="">
+    <OpcUaAttribute Name="SecurityConfiguration" Locked="false" MaxOccurs="0" Context="E73B94B0E3541927" SubItems="">
       <OpcUaAttribute Name="SecurityPolicy" Value="None" Locked="false" MaxOccurs="0" SubItems="" />
       <OpcUaAttribute Name="SecurityMode" Value="None" Locked="false" MaxOccurs="0" SubItems="" />
       <OpcUaAttribute Name="AuthenticationMode" Value="Anonymous" Locked="false" MaxOccurs="0" SubItems="" />

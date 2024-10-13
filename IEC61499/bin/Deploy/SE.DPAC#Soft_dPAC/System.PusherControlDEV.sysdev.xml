@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<System Name="System" ProjectName="LiftingLuggage" ProjectGuid="{A5C5F206-235D-47D9-8A3B-71E672475EE7}" BuildTime="2024-10-11 09:57:16Z" DeployTime="" StudioVersion="IEC 61499 IDE, Panther UAOv23.0 g5173 4181ef5 Thu Oct 12 16:53:40 2023" SnapshotGuid="{E0589B36-7636-45D7-BDA7-B8DE1AEA3A2F}">
+<System Name="System" ProjectName="LiftingLuggage" ProjectGuid="{A5C5F206-235D-47D9-8A3B-71E672475EE7}" BuildTime="2024-10-13 11:14:41Z" DeployTime="" StudioVersion="IEC 61499 IDE, Panther UAOv23.0 g5173 4181ef5 Thu Oct 12 16:53:40 2023" SnapshotGuid="{795688BF-DDD1-45F5-B43A-FC216D473B4C}">
   <Device ID="f52da1eb-1c96-483e-9b03-6c71f593bf08" Name="PusherControlDEV" Type="Soft_dPAC" Namespace="SE.DPAC">
     <Resource ID="F4D5DF7CD07DEA" Name="RES0" Type="EMB_RES_ECO" Namespace="Runtime.Management">
       <FBNetwork>
@@ -28,22 +28,22 @@
           <Parameter Name="CONNECTION_ID" Value="'Luggage_OPCUA'" />
           <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.PushCylinder.IThis.FWD_OUT'" />
         </FB>
+        <FB ID="28D6BD2C325A3758" Name="CHAN_LiftControlDEV_RES0" Type="COMM_CHANN_DESC" Namespace="Runtime.System">
+          <Attribute Name="Endpoint.Port" Value="51305" />
+          <Parameter Name="PEERNAME" Value="'LiftControlDEV.RES0'" />
+        </FB>
         <FB ID="6B01B5A1FEFBE3C" Name="CHAN_DEV_RES0" Type="COMM_CHANN_DESC" Namespace="Runtime.System">
           <Attribute Name="Endpoint.Port" Value="51304" />
           <Parameter Name="PEERNAME" Value="'DEV.RES0'" />
         </FB>
-        <FB ID="28D6BD2C325A3758" Name="CHAN_LiftControlDEV_RES0" Type="COMM_CHANN_DESC" Namespace="Runtime.System">
-          <Attribute Name="Endpoint.Port" Value="51305" />
-          <Parameter Name="PEERNAME" Value="'LiftControlDEV.RES0'" />
+        <FB Name="SND_PROXY_215481CFAF6AAF7F1" Type="CROSSCOMM_SENDER_124AAD7831CB0FFC2" Comment="LiftControlDEV_RES0_LiftingLuggage_PusherControl" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventInputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;PUSHED&quot; /&gt;&#xD;&#xA;  &lt;/EventInputs&gt;&#xD;&#xA;  &lt;InputVars /&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
         </FB>
         <FB Name="SND_PROXY_1480A46B16BD48652" Type="CROSSCOMM_SENDER_45FE03D7848F2EB2" Comment="DEV_RES0_LiftingLuggage_PusherControl" Namespace="Main">
           <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventInputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;INITO&quot; /&gt;&#xD;&#xA;  &lt;/EventInputs&gt;&#xD;&#xA;  &lt;InputVars /&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
         </FB>
         <FB Name="PROXY_115F7C1914C9D6D55" Type="CROSSCOMM_PEER_195C19FF067434822" Comment="PusherControlDEV_RES0_LiftingLuggage_Model" Namespace="Main">
           <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventOutputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;INITO&quot; /&gt;&#xD;&#xA;  &lt;/EventOutputs&gt;&#xD;&#xA;  &lt;OutputVars /&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
-        </FB>
-        <FB Name="SND_PROXY_215481CFAF6AAF7F1" Type="CROSSCOMM_SENDER_124AAD7831CB0FFC2" Comment="LiftControlDEV_RES0_LiftingLuggage_PusherControl" Namespace="Main">
-          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventInputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;PUSHED&quot; /&gt;&#xD;&#xA;  &lt;/EventInputs&gt;&#xD;&#xA;  &lt;InputVars /&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
         </FB>
         <FB Name="START" Type="E_RESTART" Namespace="IEC61499.Standard" />
         <EventConnections>
@@ -55,9 +55,9 @@
           <Connection Source="PusherControl.INITO" Destination="FB3.INIT" />
           <Connection Source="PusherControl.CNF" Destination="FB3.REQ" />
           <Connection Source="FB2.IND" Destination="PusherControl.REQ" />
+          <Connection Source="PusherControl.PUSHED" Destination="SND_PROXY_215481CFAF6AAF7F1.PUSHED" />
           <Connection Source="PusherControl.INITO" Destination="SND_PROXY_1480A46B16BD48652.INITO" />
           <Connection Source="PROXY_115F7C1914C9D6D55.INITO" Destination="PusherControl.INIT" />
-          <Connection Source="PusherControl.PUSHED" Destination="SND_PROXY_215481CFAF6AAF7F1.PUSHED" />
         </EventConnections>
         <DataConnections>
           <Connection Source="FB2.VALUE1" Destination="PusherControl.PusherRetracted" />

@@ -1,9 +1,9 @@
 {
   "snapshot": {
-    "guid": "935fc4d1-4b6e-4d6d-9710-43c769e0b7e4",
-    "hash": "4FDA95766F89EAC1FD49F4357E586C21D9922E2C4FA64717C306B9606DDF7A35",
+    "guid": "795688bf-ddd1-45f5-b43a-fc216d473b4c",
+    "hash": "1439BC21E148E0CC2C0C83B6F0EB6EA6EC91542F61696ED698676E7CA271DFEB",
     "app": {
-      "hash": "4FDA95766F89EAC1FD49F4357E586C21D9922E2C4FA64717C306B9606DDF7A35",
+      "hash": "1439BC21E148E0CC2C0C83B6F0EB6EA6EC91542F61696ED698676E7CA271DFEB",
       "items": [
         "Main#ValveControlDA.bin",
         "Main#Sensor_HMI.bin",
@@ -27,8 +27,8 @@
         "Main#LuggageMove.bin",
         "Main#Luggage.bin",
         "Main#Model.bin",
-        "Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin",
         "Main#CROSSCOMM_PEER_195C19FF067434822.bin",
+        "Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin",
         "Device.bin",
         "CommDesc.xml",
         "ecort_opcua_ns2.bin"

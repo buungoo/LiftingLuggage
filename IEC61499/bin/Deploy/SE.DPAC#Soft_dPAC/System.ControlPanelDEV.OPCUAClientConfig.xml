@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SchemaVersion="0" xmlns="http://tempuri.org/XMLSchema.xsd">
+  <Device Name="ControlPanelDEV" Id="4f2320c7-dee5-4b95-9446-937b7dc35500">
+    <Resource Name="RES0" Id="B06BB5F1ED3B03A1">
+      <OPCUA_CONNECT Path="FB7" Id="B72A6778D403A0ED">
+        <Namespaces>
+          <Namespace Index="0" Value="http://opcfoundation.org/UA/" />
+        </Namespaces>
+        <Subscriptions>
+          <Subscription Name="default">
+            <PublishingInterval Value="500" />
+            <MaxLifetimeCount Value="180" />
+            <MaxKeepAliveCount Value="60" />
+            <MaxNotificationsPerPublish Value="100" />
+            <RelativePriority Value="10" />
+          </Subscription>
+        </Subscriptions>
+        <SecurityConfiguration>
+          <SecurityPolicy Value="0" />
+          <SecurityMode Value="1" />
+          <AuthenticationMode Value="0" />
+        </SecurityConfiguration>
+      </OPCUA_CONNECT>
+      <OPCUA_WRITE Path="FB9" Id="66EF66AC24D5F054">
+        <BrowsePathRoot Value="" />
+      </OPCUA_WRITE>
+    </Resource>
+  </Device>
+</Project>

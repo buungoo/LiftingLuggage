@@ -1,0 +1,19 @@
+{
+  "snapshot": {
+    "guid": "795688bf-ddd1-45f5-b43a-fc216d473b4c",
+    "hash": "B629CF43461F6E6A95FF21BA870E35CD3CDAC4C9D3B53C5059443C1F6415A855",
+    "app": {
+      "hash": "B629CF43461F6E6A95FF21BA870E35CD3CDAC4C9D3B53C5059443C1F6415A855",
+      "items": [
+        "Main#OPCUA_CONNECT_13434D741E95123C0.bin",
+        "Main#ControlPanel_HMI.bin",
+        "Main#ControlPanel.bin",
+        "Main#OPCUA_WRITE_48BC9B37DEA8D24C.bin",
+        "Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin",
+        "Device.bin",
+        "CommDesc.xml",
+        "OPCUAClientConfig.xml"
+      ]
+    }
+  }
+}

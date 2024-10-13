@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeployFiles xmlns="http://tempuri.org/DeploySnapshot.xsd">
+  <Deployable>
+    <DeployInformation Type="Working">
+      <FileGroup Name="FileList">
+        <FileItem Name="Basics/Main#OPCUA_CONNECT_13434D741E95123C0.bin" Library="IEC61499.dll" BuildSnapshot="{795688BF-DDD1-45F5-B43A-FC216D473B4C}">
+          <Modified>2024-10-13T13:13:32</Modified>
+          <Hash>811C0FD6D61EC85F87C5A691E0851B1D8ECD3158529CD130D4561B78374CAAA7</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#ControlPanel_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{795688BF-DDD1-45F5-B43A-FC216D473B4C}">
+          <Modified>2024-10-13T13:13:32</Modified>
+          <Hash>17EC0113160CE6D5B50CC8550DDE04C84B07B0C8BB447A4707B75D425FCF7F9F</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#ControlPanel.bin" Library="IEC61499.dll" BuildSnapshot="{795688BF-DDD1-45F5-B43A-FC216D473B4C}">
+          <Modified>2024-10-13T13:13:32</Modified>
+          <Hash>0DDEB6D6319CA033959184991EC71F8AB41684583415288455D7ABAEC10C4CD8</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#OPCUA_WRITE_48BC9B37DEA8D24C.bin" Library="IEC61499.dll" BuildSnapshot="{795688BF-DDD1-45F5-B43A-FC216D473B4C}">
+          <Modified>2024-10-13T13:13:32</Modified>
+          <Hash>EC7FD2AAE582D6917064EDF1434B401BB31BB3824D32638CF5F14C139F3B63BA</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin" Library="IEC61499.dll" BuildSnapshot="{795688BF-DDD1-45F5-B43A-FC216D473B4C}">
+          <Modified>2024-10-13T13:13:32</Modified>
+          <Hash>28D9ADBEACECEF8F6EF55F28A3E6C8EB75AAF610D2EBD167762921ED669D37AF</Hash>
+        </FileItem>
+      </FileGroup>
+      <FileGroup Name="DeployList">
+        <FileItem Name="Basics/Main#OPCUA_CONNECT_13434D741E95123C0.bin" Library="IEC61499.dll" />
+        <FileItem Name="Composites/Main#ControlPanel_HMI.bin" Library="IEC61499.dll" />
+        <FileItem Name="Composites/Main#ControlPanel.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#OPCUA_WRITE_48BC9B37DEA8D24C.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin" Library="IEC61499.dll" />
+      </FileGroup>
+    </DeployInformation>
+  </Deployable>
+</DeployFiles>
