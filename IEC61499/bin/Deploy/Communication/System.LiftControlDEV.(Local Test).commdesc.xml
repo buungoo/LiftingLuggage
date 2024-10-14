@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CommunicationDescription>
+  <Channel ChannelId="120184FECDCD8672" LinkId="36BF1F193B72CD6B">
+    <Endpoint Resource="LiftControlDEV.RES0" URI="nxtv3://0.0.0.0:51308/?proto=udp">
+      <Peer Resource="ControlPanelDEV.RES0" URI="nxtv3://127.0.0.1:51310/?proto=udp&amp;alive=3000" PeerFB="CHAN_ControlPanelDEV_RES0" />
+    </Endpoint>
+    <Endpoint Resource="ControlPanelDEV.RES0" URI="nxtv3://0.0.0.0:51310/?proto=udp">
+      <Peer Resource="LiftControlDEV.RES0" URI="nxtv3://127.0.0.1:51308/?proto=udp&amp;alive=3000" PeerFB="CHAN_LiftControlDEV_RES0" />
+    </Endpoint>
+    <FBConnection Source="LiftControlDEV.RES0.LiftControl" Destination="ControlPanelDEV.RES0.FB9" SourceProxy="SND_PROXY_93D93BA425BA740C" DestinationProxy="PROXY_93D93BA425BA740C" ProxyId="BDE6594BC750A475">
+      <Event Source="INITO" Destination="INIT" EventId="69718C2035C2E0CC" EventHash="14FFF8D43B42E21D" />
+    </FBConnection>
+    <FBConnection Source="LiftControlDEV.RES0.LiftControl" Destination="ControlPanelDEV.RES0.FB10" SourceProxy="SND_PROXY_93D93BA425BA740C" DestinationProxy="PROXY_93D93BA425BA740C" ProxyId="BDE6594BC750A475">
+      <Event Source="CNF" Destination="REQ" EventId="61383014D1493F12" EventHash="55F262B4D52BCCCB" />
+      <Data Source="RetractLift" Destination="IN1" />
+    </FBConnection>
+    <FBConnection Source="LiftControlDEV.RES0.LiftControl" Destination="ControlPanelDEV.RES0.FB3" SourceProxy="SND_PROXY_93D93BA425BA740C" DestinationProxy="PROXY_93D93BA425BA740C" ProxyId="BDE6594BC750A475">
+      <Event Source="CNF" Destination="REQ" EventId="61383014D1493F12" EventHash="55F262B4D52BCCCB" />
+      <Data Source="ExtendLift" Destination="IN1" />
+    </FBConnection>
+  </Channel>
   <Channel ChannelId="F431593127DBD617" LinkId="9E7DC7132C9B6272">
     <Endpoint Resource="LiftControlDEV.RES0" URI="nxtv3://0.0.0.0:51303/?proto=udp">
       <Peer Resource="PusherControlDEV.RES0" URI="nxtv3://127.0.0.1:51305/?proto=udp&amp;alive=3000" PeerFB="CHAN_PusherControlDEV_RES0" />

@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CommunicationDescription>
+  <Channel ChannelId="546291C2CF5EEF52" LinkId="4738C88A83332028">
+    <Endpoint Resource="PusherControlDEV.RES0" URI="nxtv3://0.0.0.0:51309/?proto=udp">
+      <Peer Resource="ControlPanelDEV.RES0" URI="nxtv3://127.0.0.1:51311/?proto=udp&amp;alive=3000" PeerFB="CHAN_ControlPanelDEV_RES0" />
+    </Endpoint>
+    <Endpoint Resource="ControlPanelDEV.RES0" URI="nxtv3://0.0.0.0:51311/?proto=udp">
+      <Peer Resource="PusherControlDEV.RES0" URI="nxtv3://127.0.0.1:51309/?proto=udp&amp;alive=3000" PeerFB="CHAN_PusherControlDEV_RES0" />
+    </Endpoint>
+    <FBConnection Source="PusherControlDEV.RES0.PusherControl" Destination="ControlPanelDEV.RES0.FB9" SourceProxy="SND_PROXY_818611A9CC9F1A72" DestinationProxy="PROXY_818611A9CC9F1A72" ProxyId="AEF925DA2AB7BD61">
+      <Event Source="INITO" Destination="INIT" EventId="DFF7DC43027FF05A" EventHash="14FFF8D43B42E21D" />
+    </FBConnection>
+    <FBConnection Source="PusherControlDEV.RES0.PusherControl" Destination="ControlPanelDEV.RES0.FB6" SourceProxy="SND_PROXY_818611A9CC9F1A72" DestinationProxy="PROXY_818611A9CC9F1A72" ProxyId="AEF925DA2AB7BD61">
+      <Event Source="CNF" Destination="REQ" EventId="1E3DFED15943519A" EventHash="CEF3247E63B601BE" />
+      <Data Source="ExtendPusher" Destination="IN1" />
+    </FBConnection>
+  </Channel>
   <Channel ChannelId="F431593127DBD617" LinkId="9E7DC7132C9B6272">
     <Endpoint Resource="PusherControlDEV.RES0" URI="nxtv3://0.0.0.0:51305/?proto=udp">
       <Peer Resource="LiftControlDEV.RES0" URI="nxtv3://127.0.0.1:51303/?proto=udp&amp;alive=3000" PeerFB="CHAN_LiftControlDEV_RES0" />

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="4341e694-1a49-4069-b64b-16db162c0f7a" Name="DelayOnAndTrue" Comment="Extracted Composite Function Block Type" Namespace="Main">
+  <Attribute Name="Configuration.FB.IDCounter" Value="8" />
+  <Identification Standard="61499-2" />
+  <VersionInfo Author="2001a" Date="10/14/2024" />
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="REQ" Comment="Normal Execution Request">
+        <With Var="IN1" />
+        <With Var="IN2" />
+      </Event>
+    </EventInputs>
+    <EventOutputs>
+      <Event Name="CNF">
+        <With Var="OUT" />
+      </Event>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration Name="IN1" Type="BOOL" Comment="Argument" />
+      <VarDeclaration Name="IN2" Type="BOOL" Comment="Argument" />
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration Name="OUT" Type="BOOL" Comment="Result: IN1 AND IN2 AND ..." />
+    </OutputVars>
+  </InterfaceList>
+  <FBNetwork>
+    <FB ID="1" Name="FB8" Type="AND_88A3DD8EC65DD11C" x="3440" y="980" Namespace="Main">
+      <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.Standard#CNT:=2;OUT:BOOL" />
+    </FB>
+    <FB ID="2" Name="FB3" Type="E_DELAY" x="5100" y="980" Namespace="IEC61499.Standard">
+      <Parameter Name="DT" Value="T#1000ms" />
+    </FB>
+    <FB ID="5" Name="FB1" Type="E_PERMIT" x="4340" y="1420" Namespace="IEC61499.Standard" />
+    <FB ID="6" Name="FB2" Type="NOT_42C76073DCEB1A7A" x="3900" y="1420" Namespace="Main">
+      <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.Standard#CNT:=1;OUT${CNT}:BOOL" />
+    </FB>
+    <FB ID="7" Name="FB4" Type="E_PERMIT" x="3880" y="980" Namespace="IEC61499.Standard" />
+    <FB ID="8" Name="FB5" Type="E_MERGE" x="5720" y="1360" Namespace="IEC61499.Standard" />
+    <Input Name="REQ" x="2860" y="992" Type="Event" />
+    <Input Name="IN1" x="2740" y="1192" Type="Data" />
+    <Input Name="IN2" x="2740" y="1252" Type="Data" />
+    <Output Name="OUT" x="3880" y="1932" Type="Data" />
+    <Output Name="CNF" x="6060" y="1372" Type="Event" />
+    <EventConnections>
+      <Connection Source="REQ" Destination="FB8.REQ" />
+      <Connection Source="FB8.CNF" Destination="FB2.REQ" dx1="67.479" />
+      <Connection Source="FB2.CNF" Destination="FB1.EI" />
+      <Connection Source="FB1.EO" Destination="FB3.STOP" dx1="47.1665" />
+      <Connection Source="FB8.CNF" Destination="FB4.EI" />
+      <Connection Source="FB4.EO" Destination="FB3.START">
+        <AvoidsNodes>false</AvoidsNodes>
+      </Connection>
+      <Connection Source="FB3.EO" Destination="FB5.EI1" dx1="48.5" />
+      <Connection Source="FB1.EO" Destination="FB5.EI2" />
+      <Connection Source="FB5.EO" Destination="CNF" />
+    </EventConnections>
+    <DataConnections>
+      <Connection Source="IN1" Destination="FB8.IN1" />
+      <Connection Source="IN2" Destination="FB8.IN2" />
+      <Connection Source="FB8.OUT" Destination="FB2.IN1" dx1="47.479" />
+      <Connection Source="FB2.OUT1" Destination="FB1.PERMIT" />
+      <Connection Source="FB8.OUT" Destination="FB4.PERMIT">
+        <AvoidsNodes>false</AvoidsNodes>
+      </Connection>
+      <Connection Source="FB8.OUT" Destination="OUT" dx1="47.479" />
+    </DataConnections>
+  </FBNetwork>
+</FBType>

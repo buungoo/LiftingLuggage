@@ -1,15 +1,20 @@
 {
   "snapshot": {
-    "guid": "795688bf-ddd1-45f5-b43a-fc216d473b4c",
-    "hash": "B629CF43461F6E6A95FF21BA870E35CD3CDAC4C9D3B53C5059443C1F6415A855",
+    "guid": "dd73e99c-f207-4df5-9596-9105ad8689a7",
+    "hash": "97753E2699298FCEE894FB4FDE0980E1B35B7EF120D404A5243CE3555B4EE67F",
     "app": {
-      "hash": "B629CF43461F6E6A95FF21BA870E35CD3CDAC4C9D3B53C5059443C1F6415A855",
+      "hash": "97753E2699298FCEE894FB4FDE0980E1B35B7EF120D404A5243CE3555B4EE67F",
       "items": [
         "Main#OPCUA_CONNECT_13434D741E95123C0.bin",
         "Main#ControlPanel_HMI.bin",
         "Main#ControlPanel.bin",
         "Main#OPCUA_WRITE_48BC9B37DEA8D24C.bin",
+        "Main#AND_88A3DD8EC65DD11C.bin",
+        "Main#NOT_42C76073DCEB1A7A.bin",
+        "Main#DelayOnAndTrue.bin",
+        "Main#CROSSCOMM_PEER_246902A2E9B15C94D.bin",
         "Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin",
+        "Main#CROSSCOMM_PEER_2451551C2B52DD24F.bin",
         "Device.bin",
         "CommDesc.xml",
         "OPCUAClientConfig.xml"

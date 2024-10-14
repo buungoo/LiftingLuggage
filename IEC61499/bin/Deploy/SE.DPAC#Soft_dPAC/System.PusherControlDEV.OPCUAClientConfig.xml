@@ -24,9 +24,6 @@
       <OPCUA_READ Path="FB2" Id="936034DEE7AD4E19">
         <BrowsePathRoot Value="" />
       </OPCUA_READ>
-      <OPCUA_WRITE Path="FB3" Id="C84743275EEC5B0B">
-        <BrowsePathRoot Value="" />
-      </OPCUA_WRITE>
     </Resource>
   </Device>
 </Project>
