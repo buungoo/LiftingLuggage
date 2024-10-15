@@ -4,14 +4,14 @@
   <Device ID="f52da1eb-1c96-483e-9b03-6c71f593bf08" Name="PusherControlDEV" Type="Soft_dPAC" x="555.4479" y="1619.854" Namespace="SE.DPAC">
     <Resource ID="F4D5DF7CD07DEA" Name="RES0" Type="EMB_RES_ECO" Namespace="Runtime.Management">
       <FBNetwork>
-        <FB ID="3F546C369396E15D" Name="PusherControl" Type="PusherControl" x="3600" y="1460" Namespace="Main" />
-        <FB ID="F421EBF448AFBE70" Name="FB1" Type="OPCUA_CONNECT_13434D741E95123C0" x="2220" y="2540" Namespace="Main">
+        <FB ID="3F546C369396E15D" Name="PusherControl" Type="PusherControl" x="3580" y="100" Namespace="Main" />
+        <FB ID="F421EBF448AFBE70" Name="FB1" Type="OPCUA_CONNECT_13434D741E95123C0" x="1080" y="1900" Namespace="Main">
           <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=1" />
           <Parameter Name="QI" Value="TRUE" />
           <Parameter Name="ID" Value="'Luggage_OPCUA'" />
           <Parameter Name="URI" Value="'opc.tcp://127.0.0.1:4841'" />
         </FB>
-        <FB ID="936034DEE7AD4E19" Name="FB2" Type="OPCUA_READ_17210D0FAA2FB8D01" x="2200" y="3260" Namespace="Main">
+        <FB ID="936034DEE7AD4E19" Name="FB2" Type="OPCUA_READ_17210D0FAA2FB8D01" x="2180" y="1900" Namespace="Main">
           <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=4;VALUE${CNTX}:BOOL,BOOL,BOOL,BOOL" />
           <Parameter Name="ATTRIB_ID" Value="13" />
           <Parameter Name="QI" Value="TRUE" />
@@ -48,8 +48,8 @@
         </FB>
         <FB Name="START" Type="E_RESTART" x="80" y="100" Namespace="IEC61499.Standard" />
         <EventConnections>
-          <Connection Source="START.COLD" Destination="PusherControl.INIT" dx1="48.60419" />
-          <Connection Source="FB1.INITO" Destination="FB2.INIT" dx1="42.60425" dx2="50" dy="530" />
+          <Connection Source="START.COLD" Destination="PusherControl.INIT" />
+          <Connection Source="FB1.INITO" Destination="FB2.INIT" />
           <Connection Source="FB2.INITO" Destination="FB2.REQ" dx1="165.896" dx2="70" dy="-110" />
           <Connection Source="FB2.CNF" Destination="FB2.START" dx1="145.896" dx2="90" dy="-170" />
           <Connection Source="START.COLD" Destination="FB1.INIT" dx1="48.60419" />

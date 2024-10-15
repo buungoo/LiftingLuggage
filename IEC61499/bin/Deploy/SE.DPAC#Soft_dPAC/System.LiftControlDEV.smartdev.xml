@@ -52,7 +52,7 @@
           <Connection Source="FB4.INITO" Destination="FB5.INIT" />
           <Connection Source="FB5.IND" Destination="LiftControl.REQ" dx1="90" />
           <Connection Source="START.COLD" Destination="FB4.INIT" dx1="48.60419" />
-          <Connection Source="FB5.INITO" Destination="FB5.REQ" dx1="145.896" dx2="70" dy="-110" />
+          <Connection Source="FB5.INITO" Destination="FB5.REQ" dx1="165.896" dx2="70" dy="-110" />
           <Connection Source="FB5.CNF" Destination="FB5.START" dx1="175.896" dx2="90" dy="-200">
             <AvoidsNodes>false</AvoidsNodes>
           </Connection>

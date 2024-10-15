@@ -7,73 +7,95 @@
   <Application ID="A4ABD8400116F035" Name="LiftingLuggage">
     <SubAppNetwork>
       <FB ID="DFD43629BFCD4A5" Name="Model" Type="Model" x="1700" y="580" Namespace="Main" />
-      <FB ID="FDAAC859A2745F2A" Name="ControlPanel" Type="ControlPanel" x="3980" y="4020" Namespace="Main" />
-      <FB ID="7A52D6A32DBE4D96" Name="LiftControl" Type="LiftControl" x="3640" y="1840" Namespace="Main" />
-      <FB ID="84AE69FC5D66198F" Name="PusherControl" Type="PusherControl" x="3620" y="3060" Namespace="Main" />
+      <FB ID="FDAAC859A2745F2A" Name="ControlPanel" Type="ControlPanel" x="4800" y="4020" Namespace="Main" />
+      <FB ID="7A52D6A32DBE4D96" Name="LiftControl" Type="LiftControl" x="4460" y="1840" Namespace="Main" />
+      <FB ID="84AE69FC5D66198F" Name="PusherControl" Type="PusherControl" x="4440" y="3060" Namespace="Main" />
       <FB ID="7E81A9F5AC573014" Name="FB1" Type="OPCUA_CONNECT_13434D741E95123C0" x="1260" y="2880" Namespace="Main">
         <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=1" />
         <Parameter Name="QI" Value="TRUE" />
         <Parameter Name="ID" Value="'Luggage_OPCUA'" />
-        <Parameter Name="URI" Value="'opc.tcp://127.0.0.1:4841'" />
+        <Parameter Name="URI" Value="'opc.tcp://127.0.0.1:4841'">
+          <Attribute Name="Configuration.Parameter.Style" Value="Width=300" />
+        </Parameter>
       </FB>
-      <FB ID="722605834DEA3429" UID="A5DB640BACBF4E5A" Name="FB2" Type="OPCUA_READ_17210D0FAA2FB8D01" x="2260" y="2880" Namespace="Main">
+      <FB ID="722605834DEA3429" UID="A5DB640BACBF4E5A" Name="FB2" Type="OPCUA_READ_17210D0FAA2FB8D01" x="3080" y="2880" Namespace="Main">
         <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=4;VALUE${CNTX}:BOOL,BOOL,BOOL,BOOL" />
         <Parameter Name="ATTRIB_ID" Value="13" />
         <Parameter Name="QI" Value="TRUE" />
         <Parameter Name="CONNECTION_ID" Value="'Luggage_OPCUA'" />
         <Parameter Name="SCAN_RATE" Value="50" />
-        <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.PushCylinder.FB1.RightSensor.Interface1.sensRead'" />
-        <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.PushCylinder.FB1.LeftSensor.Interface1.sensRead'" />
-        <Parameter Name="NODE_ID3" Value="'ns=2;s=DEV.RES0.Model.Luggage.IThis.LuggageLoaded'" />
-        <Parameter Name="NODE_ID4" Value="'ns=2;s=DEV.RES0.Model.Luggage.IThis.LuggageLifted'" />
+        <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.PushCylinder.FB1.RightSensor.Interface1.sensRead'">
+          <Attribute Name="Configuration.Parameter.Style" Value="Width=300" />
+        </Parameter>
+        <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.PushCylinder.FB1.LeftSensor.Interface1.sensRead'">
+          <Attribute Name="Configuration.Parameter.Style" Value="Width=300" />
+        </Parameter>
+        <Parameter Name="NODE_ID3" Value="'ns=2;s=DEV.RES0.Model.Luggage.IThis.LuggageLoaded'">
+          <Attribute Name="Configuration.Parameter.Style" Value="Width=300" />
+        </Parameter>
+        <Parameter Name="NODE_ID4" Value="'ns=2;s=DEV.RES0.Model.Luggage.IThis.LuggageLifted'">
+          <Attribute Name="Configuration.Parameter.Style" Value="Width=300" />
+        </Parameter>
       </FB>
       <FB ID="9CB05CBF696646A" Name="FB4" Type="OPCUA_CONNECT_13434D741E95123C0" x="1240" y="1780" Namespace="Main">
         <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=1" />
         <Parameter Name="QI" Value="TRUE" />
         <Parameter Name="ID" Value="'Luggage_OPCUA'" />
-        <Parameter Name="URI" Value="'opc.tcp://127.0.0.1:4841'" />
+        <Parameter Name="URI" Value="'opc.tcp://127.0.0.1:4841'">
+          <Attribute Name="Configuration.Parameter.Style" Value="Width=300" />
+        </Parameter>
       </FB>
-      <FB ID="EDCA349F85725F1" UID="78C8CA7DB11F4B7C" Name="FB5" Type="OPCUA_READ_17210D0FAA2FB8D01" x="2260" y="1780" Namespace="Main">
+      <FB ID="EDCA349F85725F1" UID="78C8CA7DB11F4B7C" Name="FB5" Type="OPCUA_READ_17210D0FAA2FB8D01" x="3080" y="1780" Namespace="Main">
         <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=4;VALUE${CNTX}:BOOL,BOOL,BOOL,BOOL" />
         <Parameter Name="QI" Value="TRUE" />
         <Parameter Name="CONNECTION_ID" Value="'Luggage_OPCUA'" />
         <Parameter Name="SCAN_RATE" Value="50" />
         <Parameter Name="ATTRIB_ID" Value="13" />
-        <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.FB1.StartSensor.Interface1.sensRead'" />
-        <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.FB1.EndSensor.Interface1.sensRead'" />
-        <Parameter Name="NODE_ID3" Value="'ns=2;s=DEV.RES0.Model.Luggage.IThis.LuggageLoaded'" />
-        <Parameter Name="NODE_ID4" Value="'ns=2;s=DEV.RES0.Model.Luggage.IThis.LuggageLifted'" />
+        <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.FB1.StartSensor.Interface1.sensRead'">
+          <Attribute Name="Configuration.Parameter.Style" Value="Width=300" />
+        </Parameter>
+        <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.FB1.EndSensor.Interface1.sensRead'">
+          <Attribute Name="Configuration.Parameter.Style" Value="Width=300" />
+        </Parameter>
+        <Parameter Name="NODE_ID3" Value="'ns=2;s=DEV.RES0.Model.Luggage.IThis.LuggageLoaded'">
+          <Attribute Name="Configuration.Parameter.Style" Value="Width=300" />
+        </Parameter>
+        <Parameter Name="NODE_ID4" Value="'ns=2;s=DEV.RES0.Model.Luggage.IThis.LuggageLifted'">
+          <Attribute Name="Configuration.Parameter.Style" Value="Width=300" />
+        </Parameter>
       </FB>
-      <FB ID="E73B94B0E3541927" Name="FB7" Type="OPCUA_CONNECT_13434D741E95123C0" x="2960" y="4020" Namespace="Main">
-        <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=1" />
-        <Parameter Name="QI" Value="TRUE" />
-        <Parameter Name="ID" Value="'Luggage_OPCUA'" />
-        <Parameter Name="URI" Value="'opc.tcp://127.0.0.1:4841'" />
-      </FB>
-      <FB ID="2FF8B9C5C251507" UID="AC39708F3B2D6B1C" Name="FB9" Type="OPCUA_WRITE_48BC9B37DEA8D24C" x="8460" y="2700" Namespace="Main">
+      <FB ID="2FF8B9C5C251507" UID="AC39708F3B2D6B1C" Name="FB9" Type="OPCUA_WRITE_48BC9B37DEA8D24C" x="8280" y="2640" Namespace="Main">
         <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=3;VALUE${CNTX}:BOOL,BOOL,BOOL" />
         <Parameter Name="QI" Value="TRUE" />
         <Parameter Name="CONNECTION_ID" Value="'Luggage_OPCUA'" />
         <Parameter Name="ATTRIB_ID" Value="13" />
-        <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.FWD_OUT'" />
-        <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.BKWD_OUT'" />
-        <Parameter Name="NODE_ID3" Value="'ns=2;s=DEV.RES0.Model.PushCylinder.IThis.FWD_OUT'" />
+        <Parameter Name="NODE_ID1" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.FWD_OUT'">
+          <Attribute Name="Configuration.Parameter.Style" Value="Width=300" />
+        </Parameter>
+        <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.BKWD_OUT'">
+          <Attribute Name="Configuration.Parameter.Style" Value="Width=300" />
+        </Parameter>
+        <Parameter Name="NODE_ID3" Value="'ns=2;s=DEV.RES0.Model.PushCylinder.IThis.FWD_OUT'">
+          <Attribute Name="Configuration.Parameter.Style" Value="Width=300" />
+        </Parameter>
       </FB>
-      <FB ID="9BF59A0DF9469258" Name="FB10" Type="AND_88A3DD8EC65DD11C" x="5160" y="2620" Namespace="Main">
+      <FB ID="9BF59A0DF9469258" Name="FB10" Type="AND_88A3DD8EC65DD11C" x="5980" y="2620" Namespace="Main">
         <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.Standard#CNT:=2;OUT:BOOL" />
       </FB>
-      <FB ID="A1301F7479FD8115" Name="FB3" Type="DelayOnAndTrue" x="5140" y="1900" Namespace="Main" />
-      <FB ID="6E47FC597E089E17" Name="FB6" Type="DelayOnAndTrue" x="5140" y="3180" Namespace="Main" />
+      <FB ID="A1301F7479FD8115" Name="FB3" Type="DelayOnAndTrue" x="5960" y="1900" Namespace="Main" />
+      <FB ID="6E47FC597E089E17" Name="FB6" Type="DelayOnAndTrue" x="5960" y="3180" Namespace="Main" />
+      <FB ID="E73B94B0E3541927" Name="FB7" Type="OPCUA_CONNECT_13434D741E95123C0" x="3780" y="4020" Namespace="Main">
+        <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=1" />
+        <Parameter Name="QI" Value="TRUE" />
+        <Parameter Name="ID" Value="'Luggage_OPCUA'" />
+        <Parameter Name="URI" Value="'opc.tcp://127.0.0.1:4841'">
+          <Attribute Name="Configuration.Parameter.Style" Value="Width=300" />
+        </Parameter>
+      </FB>
       <EventConnections>
-        <Connection Source="Model.INITO" Destination="LiftControl.INIT" dx1="1039.604">
-          <AvoidsNodes>false</AvoidsNodes>
-        </Connection>
-        <Connection Source="Model.INITO" Destination="PusherControl.INIT" dx1="919.6042">
-          <AvoidsNodes>false</AvoidsNodes>
-        </Connection>
-        <Connection Source="PusherControl.INITO" Destination="Model.INIT" dx1="151.8125" dx2="120" dy="-2760">
-          <AvoidsNodes>false</AvoidsNodes>
-        </Connection>
+        <Connection Source="Model.INITO" Destination="LiftControl.INIT" dx1="1569.604" />
+        <Connection Source="Model.INITO" Destination="PusherControl.INIT" dx1="1569.604" />
+        <Connection Source="PusherControl.INITO" Destination="Model.INIT" dx1="50" dx2="30" dy="-1390" />
         <Connection Source="PusherControl.PUSHED" Destination="LiftControl.RETRACT" dx1="90" dx2="110" dy="-560">
           <AvoidsNodes>false</AvoidsNodes>
         </Connection>
@@ -87,9 +109,7 @@
         </Connection>
         <Connection Source="FB4.INITO" Destination="FB5.INIT" />
         <Connection Source="FB5.IND" Destination="LiftControl.REQ" dx1="90" />
-        <Connection Source="LiftControl.INITO" Destination="Model.INIT" dx1="303.8125" dx2="30" dy="-1540">
-          <AvoidsNodes>false</AvoidsNodes>
-        </Connection>
+        <Connection Source="LiftControl.INITO" Destination="Model.INIT" dx1="53.8125" dx2="30" dy="-170" />
         <Connection Source="FB5.INITO" Destination="FB5.REQ" dx1="75.896" dx2="70" dy="-100">
           <AvoidsNodes>false</AvoidsNodes>
         </Connection>
@@ -97,11 +117,34 @@
           <AvoidsNodes>false</AvoidsNodes>
         </Connection>
         <Connection Source="FB7.INITO" Destination="ControlPanel.INIT" />
-        <Connection Source="ControlPanel.INITO" Destination="Model.INIT" dx1="280.5205" dx2="30" dy="-3720">
-          <AvoidsNodes>false</AvoidsNodes>
-        </Connection>
-        <Connection Source="LiftControl.INITO" Destination="FB9.INIT" dx1="1763.813">
-          <AvoidsNodes>false</AvoidsNodes>
+        <Connection Source="ControlPanel.INITO" Destination="Model.INIT" dx1="50.521" dx2="30" dy="-2350" />
+        <Connection Source="LiftControl.INITO" Destination="FB9.INIT">
+          <Points>
+            <Points>
+              <X>1274.04688</X>
+              <Y>470</Y>
+            </Points>
+            <Points>
+              <X>1299.04688</X>
+              <Y>470</Y>
+            </Points>
+            <Points>
+              <X>1299.04688</X>
+              <Y>572.5</Y>
+            </Points>
+            <Points>
+              <X>1587.5</X>
+              <Y>572.5</Y>
+            </Points>
+            <Points>
+              <X>1587.5</X>
+              <Y>670</Y>
+            </Points>
+            <Points>
+              <X>2065</X>
+              <Y>670</Y>
+            </Points>
+          </Points>
         </Connection>
         <Connection Source="PusherControl.INITO" Destination="FB9.INIT" dx1="1691.813">
           <AvoidsNodes>false</AvoidsNodes>
@@ -115,16 +158,21 @@
         <Connection Source="LiftControl.CNF" Destination="FB10.REQ" dx1="703.8125">
           <AvoidsNodes>false</AvoidsNodes>
         </Connection>
-        <Connection Source="ControlPanel.CNF" Destination="FB10.REQ" dx1="700.521">
+        <Connection Source="LiftControl.CNF" Destination="FB3.REQ" />
+        <Connection Source="ControlPanel.CNF" Destination="FB3.REQ" dx1="520.521">
           <AvoidsNodes>false</AvoidsNodes>
         </Connection>
-        <Connection Source="LiftControl.CNF" Destination="FB3.REQ" />
-        <Connection Source="ControlPanel.CNF" Destination="FB3.REQ" dx1="70.521" />
-        <Connection Source="FB3.CNF" Destination="FB9.REQ" dx1="390.104">
+        <Connection Source="FB3.CNF" Destination="FB9.REQ" dx1="390.1035">
           <AvoidsNodes>false</AvoidsNodes>
         </Connection>
         <Connection Source="PusherControl.CNF" Destination="FB6.REQ" dx1="81.8125" />
-        <Connection Source="FB6.CNF" Destination="FB9.REQ" dx1="390.104">
+        <Connection Source="FB6.CNF" Destination="FB9.REQ" dx1="390.1035">
+          <AvoidsNodes>false</AvoidsNodes>
+        </Connection>
+        <Connection Source="ControlPanel.CNF" Destination="FB6.REQ" dx1="640.521">
+          <AvoidsNodes>false</AvoidsNodes>
+        </Connection>
+        <Connection Source="ControlPanel.CNF" Destination="FB10.REQ" dx1="580.521">
           <AvoidsNodes>false</AvoidsNodes>
         </Connection>
       </EventConnections>
@@ -143,17 +191,17 @@
         <Connection Source="ControlPanel.LeftRet" Destination="FB10.IN2" dx1="480.521">
           <AvoidsNodes>false</AvoidsNodes>
         </Connection>
-        <Connection Source="FB10.OUT" Destination="FB9.VALUE2" dx1="1937.479">
+        <Connection Source="FB10.OUT" Destination="FB9.VALUE2" dx1="1697.479">
           <AvoidsNodes>false</AvoidsNodes>
         </Connection>
         <Connection Source="LiftControl.ExtendLift" Destination="FB3.IN1" dx1="93.8125" />
         <Connection Source="ControlPanel.LiftExt" Destination="FB3.IN2" dx1="90.521" />
-        <Connection Source="FB3.OUT" Destination="FB9.VALUE1" dx1="1930.104">
+        <Connection Source="FB3.OUT" Destination="FB9.VALUE1" dx1="1710.104">
           <AvoidsNodes>false</AvoidsNodes>
         </Connection>
         <Connection Source="PusherControl.ExtendPusher" Destination="FB6.IN1" />
         <Connection Source="ControlPanel.PushExt" Destination="FB6.IN2" dx1="130.521" />
-        <Connection Source="FB6.OUT" Destination="FB9.VALUE3" dx1="1970.104">
+        <Connection Source="FB6.OUT" Destination="FB9.VALUE3">
           <AvoidsNodes>false</AvoidsNodes>
         </Connection>
       </DataConnections>
@@ -220,7 +268,7 @@
           <Connection Source="FB4.INITO" Destination="FB5.INIT" />
           <Connection Source="FB5.IND" Destination="LiftControl.REQ" dx1="90" />
           <Connection Source="START.COLD" Destination="FB4.INIT" dx1="48.60419" />
-          <Connection Source="FB5.INITO" Destination="FB5.REQ" dx1="145.896" dx2="70" dy="-110" />
+          <Connection Source="FB5.INITO" Destination="FB5.REQ" dx1="165.896" dx2="70" dy="-110" />
           <Connection Source="FB5.CNF" Destination="FB5.START" dx1="175.896" dx2="90" dy="-200">
             <AvoidsNodes>false</AvoidsNodes>
           </Connection>
@@ -238,14 +286,14 @@
   <Device ID="f52da1eb-1c96-483e-9b03-6c71f593bf08" Name="PusherControlDEV" Type="Soft_dPAC" x="555.4479" y="1619.854" Namespace="SE.DPAC">
     <Resource ID="F4D5DF7CD07DEA" Name="RES0" Type="EMB_RES_ECO" Namespace="Runtime.Management">
       <FBNetwork>
-        <FB ID="3F546C369396E15D" Name="PusherControl" Type="PusherControl" x="3600" y="1460" Namespace="Main" />
-        <FB ID="F421EBF448AFBE70" Name="FB1" Type="OPCUA_CONNECT_13434D741E95123C0" x="2220" y="2540" Namespace="Main">
+        <FB ID="3F546C369396E15D" Name="PusherControl" Type="PusherControl" x="3580" y="100" Namespace="Main" />
+        <FB ID="F421EBF448AFBE70" Name="FB1" Type="OPCUA_CONNECT_13434D741E95123C0" x="1080" y="1900" Namespace="Main">
           <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=1" />
           <Parameter Name="QI" Value="TRUE" />
           <Parameter Name="ID" Value="'Luggage_OPCUA'" />
           <Parameter Name="URI" Value="'opc.tcp://127.0.0.1:4841'" />
         </FB>
-        <FB ID="936034DEE7AD4E19" Name="FB2" Type="OPCUA_READ_17210D0FAA2FB8D01" x="2200" y="3260" Namespace="Main">
+        <FB ID="936034DEE7AD4E19" Name="FB2" Type="OPCUA_READ_17210D0FAA2FB8D01" x="2180" y="1900" Namespace="Main">
           <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=4;VALUE${CNTX}:BOOL,BOOL,BOOL,BOOL" />
           <Parameter Name="ATTRIB_ID" Value="13" />
           <Parameter Name="QI" Value="TRUE" />
@@ -269,8 +317,8 @@
           <Parameter Name="PEERNAME" Value="'DEV.RES0'" />
         </FB>
         <EventConnections>
-          <Connection Source="START.COLD" Destination="PusherControl.INIT" dx1="48.60419" />
-          <Connection Source="FB1.INITO" Destination="FB2.INIT" dx1="42.60425" dx2="50" dy="530" />
+          <Connection Source="START.COLD" Destination="PusherControl.INIT" />
+          <Connection Source="FB1.INITO" Destination="FB2.INIT" />
           <Connection Source="FB2.INITO" Destination="FB2.REQ" dx1="165.896" dx2="70" dy="-110" />
           <Connection Source="FB2.CNF" Destination="FB2.START" dx1="145.896" dx2="90" dy="-170" />
           <Connection Source="START.COLD" Destination="FB1.INIT" dx1="48.60419" />
@@ -289,14 +337,8 @@
   <Device ID="4f2320c7-dee5-4b95-9446-937b7dc35500" Name="ControlPanelDEV" Type="Soft_dPAC" x="555.4479" y="2199.854" Namespace="SE.DPAC">
     <Resource ID="B06BB5F1ED3B03A1" Name="RES0" Type="EMB_RES_ECO" Namespace="Runtime.Management">
       <FBNetwork>
-        <FB ID="B72A6778D403A0ED" Name="FB7" Type="OPCUA_CONNECT_13434D741E95123C0" x="1380" y="1300" Namespace="Main">
-          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=1" />
-          <Parameter Name="QI" Value="TRUE" />
-          <Parameter Name="ID" Value="'Luggage_OPCUA'" />
-          <Parameter Name="URI" Value="'opc.tcp://127.0.0.1:4841'" />
-        </FB>
-        <FB ID="A270C9DB387A4FD3" Name="ControlPanel" Type="ControlPanel" x="2620" y="1300" Namespace="Main" />
-        <FB ID="66EF66AC24D5F054" Name="FB9" Type="OPCUA_WRITE_48BC9B37DEA8D24C" x="3920" y="1300" Namespace="Main">
+        <FB ID="A270C9DB387A4FD3" Name="ControlPanel" Type="ControlPanel" x="2580" y="100" Namespace="Main" />
+        <FB ID="66EF66AC24D5F054" Name="FB9" Type="OPCUA_WRITE_48BC9B37DEA8D24C" x="3880" y="100" Namespace="Main">
           <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=3;VALUE${CNTX}:BOOL,BOOL,BOOL" />
           <Parameter Name="QI" Value="TRUE" />
           <Parameter Name="CONNECTION_ID" Value="'Luggage_OPCUA'" />
@@ -305,11 +347,17 @@
           <Parameter Name="NODE_ID2" Value="'ns=2;s=DEV.RES0.Model.LiftCylinder.IThis.BKWD_OUT'" />
           <Parameter Name="NODE_ID3" Value="'ns=2;s=DEV.RES0.Model.PushCylinder.IThis.FWD_OUT'" />
         </FB>
-        <FB ID="17DD7232596034BA" Name="FB10" Type="AND_88A3DD8EC65DD11C" x="5160" y="2620" Namespace="Main">
+        <FB ID="17DD7232596034BA" Name="FB10" Type="AND_88A3DD8EC65DD11C" x="5120" y="1420" Namespace="Main">
           <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.Standard#CNT:=2;OUT:BOOL" />
         </FB>
-        <FB ID="38A60EF41C154BA1" Name="FB3" Type="DelayOnAndTrue" x="5140" y="1900" Namespace="Main" />
-        <FB ID="250E967C12F47912" Name="FB6" Type="DelayOnAndTrue" x="5140" y="3180" Namespace="Main" />
+        <FB ID="38A60EF41C154BA1" Name="FB3" Type="DelayOnAndTrue" x="5100" y="700" Namespace="Main" />
+        <FB ID="250E967C12F47912" Name="FB6" Type="DelayOnAndTrue" x="5100" y="1980" Namespace="Main" />
+        <FB ID="B72A6778D403A0ED" Name="FB7" Type="OPCUA_CONNECT_13434D741E95123C0" x="1340" y="100" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=1" />
+          <Parameter Name="QI" Value="TRUE" />
+          <Parameter Name="ID" Value="'Luggage_OPCUA'" />
+          <Parameter Name="URI" Value="'opc.tcp://127.0.0.1:4841'" />
+        </FB>
         <FB ID="6F0CC296C9D69366" Name="CHAN_LiftControlDEV_RES0" Type="COMM_CHANN_DESC" x="500" y="300" Namespace="Runtime.System">
           <Attribute Name="Endpoint.Port" Value="51310" />
           <Parameter Name="PEERNAME" Value="'LiftControlDEV.RES0'" />
@@ -324,17 +372,43 @@
         </FB>
         <EventConnections>
           <Connection Source="FB7.INITO" Destination="ControlPanel.INIT" />
-          <Connection Source="START.COLD" Destination="FB7.INIT" dx1="48.60425" />
+          <Connection Source="START.COLD" Destination="FB7.INIT" />
           <Connection Source="ControlPanel.INITO" Destination="FB9.INIT" />
           <Connection Source="FB10.CNF" Destination="FB9.REQ" dx1="47.479" dx2="170" dy="-110">
             <AvoidsNodes>false</AvoidsNodes>
           </Connection>
-          <Connection Source="ControlPanel.CNF" Destination="FB10.REQ" dx1="700.521">
-            <AvoidsNodes>false</AvoidsNodes>
+          <Connection Source="ControlPanel.CNF" Destination="FB3.REQ">
+            <Points>
+              <Points>
+                <X>739.869751</X>
+                <Y>50</Y>
+              </Points>
+              <Points>
+                <X>764.869751</X>
+                <Y>50</Y>
+              </Points>
+              <Points>
+                <X>764.869751</X>
+                <Y>7.5</Y>
+              </Points>
+              <Points>
+                <X>1147.5</X>
+                <Y>7.5</Y>
+              </Points>
+              <Points>
+                <X>1147.5</X>
+                <Y>185</Y>
+              </Points>
+              <Points>
+                <X>1250</X>
+                <Y>185</Y>
+              </Points>
+            </Points>
           </Connection>
-          <Connection Source="ControlPanel.CNF" Destination="FB3.REQ" dx1="70.521" />
-          <Connection Source="FB3.CNF" Destination="FB9.REQ" dx1="50" dx2="220" dy="-708.2916" />
-          <Connection Source="FB6.CNF" Destination="FB9.REQ" dx1="40.104" dx2="190" dy="-110" />
+          <Connection Source="FB3.CNF" Destination="FB9.REQ" dx1="50" dx2="210" dy="-710" />
+          <Connection Source="FB6.CNF" Destination="FB9.REQ" dx1="50" dx2="210" dy="-110" />
+          <Connection Source="ControlPanel.CNF" Destination="FB6.REQ" dx1="100" />
+          <Connection Source="ControlPanel.CNF" Destination="FB10.REQ" dx1="100" />
         </EventConnections>
         <DataConnections>
           <Connection Source="ControlPanel.LeftRet" Destination="FB10.IN2" dx1="480.521">
@@ -343,12 +417,12 @@
           <Connection Source="FB10.OUT" Destination="FB9.VALUE2" dx1="70" dx2="50" dy="-310">
             <AvoidsNodes>false</AvoidsNodes>
           </Connection>
-          <Connection Source="ControlPanel.LiftExt" Destination="FB3.IN2" dx1="90.521" />
+          <Connection Source="ControlPanel.LiftExt" Destination="FB3.IN2" dx1="80" />
           <Connection Source="FB3.OUT" Destination="FB9.VALUE1" dx1="40.104" dx2="110" dy="150">
             <AvoidsNodes>false</AvoidsNodes>
           </Connection>
-          <Connection Source="ControlPanel.PushExt" Destination="FB6.IN2" dx1="130.521" />
-          <Connection Source="FB6.OUT" Destination="FB9.VALUE3" dx1="70" dx2="40" dy="-790.146" />
+          <Connection Source="ControlPanel.PushExt" Destination="FB6.IN2" dx1="40" />
+          <Connection Source="FB6.OUT" Destination="FB9.VALUE3" dx1="70" dx2="30" dy="-310" />
         </DataConnections>
       </FBNetwork>
     </Resource>
@@ -361,10 +435,10 @@
   <Mapping From="LiftingLuggage.FB2" To="PusherControlDEV.RES0" />
   <Mapping From="LiftingLuggage.FB4" To="LiftControlDEV.RES0" />
   <Mapping From="LiftingLuggage.FB5" To="LiftControlDEV.RES0" />
-  <Mapping From="LiftingLuggage.FB7" To="ControlPanelDEV.RES0" />
   <Mapping From="LiftingLuggage.ControlPanel" To="ControlPanelDEV.RES0" />
   <Mapping From="LiftingLuggage.FB9" To="ControlPanelDEV.RES0" />
   <Mapping From="LiftingLuggage.FB10" To="ControlPanelDEV.RES0" />
   <Mapping From="LiftingLuggage.FB3" To="ControlPanelDEV.RES0" />
   <Mapping From="LiftingLuggage.FB6" To="ControlPanelDEV.RES0" />
+  <Mapping From="LiftingLuggage.FB7" To="ControlPanelDEV.RES0" />
 </System>

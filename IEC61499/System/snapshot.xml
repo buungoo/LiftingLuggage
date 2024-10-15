@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <baseline xmlns:xsd="http://www.nxtControl.com/Snapshot" xmlns="http://tempuri.org/XMLSchema1.xsd">
-  <snapshot guid="{DD73E99C-F207-4DF5-9596-9105AD8689A7}" compiler="Default" created="2024-10-14T17:26:44" base="{00000000-0000-0000-0000-000000000000}">
+  <snapshot guid="{1DD651F5-36BE-4FC2-AD27-FCABE9EF2AF4}" compiler="Default" created="2024-10-15T17:06:04" base="{00000000-0000-0000-0000-000000000000}">
     <DeployInformation Type="Working">
       <FileGroup Name="FileList" xmlns="http://tempuri.org/DeploySnapshot.xsd">
         <FileItem Name="Main#CentralController.bin" Library="IEC61499.dll" BuildSnapshot="{27C2D50B-97AA-4AF8-A8EF-92CB39EAF270}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
@@ -226,11 +226,43 @@
         <DeviceItem ID="8e25662b-7163-43d9-a62e-5110e1ee3534" Hash="199A3DBC408ED006B" />
         <DeviceItem ID="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e" Hash="763947B659DD6B2E" />
         <DeviceItem ID="f52da1eb-1c96-483e-9b03-6c71f593bf08" Hash="3311A098BE50FFD8" />
-        <DeviceItem ID="4f2320c7-dee5-4b95-9446-937b7dc35500" Hash="432F020EDFB5D338" />
+        <DeviceItem ID="4f2320c7-dee5-4b95-9446-937b7dc35500" Hash="6636A86FE9F8BBC1" />
       </FileGroup>
-      <Device Name="LiftControlDEV" ID="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e" xmlns="http://tempuri.org/DeploySnapshot.xsd">
-        <FileItem Name="Basics/Main#LiftControl.bin">
-          <Hash>1D0C9E465BA0D98F93EA3E88B26A38599FE7A809DC382D0C59A4814307B92463</Hash>
+      <Device Name="ControlPanelDEV" ID="4f2320c7-dee5-4b95-9446-937b7dc35500" xmlns="http://tempuri.org/DeploySnapshot.xsd">
+        <FileItem Name="Composites/Main#ControlPanel_HMI.bin">
+          <Hash>FEE61A3CF413A016E95C8B487F3CD1D2C97C377E05E97F3429F16DADEB985350</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#ControlPanel.bin">
+          <Hash>8478FB6E1526BBFB6215E705E020BED00BF19C2718538467F240C3793AB767D1</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#OPCUA_WRITE_48BC9B37DEA8D24C.bin">
+          <Hash>B760051A23AD14F7B2E8FC332BFF077E656B7AB4F0DEC71221222896A08FEE76</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#AND_88A3DD8EC65DD11C.bin">
+          <Hash>89D961ACACCE98AD5B49D10BBFEE8DD0CC060555E82C1138D3E51E195ACA954A</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#NOT_42C76073DCEB1A7A.bin">
+          <Hash>D2B4A0A05A93F4A817CAEE6DC868892C62EB1DAB190B2B05030967401C360B14</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#DelayOnAndTrue.bin">
+          <Hash>8D5C35F137204F0100F85F092FDB2E97CA6175724948576D8B851DE2590555A0</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#OPCUA_CONNECT_13434D741E95123C0.bin">
+          <Hash>754A8C2EFFD32EB1D36B220E2E31A3CC4F6233545CF1BB0FFD0B1853A2DDC320</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_246902A2E9B15C94D.bin">
+          <Hash>0E678C3C53DBFCE97C9AB2FE17D24A5C25FC2B6E2DEDA049A06B01E72AFF1602</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin">
+          <Hash>BDA17C1A0C8FB031CB5993046D8A7E98C475A2CBC05CA8A5DC5D5C1DDE8CD7DB</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_2451551C2B52DD24F.bin">
+          <Hash>B509926AEE78507BE0C2F98EE0EECD240F0F0497D071876A7D798064D5EAEB0E</Hash>
+        </FileItem>
+      </Device>
+      <Device Name="PusherControlDEV" ID="f52da1eb-1c96-483e-9b03-6c71f593bf08" xmlns="http://tempuri.org/DeploySnapshot.xsd">
+        <FileItem Name="Basics/Main#PusherControl.bin">
+          <Hash>36CF555427BD41E25B35F40C45B88FB128D1295078643E2C26085FC0AC3DF9BC</Hash>
         </FileItem>
         <FileItem Name="Basics/Main#OPCUA_CONNECT_13434D741E95123C0.bin">
           <Hash>754A8C2EFFD32EB1D36B220E2E31A3CC4F6233545CF1BB0FFD0B1853A2DDC320</Hash>
@@ -238,11 +270,11 @@
         <FileItem Name="Basics/Main#OPCUA_READ_17210D0FAA2FB8D01.bin">
           <Hash>AD12477526623F69C7B475983EFBDD5D62CA1A2B8DC9312828C88998BADFA2B6</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_5766F27C0FBCC110.bin">
-          <Hash>418028345FA05EE4B175641C18E800528A5587AAAFBBCCC06EC79105CDCBA34A</Hash>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_271612CFD7010AE0.bin">
+          <Hash>FAB31C2E126FEA451706F34C944A178F75AD13407D35777A8DFD29C45D7CC64F</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_PEER_16697678DCF9C13D3.bin">
-          <Hash>372E5BAB89FC9720E551C9DD5ECEF8B2E063E9B6B42C44FDF49E4816D981425F</Hash>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_124AAD7831CB0FFC2.bin">
+          <Hash>D50485136745C5EA6C0D37FBE29E7F2216A73A93ECF4B6C96DF6B3AF13278232</Hash>
         </FileItem>
         <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin">
           <Hash>BDA17C1A0C8FB031CB5993046D8A7E98C475A2CBC05CA8A5DC5D5C1DDE8CD7DB</Hash>
@@ -325,9 +357,9 @@
           <Hash>BDA17C1A0C8FB031CB5993046D8A7E98C475A2CBC05CA8A5DC5D5C1DDE8CD7DB</Hash>
         </FileItem>
       </Device>
-      <Device Name="PusherControlDEV" ID="f52da1eb-1c96-483e-9b03-6c71f593bf08" xmlns="http://tempuri.org/DeploySnapshot.xsd">
-        <FileItem Name="Basics/Main#PusherControl.bin">
-          <Hash>36CF555427BD41E25B35F40C45B88FB128D1295078643E2C26085FC0AC3DF9BC</Hash>
+      <Device Name="LiftControlDEV" ID="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e" xmlns="http://tempuri.org/DeploySnapshot.xsd">
+        <FileItem Name="Basics/Main#LiftControl.bin">
+          <Hash>1D0C9E465BA0D98F93EA3E88B26A38599FE7A809DC382D0C59A4814307B92463</Hash>
         </FileItem>
         <FileItem Name="Basics/Main#OPCUA_CONNECT_13434D741E95123C0.bin">
           <Hash>754A8C2EFFD32EB1D36B220E2E31A3CC4F6233545CF1BB0FFD0B1853A2DDC320</Hash>
@@ -335,11 +367,11 @@
         <FileItem Name="Basics/Main#OPCUA_READ_17210D0FAA2FB8D01.bin">
           <Hash>AD12477526623F69C7B475983EFBDD5D62CA1A2B8DC9312828C88998BADFA2B6</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_271612CFD7010AE0.bin">
-          <Hash>FAB31C2E126FEA451706F34C944A178F75AD13407D35777A8DFD29C45D7CC64F</Hash>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_5766F27C0FBCC110.bin">
+          <Hash>418028345FA05EE4B175641C18E800528A5587AAAFBBCCC06EC79105CDCBA34A</Hash>
         </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_124AAD7831CB0FFC2.bin">
-          <Hash>D50485136745C5EA6C0D37FBE29E7F2216A73A93ECF4B6C96DF6B3AF13278232</Hash>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_16697678DCF9C13D3.bin">
+          <Hash>372E5BAB89FC9720E551C9DD5ECEF8B2E063E9B6B42C44FDF49E4816D981425F</Hash>
         </FileItem>
         <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin">
           <Hash>BDA17C1A0C8FB031CB5993046D8A7E98C475A2CBC05CA8A5DC5D5C1DDE8CD7DB</Hash>
@@ -348,53 +380,21 @@
           <Hash>318873CAE361C7FB0666BF39C8C9A179B031E184158337644BA769A8B1DFFA0A</Hash>
         </FileItem>
       </Device>
-      <Device Name="ControlPanelDEV" ID="4f2320c7-dee5-4b95-9446-937b7dc35500" xmlns="http://tempuri.org/DeploySnapshot.xsd">
-        <FileItem Name="Basics/Main#OPCUA_CONNECT_13434D741E95123C0.bin">
-          <Hash>754A8C2EFFD32EB1D36B220E2E31A3CC4F6233545CF1BB0FFD0B1853A2DDC320</Hash>
-        </FileItem>
-        <FileItem Name="Composites/Main#ControlPanel_HMI.bin">
-          <Hash>FEE61A3CF413A016E95C8B487F3CD1D2C97C377E05E97F3429F16DADEB985350</Hash>
-        </FileItem>
-        <FileItem Name="Composites/Main#ControlPanel.bin">
-          <Hash>8478FB6E1526BBFB6215E705E020BED00BF19C2718538467F240C3793AB767D1</Hash>
-        </FileItem>
-        <FileItem Name="Basics/Main#OPCUA_WRITE_48BC9B37DEA8D24C.bin">
-          <Hash>B760051A23AD14F7B2E8FC332BFF077E656B7AB4F0DEC71221222896A08FEE76</Hash>
-        </FileItem>
-        <FileItem Name="Basics/Main#AND_88A3DD8EC65DD11C.bin">
-          <Hash>89D961ACACCE98AD5B49D10BBFEE8DD0CC060555E82C1138D3E51E195ACA954A</Hash>
-        </FileItem>
-        <FileItem Name="Basics/Main#NOT_42C76073DCEB1A7A.bin">
-          <Hash>D2B4A0A05A93F4A817CAEE6DC868892C62EB1DAB190B2B05030967401C360B14</Hash>
-        </FileItem>
-        <FileItem Name="Composites/Main#DelayOnAndTrue.bin">
-          <Hash>8D5C35F137204F0100F85F092FDB2E97CA6175724948576D8B851DE2590555A0</Hash>
-        </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_PEER_246902A2E9B15C94D.bin">
-          <Hash>0E678C3C53DBFCE97C9AB2FE17D24A5C25FC2B6E2DEDA049A06B01E72AFF1602</Hash>
-        </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin">
-          <Hash>BDA17C1A0C8FB031CB5993046D8A7E98C475A2CBC05CA8A5DC5D5C1DDE8CD7DB</Hash>
-        </FileItem>
-        <FileItem Name="Basics/Main#CROSSCOMM_PEER_2451551C2B52DD24F.bin">
-          <Hash>B509926AEE78507BE0C2F98EE0EECD240F0F0497D071876A7D798064D5EAEB0E</Hash>
-        </FileItem>
-      </Device>
     </DeployInformation>
   </snapshot>
   <deployment>
     <network_profile name="(Local Test)">
-      <device id="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e">
-        <sref snapshot="{DD73E99C-F207-4DF5-9596-9105AD8689A7}" state="ACTIVE" />
-      </device>
-      <device id="8e25662b-7163-43d9-a62e-5110e1ee3534">
-        <sref snapshot="{DD73E99C-F207-4DF5-9596-9105AD8689A7}" state="ACTIVE" />
+      <device id="4f2320c7-dee5-4b95-9446-937b7dc35500">
+        <sref snapshot="{1DD651F5-36BE-4FC2-AD27-FCABE9EF2AF4}" state="ACTIVE" />
       </device>
       <device id="f52da1eb-1c96-483e-9b03-6c71f593bf08">
-        <sref snapshot="{DD73E99C-F207-4DF5-9596-9105AD8689A7}" state="ACTIVE" />
+        <sref snapshot="{1DD651F5-36BE-4FC2-AD27-FCABE9EF2AF4}" state="ACTIVE" />
       </device>
-      <device id="4f2320c7-dee5-4b95-9446-937b7dc35500">
-        <sref snapshot="{DD73E99C-F207-4DF5-9596-9105AD8689A7}" state="ACTIVE" />
+      <device id="8e25662b-7163-43d9-a62e-5110e1ee3534">
+        <sref snapshot="{1DD651F5-36BE-4FC2-AD27-FCABE9EF2AF4}" state="ACTIVE" />
+      </device>
+      <device id="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e">
+        <sref snapshot="{1DD651F5-36BE-4FC2-AD27-FCABE9EF2AF4}" state="ACTIVE" />
       </device>
     </network_profile>
   </deployment>

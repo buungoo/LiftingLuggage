@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<System Name="System" ProjectName="LiftingLuggage" ProjectGuid="{A5C5F206-235D-47D9-8A3B-71E672475EE7}" BuildTime="2024-10-14 15:26:43Z" DeployTime="" StudioVersion="IEC 61499 IDE, Panther UAOv23.0 g5173 4181ef5 Thu Oct 12 16:53:40 2023" SnapshotGuid="{DD73E99C-F207-4DF5-9596-9105AD8689A7}">
+<System Name="System" ProjectName="LiftingLuggage" ProjectGuid="{A5C5F206-235D-47D9-8A3B-71E672475EE7}" BuildTime="2024-10-15 15:06:03Z" DeployTime="" StudioVersion="IEC 61499 IDE, Panther UAOv23.0 g5173 4181ef5 Thu Oct 12 16:53:40 2023" SnapshotGuid="{1DD651F5-36BE-4FC2-AD27-FCABE9EF2AF4}">
   <Device ID="4f2320c7-dee5-4b95-9446-937b7dc35500" Name="ControlPanelDEV" Type="Soft_dPAC" Namespace="SE.DPAC">
     <Resource ID="B06BB5F1ED3B03A1" Name="RES0" Type="EMB_RES_ECO" Namespace="Runtime.Management">
       <FBNetwork>
-        <FB ID="B72A6778D403A0ED" Name="FB7" Type="OPCUA_CONNECT_13434D741E95123C0" Namespace="Main">
-          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=1" />
-          <Parameter Name="QI" Value="TRUE" />
-          <Parameter Name="ID" Value="'Luggage_OPCUA'" />
-          <Parameter Name="URI" Value="'opc.tcp://127.0.0.1:4841'" />
-        </FB>
         <FB ID="A270C9DB387A4FD3" Name="ControlPanel" Type="ControlPanel" Namespace="Main" />
         <FB ID="66EF66AC24D5F054" Name="FB9" Type="OPCUA_WRITE_48BC9B37DEA8D24C" Namespace="Main">
           <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=3;VALUE${CNTX}:BOOL,BOOL,BOOL" />
@@ -24,6 +18,12 @@
         </FB>
         <FB ID="38A60EF41C154BA1" Name="FB3" Type="DelayOnAndTrue" Namespace="Main" />
         <FB ID="250E967C12F47912" Name="FB6" Type="DelayOnAndTrue" Namespace="Main" />
+        <FB ID="B72A6778D403A0ED" Name="FB7" Type="OPCUA_CONNECT_13434D741E95123C0" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Standard.OPCUAClient#CNTX:=1" />
+          <Parameter Name="QI" Value="TRUE" />
+          <Parameter Name="ID" Value="'Luggage_OPCUA'" />
+          <Parameter Name="URI" Value="'opc.tcp://127.0.0.1:4841'" />
+        </FB>
         <FB ID="6F0CC296C9D69366" Name="CHAN_LiftControlDEV_RES0" Type="COMM_CHANN_DESC" Namespace="Runtime.System">
           <Attribute Name="Endpoint.Port" Value="51310" />
           <Parameter Name="PEERNAME" Value="'LiftControlDEV.RES0'" />
@@ -51,10 +51,11 @@
           <Connection Source="START.COLD" Destination="FB7.INIT" />
           <Connection Source="ControlPanel.INITO" Destination="FB9.INIT" />
           <Connection Source="FB10.CNF" Destination="FB9.REQ" />
-          <Connection Source="ControlPanel.CNF" Destination="FB10.REQ" />
           <Connection Source="ControlPanel.CNF" Destination="FB3.REQ" />
           <Connection Source="FB3.CNF" Destination="FB9.REQ" />
           <Connection Source="FB6.CNF" Destination="FB9.REQ" />
+          <Connection Source="ControlPanel.CNF" Destination="FB6.REQ" />
+          <Connection Source="ControlPanel.CNF" Destination="FB10.REQ" />
           <Connection Source="PROXY_93D93BA425BA740C.INITO" Destination="FB9.INIT" />
           <Connection Source="PROXY_93D93BA425BA740C.CNF" Destination="FB10.REQ" />
           <Connection Source="PROXY_93D93BA425BA740C.CNF" Destination="FB3.REQ" />

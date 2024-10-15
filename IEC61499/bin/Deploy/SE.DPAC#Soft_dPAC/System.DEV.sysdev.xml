@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<System Name="System" ProjectName="LiftingLuggage" ProjectGuid="{A5C5F206-235D-47D9-8A3B-71E672475EE7}" BuildTime="2024-10-14 15:26:42Z" DeployTime="" StudioVersion="IEC 61499 IDE, Panther UAOv23.0 g5173 4181ef5 Thu Oct 12 16:53:40 2023" SnapshotGuid="{DD73E99C-F207-4DF5-9596-9105AD8689A7}">
+<System Name="System" ProjectName="LiftingLuggage" ProjectGuid="{A5C5F206-235D-47D9-8A3B-71E672475EE7}" BuildTime="2024-10-15 15:06:02Z" DeployTime="" StudioVersion="IEC 61499 IDE, Panther UAOv23.0 g5173 4181ef5 Thu Oct 12 16:53:40 2023" SnapshotGuid="{1DD651F5-36BE-4FC2-AD27-FCABE9EF2AF4}">
   <Device ID="8e25662b-7163-43d9-a62e-5110e1ee3534" Name="DEV" Type="Soft_dPAC" Namespace="SE.DPAC">
     <Resource ID="189B9269FE2737C" Name="RES0" Type="EMB_RES_ECO" Namespace="Runtime.Management">
       <FBNetwork>

@@ -6,4 +6,10 @@
   <DeviceDeployments Device="System.ControlPanelDEV">
     <Attrs Name="HMI.Alias" Value="" Context="RES0.ControlPanel.CP_HMI" />
   </DeviceDeployments>
+  <DeviceDeployments Device="System.ControlPanelDEV">
+    <Attrs Name="HMI.Alias" Value="" Context="RES0.ControlPanel.CP_HMI" />
+  </DeviceDeployments>
+  <DeviceDeployments Device="System.ControlPanelDEV">
+    <Attrs Name="HMI.Alias" Value="" Context="RES0.ControlPanel.CP_HMI" />
+  </DeviceDeployments>
 </HMIProjectDatabase>
